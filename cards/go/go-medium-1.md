@@ -595,3 +595,296 @@ wg.Wait()
 
 <!-- Card End -->
 
+# Batch 2
+
+Here are 5 additional flashcards specifically addressing Go messaging syntax, including your particular interest in `<- msg` vs `msg <-`:
+
+<!-- Card Start -->
+
+### Front
+
+**In Go channels, what is the difference between `<- msg` and `msg <-` syntax?**
+
+### Back
+
+- `<- msg` means **receiving** a value from channel `msg`.
+  ```go
+  val := <-msg
+  ```
+- `msg <- val` means **sending** a value (`val`) into channel `msg`.
+  ```go
+  msg <- val
+  ```
+
+<!-- Card End -->
+
+<!-- Card Start -->
+
+### Front
+
+**What is the correct way to send a value to a channel in Go?**
+
+- a `value := <- channel`
+- b `channel <- value`
+- c `<-channel value`
+
+### Back
+
+b 
+```go
+channel <- value
+```
+
+<!-- Card End -->
+
+<!-- Card Start -->
+
+### Front
+
+**Which syntax correctly reads from a Go channel named `ch`?**
+
+- A `val := <-ch`
+- B `ch <- val`
+- B `<-ch val`
+
+### Back
+
+A
+```go
+val := <-ch
+```
+
+<!-- Card End -->
+
+<!-- Card Start -->
+
+### Front
+
+**What does the following Go code snippet do?**
+```go
+select {
+case ch <- v:
+    // ...
+default:
+    // ...
+}
+```
+
+### Back
+
+Attempts a **non-blocking send** of value `v` into channel `ch`. If `ch` is full or not ready, it executes the `default` case.
+
+#### Why Does a Regular Send Block?
+Normally, when sending to an unbuffered channel:
+
+```go
+
+ch <- v  // BLOCKS until another goroutine receives
+```
+
+If there’s no receiver waiting, the program blocks and waits indefinitely.
+If another goroutine is receiving from ch, then the value is sent immediately.
+For a buffered channel:
+
+```go
+ch := make(chan int, 2)
+ch <- 1 // Does NOT block (buffer has space)
+ch <- 2 // Does NOT block (buffer has space)
+ch <- 3 // BLOCKS (buffer is full until a value is received)
+```
+
+#### What Does select {} Do?
+The select statement in Go allows handling multiple channel operations at once.
+
+When using:
+
+```go
+select {
+case ch <- v:
+    // Value sent successfully
+default:
+    // Channel is full or no receiver, so do something else
+}
+```
+If ch is ready to accept a value, the case ch <- v: branch executes.
+If ch is blocked (full or no receiver), the default: case executes immediately, preventing blocking.
+
+```go
+func main() {
+	ch := make(chan int, 2)
+	select {
+	case ch <- 1:
+		// Value sent successfully
+		fmt.Println("do 1")
+	default:
+		// Channel is full or no receiver, so do something else
+		fmt.Println("booo")
+	}
+
+	select {
+	case ch <- 2:
+		// Value sent successfully
+		fmt.Println("do 2")
+	default:
+		// Channel is full or no receiver, so do something else
+		fmt.Println("booo")
+	}
+
+	select {
+	case ch <- 2:
+		// Value sent successfullyblocked  :(
+
+		fmt.Println("booo")
+	default:
+		// Channel is full or no receiver, so do something else
+		fmt.Println("do 3")
+	}
+
+}
+```
+prints:
+```
+do 1
+do 2
+do 3
+```
+
+
+https://go.dev/play/p/Rser0d2KowY
+
+<!-- Card End -->
+
+<!-- Card Start -->
+
+### Front
+
+**How do you check if a channel is closed after receiving from it?**
+
+### Back
+
+Use the two-value receive syntax:
+```go
+val, ok := <-ch
+if !ok {
+    fmt.Println("Channel closed!")
+}
+```
+- `ok` is `false` if the channel has been closed.
+
+<!-- Card End -->
+
+<!-- Card Start -->
+
+### Front
+
+```go
+
+func main() {
+    ch := make(chan int)
+
+    go func() {
+        v := <-ch // Receives a value
+        fmt.Println("Received:", v)
+    }()
+
+    select {
+    case ch <- 42:
+        fmt.Println("Value sent")
+    default:
+        fmt.Println("Channel blocked, skipping send")
+    }
+}
+```
+What will it say?
+
+### Back
+
+You would think that it might say
+
+Value sent
+Received:42
+
+but it might also not.  It all depends on the scheduler.
+
+you can but a small sleep in there
+```go
+     time.Sleep(10 * time.Millisecond) // Allow goroutine to start
+     select {....
+```
+and your good to go.  But you know...that kinda sucks
+
+Try
+
+```go
+
+package main
+
+import (
+    "fmt"
+    "sync"
+)
+
+func main() {
+    var wg sync.WaitGroup
+    ch := make(chan int)
+
+    wg.Add(1)
+    go func() {
+        defer wg.Done()
+        v := <-ch // Receives a value
+        fmt.Println("Received:", v)
+    }()
+
+    wg.Wait() // Ensures the goroutine is ready
+
+    select {
+    case ch <- 42:
+        fmt.Println("Value sent")
+    default:
+        fmt.Println("Channel blocked, skipping send")
+    }
+}
+```
+
+<!-- Card End -->
+
+<!-- Card Start -->
+
+### Front
+
+```go
+ package main
+
+import (
+	"fmt"
+	"time"
+)
+
+func f(from string) {
+	fmt.Println(from)
+}
+
+func main() {
+
+	f("hello1")
+
+	go f("hello2")
+
+	go func(msg string) {
+		fmt.Println(msg)
+	}("hello3")
+
+	time.Sleep(time.Second)
+	fmt.Println("done")
+}
+```
+ what is the difference between hello1, hello2 and hello3
+
+### Back
+
+hello1 is a straight up synchronous function call
+hello2 is a go proc
+hello3 is an anonymous function ( still a go proc)
+
+you need to do the delay at the end to see the results.
+<!-- Card End -->

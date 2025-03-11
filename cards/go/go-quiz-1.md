@@ -17,7 +17,8 @@ D) Both A and C are correct
 
 Go allows variable declaration using either the `var` keyword or the short declaration operator `:=`.
 
-<!-- Card End --> <!-- Card Start -->
+<!-- Card End -->
+<!-- Card Start -->
 
 ### Front
 
@@ -34,7 +35,8 @@ C) char
 
 Go does not have a `char` type. It uses `rune` for Unicode characters and `byte` for ASCII characters.
 
-<!-- Card End --> <!-- Card Start -->
+<!-- Card End -->
+<!-- Card Start -->
 
 ### Front
 
@@ -51,7 +53,8 @@ B) Delays the execution of a function until the surrounding function returns
 
 `defer` is used to ensure that a function call is performed later in a program's execution, usually for cleanup purposes.
 
-<!-- Card End --> <!-- Card Start -->
+<!-- Card End -->
+<!-- Card Start -->
 
 ### Front
 
@@ -68,7 +71,8 @@ B) if err != nil
 
 Go uses explicit error checking with the `if err != nil` pattern instead of exceptions.
 
-<!-- Card End --> <!-- Card Start -->
+<!-- Card End -->
+<!-- Card Start -->
 
 ### Front
 
@@ -85,7 +89,8 @@ B) A lightweight thread managed by the Go runtime
 
 Goroutines are functions or methods that run concurrently with other functions or methods.
 
-<!-- Card End --> <!-- Card Start -->
+<!-- Card End --> 
+<!-- Card Start -->
 
 ### Front
 
@@ -102,7 +107,8 @@ B) type
 
 The `type` keyword is used to define new types, including structs, in Go.
 
-<!-- Card End --> <!-- Card Start -->
+<!-- Card End --> 
+<!-- Card Start -->
 
 ### Front
 
@@ -119,7 +125,8 @@ A) To allocate memory for built-in types
 
 `make` is used to create slices, maps, and channels with initial capacity.
 
-<!-- Card End --> <!-- Card Start -->
+<!-- Card End -->
+<!-- Card Start -->
 
 ### Front
 
@@ -136,7 +143,8 @@ B) It's automatic and runs concurrently
 
 Go features automatic garbage collection that runs concurrently with the program.
 
-<!-- Card End --> <!-- Card Start -->
+<!-- Card End --> 
+<!-- Card Start -->
 
 ### Front
 
@@ -153,7 +161,8 @@ C) To be called before the main() function
 
 The `init()` function is automatically executed before the `main()` function in Go programs.
 
-<!-- Card End --> <!-- Card Start -->
+<!-- Card End --> 
+<!-- Card Start -->
 
 ### Front
 
@@ -170,7 +179,8 @@ B) fmt.Printf()
 
 `fmt.Printf()` is used for formatted I/O in Go, similar to C's printf.
 
-<!-- Card End --> <!-- Card Start -->
+<!-- Card End -->
+<!-- Card Start -->
 
 ### Front
 
@@ -187,7 +197,8 @@ D) All of the above
 
 Slices can be declared using var, make, or with a literal.
 
-<!-- Card End --> <!-- Card Start -->
+<!-- Card End -->
+<!-- Card Start -->
 
 ### Front
 
@@ -204,7 +215,8 @@ B) They are implicitly implemented
 
 In Go, types implement interfaces implicitly by implementing the methods.
 
-<!-- Card End --> <!-- Card Start -->
+<!-- Card End -->
+<!-- Card Start -->
 
 ### Front
 
@@ -221,7 +233,8 @@ B) To iterate over elements in various data structures
 
 `range` is used in for loops to iterate over slices, arrays, maps, strings, and channels.
 
-<!-- Card End --> <!-- Card Start -->
+<!-- Card End -->
+<!-- Card Start -->
 
 ### Front
 
@@ -238,7 +251,8 @@ C) testing
 
 The `testing` package provides support for automated testing of Go packages.
 
-<!-- Card End --> <!-- Card Start -->
+<!-- Card End -->
+<!-- Card Start -->
 
 ### Front
 
@@ -255,7 +269,8 @@ C) To start a new goroutine
 
 The `go` keyword is used to start a new goroutine, allowing for concurrent execution.
 
-<!-- Card End --> <!-- Card Start -->
+<!-- Card End -->
+<!-- Card Start -->
 
 ### Front
 
@@ -272,7 +287,8 @@ D) All of the above
 
 Go provides various synchronization primitives, including locks, mutexes, and semaphores, for handling concurrent access.
 
-<!-- Card End --> <!-- Card Start -->
+<!-- Card End -->
+<!-- Card Start -->
 
 ### Front
 
@@ -289,7 +305,8 @@ A) To choose from multiple send/receive channel operations
 
 `select` allows a goroutine to wait on multiple communication operations.
 
-<!-- Card End --> <!-- Card Start -->
+<!-- Card End -->
+<!-- Card Start -->
 
 ### Front
 
@@ -306,7 +323,8 @@ C) The & operator is used to get the address of a variable
 
 In Go, & is used to get the address of a variable, and * is used to dereference a pointer.
 
-<!-- Card End --> <!-- Card Start -->
+<!-- Card End -->
+<!-- Card Start -->
 
 ### Front
 
@@ -323,7 +341,8 @@ B) To generate a sequence of related constants
 
 `iota` is used in constant declarations to create a sequence of related values.
 
-<!-- Card End --> <!-- Card Start -->
+<!-- Card End -->
+<!-- Card Start -->
 
 ### Front
 
@@ -340,7 +359,8 @@ B) They can be defined for any type
 
 In Go, methods can be defined for any named type, not just structs.
 
-<!-- Card End --> <!-- Card Start -->
+<!-- Card End -->
+<!-- Card Start -->
 
 ### Front
 
@@ -357,7 +377,8 @@ B) To handle panics and prevent the program from crashing
 
 `recover` is used to regain control of a panicking goroutine.
 
-<!-- Card End --> <!-- Card Start -->
+<!-- Card End -->
+<!-- Card Start -->
 
 ### Front
 
@@ -374,7 +395,8 @@ A) interface{}
 
 An empty interface is denoted by `interface{}` and can hold values of any type.
 
-<!-- Card End --> <!-- Card Start -->
+<!-- Card End -->
+<!-- Card Start -->
 
 ### Front
 
@@ -391,7 +413,8 @@ C) To execute the next case regardless of its condition
 
 `fallthrough` forces the execution to fall through to the next case.
 
-<!-- Card End --> <!-- Card Start -->
+<!-- Card End -->
+<!-- Card Start -->
 
 ### Front
 
@@ -408,7 +431,8 @@ B) They facilitate communication between goroutines
 
 Channels are the pipes that connect concurrent goroutines.
 
-<!-- Card End --> <!-- Card Start -->
+<!-- Card End -->
+<!-- Card Start -->
 
 ### Front
 
@@ -425,7 +449,8 @@ B) To manage module dependencies
 
 `go mod` is used for module maintenance, including dependency management.
 
-<!-- Card End --> <!-- Card Start -->
+<!-- Card End -->
+<!-- Card Start -->
 
 ### Front
 
@@ -442,7 +467,8 @@ D) while condition {}
 
 Go does not have a `while` loop. All loops are expressed using the `for` keyword.
 
-<!-- Card End --> <!-- Card Start -->
+<!-- Card End -->
+<!-- Card Start -->
 
 ### Front
 
@@ -459,7 +485,8 @@ B) To ignore values that you don't want to use
 
 The blank identifier is used to discard unwanted values returned by functions or in multiple assignments.
 
-<!-- Card End --> <!-- Card Start -->
+<!-- Card End -->
+<!-- Card Start -->
 
 ### Front
 
@@ -476,7 +503,8 @@ B) Errors are values
 
 In Go, errors are just values that can be returned, checked, and passed around like any other value.
 
-<!-- Card End --> <!-- Card Start -->
+<!-- Card End -->
+<!-- Card Start -->
 
 ### Front
 
