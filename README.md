@@ -5,6 +5,8 @@ This repo contains some flashcards that can be used with the Meowmorize app.
 https://github.com/robstave/meowmorize
 
 They can be imported in the Markdown format.   I just created them with chatGPT.  
+Useful for learning and memorizing concepts.  The prompts are included in the project.
+
 
 
 ## Topics
