@@ -1682,3 +1682,65 @@ func (w *Worker) Process() {
 This approach is often seen in well-designed Go libraries and services, combining the best aspects of both synchronization mechanisms.
 
 <!-- Card End -->
+
+<!-- Card Start -->
+
+### Front
+
+What is duck typing, and how does it relate to Go's type system?
+
+A) A way to define types explicitly  
+B) A method of type inference based on method signatures  
+C) A mechanism for runtime type checking  
+D) A feature for dynamic typing in Go
+
+### Back
+
+**B) A method of type inference based on method signatures**
+
+Duck typing is a concept where the type of an object is determined by the methods it implements, rather than its explicit declaration. The name comes from the saying, "If it looks like a duck, swims like a duck, and quacks like a duck, then it probably is a duck."
+
+**Duck Typing in Go**:
+- Go uses duck typing through its interface system.
+- A type satisfies an interface if it implements all the methods defined by the interface, without needing explicit declaration.
+- This allows for loose coupling and flexible code, as types can satisfy interfaces without knowing about them.
+
+**Example**:
+```go
+package main
+
+import (
+	"fmt"
+)
+
+type Quacker interface {
+	Quack()
+}
+
+type Duck struct{}
+
+func (d Duck) Quack() {
+	fmt.Println("Quack!")
+}
+
+func MakeItQuack1(q Quacker) {
+	q.Quack()
+}
+
+func MakeItQuack2(d Duck) {
+	d.Quack()
+}
+
+func main() {
+	var d Duck
+	MakeItQuack1(d) // Duck satisfies Quacker because it implements Quack()
+	MakeItQuack2(d) // Duck just works...this is not ducking
+}
+
+```
+
+https://go.dev/play/p/6g8huL8W9Oi
+
+In this example, `Duck` satisfies the `Quacker` interface because it implements the `Quack` method, even though it doesn't explicitly declare that it implements `Quacker`. This is a practical demonstration of duck typing in Go.
+
+However, `MakeItQuack2` is not an example of duck typing. It explicitly requires a `Duck` type as its parameter, which means it does not rely on the interface system or method signatures to determine compatibility. Instead, it directly couples the function to the `Duck` type, losing the flexibility and loose coupling that duck typing provides.
