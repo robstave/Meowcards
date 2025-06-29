@@ -8,14 +8,14 @@ Here is a comprehensive set of 65 multiple choice flashcards for Golang intervie
 
 What is the primary design philosophy behind Go's error handling?
 
-A) Errors should be hidden from developers
-B) Explicit error handling over exceptions
-C) Automatic error recovery
-D) Error handling through try-catch blocks
+- A. Errors should be hidden from developers
+- B. Explicit error handling over exceptions
+- C. Automatic error recovery
+- D. Error handling through try-catch blocks
 
 ### Back
 
-**B) Explicit error handling over exceptions**
+**B. Explicit error handling over exceptions**
 
 Go's philosophy is "errors are values" - making error handling explicit and forcing developers to consciously handle errors rather than letting them propagate implicitly through exceptions.
 
@@ -27,14 +27,14 @@ Go's philosophy is "errors are values" - making error handling explicit and forc
 
 What makes Go's goroutines more efficient than traditional OS threads?
 
-A) They run on the GPU
-B) They use less memory and have faster context switching
-C) They can only run one at a time
-D) They automatically handle errors
+- A. They run on the GPU
+- B. They use less memory and have faster context switching
+- C. They can only run one at a time
+- D. They automatically handle errors
 
 ### Back
 
-**B) They use less memory and have faster context switching**
+**B. They use less memory and have faster context switching**
 
 Goroutines start with only 2KB of stack space (vs 2MB for OS threads) and are multiplexed onto OS threads by the Go runtime, making context switching much faster.
 
@@ -58,14 +58,14 @@ Goroutines start with only 2KB of stack space (vs 2MB for OS threads) and are mu
 
 What is the main advantage of Go's garbage collector design?
 
-A) It never runs during program execution
-B) Low-latency, concurrent collection with minimal stop-the-world pauses
-C) It requires manual memory management
-D) It only works with pointers
+- A. It never runs during program execution
+- B. Low-latency, concurrent collection with minimal stop-the-world pauses
+- C. It requires manual memory management
+- D. It only works with pointers
 
 ### Back
 
-**B) Low-latency, concurrent collection with minimal stop-the-world pauses**
+**B. Low-latency, concurrent collection with minimal stop-the-world pauses**
 
 Go's GC is designed for low-latency applications, running concurrently with the program and minimizing pause times, typically under 1ms.
 
@@ -77,14 +77,14 @@ Go's GC is designed for low-latency applications, running concurrently with the 
 
 Why doesn't Go support generics (prior to Go 1.18)?
 
-A) Technical limitations
-B) To maintain simplicity and fast compilation
-C) Performance reasons
-D) Memory constraints
+- A. Technical limitations
+- B. To maintain simplicity and fast compilation
+- C. Performance reasons
+- D. Memory constraints
 
 ### Back
 
-**B) To maintain simplicity and fast compilation**
+**B. To maintain simplicity and fast compilation**
 
 Go's original design prioritized simplicity, readability, and fast compilation. The team believed generics would complicate the language, though they were eventually added in Go 1.18 with careful design.
 
@@ -96,14 +96,14 @@ Go's original design prioritized simplicity, readability, and fast compilation. 
 
 What is the primary purpose of Go's interface{} type?
 
-A) To define method contracts
-B) To represent any type (empty interface)
-C) To handle errors
-D) To create generic functions
+- A. To define method contracts
+- B. To represent any type (empty interface)
+- C. To handle errors
+- D. To create generic functions
 
 ### Back
 
-**B) To represent any type (empty interface)**
+**B. To represent any type (empty interface)**
 
 `interface{}` is the empty interface that can hold values of any type, as every type implements at least zero methods. It's Go's way of achieving dynamic typing when needed.
 
@@ -115,14 +115,14 @@ D) To create generic functions
 
 What advantage does Go's static linking provide?
 
-A) Faster runtime performance
-B) Self-contained binaries with no external dependencies
-C) Smaller binary sizes
-D) Better security
+- A. Faster runtime performance
+- B. Self-contained binaries with no external dependencies
+- C. Smaller binary sizes
+- D. Better security
 
 ### Back
 
-**B) Self-contained binaries with no external dependencies**
+**B. Self-contained binaries with no external dependencies**
 
 Go statically links dependencies by default, creating standalone binaries that don't require external libraries or runtime environments, simplifying deployment.
 
@@ -134,14 +134,14 @@ Go statically links dependencies by default, creating standalone binaries that d
 
 What is the main benefit of Go's composition over inheritance model?
 
-A) Faster execution
-B) More flexible and easier to test code organization
-C) Automatic method generation
-D) Better memory usage
+- A. Faster execution
+- B. More flexible and easier to test code organization
+- C. Automatic method generation
+- D. Better memory usage
 
 ### Back
 
-**B) More flexible and easier to test code organization**
+**B. More flexible and easier to test code organization**
 
 Go favors composition over inheritance, allowing for more flexible designs, easier testing, and avoiding the complexity and coupling issues common with deep inheritance hierarchies.
 
@@ -153,14 +153,14 @@ Go favors composition over inheritance, allowing for more flexible designs, easi
 
 Why does Go not support operator overloading?
 
-A) Performance concerns
-B) To maintain code clarity and predictability
-C) Technical limitations
-D) Memory management issues
+- A. Performance concerns
+- B. To maintain code clarity and predictability
+- C. Technical limitations
+- D. Memory management issues
 
 ### Back
 
-**B) To maintain code clarity and predictability**
+**B. To maintain code clarity and predictability**
 
 Go avoids operator overloading to keep code simple and predictable. When you see `+`, you know exactly what it does without needing to understand custom implementations.
 
@@ -172,20 +172,18 @@ Go avoids operator overloading to keep code simple and predictable. When you see
 
 What makes Go particularly suitable for microservices architecture?
 
-A) Large runtime environment
-B) Fast compilation, small binaries, excellent concurrency support
-C) Complex dependency management
-D) Rich OOP features
+- A. Large runtime environment
+- B. Fast compilation, small binaries, excellent concurrency support
+- C. Complex dependency management
+- D. Rich OOP features
 
 ### Back
 
-**B) Fast compilation, small binaries, excellent concurrency support**
+**B. Fast compilation, small binaries, excellent concurrency support**
 
 Go's fast build times, lightweight binaries, built-in concurrency primitives, and strong networking libraries make it ideal for microservices development and deployment.
 
 <!-- Card End -->
-
- 
 
 <!-- Card Start -->
 
@@ -193,14 +191,14 @@ Go's fast build times, lightweight binaries, built-in concurrency primitives, an
 
 What is the purpose of Go's `select` statement?
 
-A) To choose between different data types
-B) To handle multiple channel operations concurrently
-C) To select files from the filesystem
-D) To implement conditional logic
+- A. To choose between different data types
+- B. To handle multiple channel operations concurrently
+- C. To select files from the filesystem
+- D. To implement conditional logic
 
 ### Back
 
-**B) To handle multiple channel operations concurrently**
+**B. To handle multiple channel operations concurrently**
 
 The `select` statement in Go is a powerful construct for managing multiple channel operations. It allows a goroutine to:
 
@@ -225,8 +223,6 @@ This example demonstrates how `select` can handle multiple channels, send/receiv
 
 https://go.dev/play/p/X7VtVqH0y0N
 
-
-
 <!-- Card End -->
 
 <!-- Card Start -->
@@ -235,14 +231,14 @@ https://go.dev/play/p/X7VtVqH0y0N
 
 What advantage does Go's built-in race detector provide?
 
-A) Faster code execution
-B) Automatic race condition fixes
-C) Detection of concurrent access issues during testing
-D) Memory optimization
+- A. Faster code execution
+- B. Automatic race condition fixes
+- C. Detection of concurrent access issues during testing
+- D. Memory optimization
 
 ### Back
 
-**C) Detection of concurrent access issues during testing**
+**C. Detection of concurrent access issues during testing**
 
 Go's race detector (enabled with `-race` flag) helps identify data races during testing by monitoring memory access patterns, crucial for writing safe concurrent code.
 
@@ -254,30 +250,27 @@ Go's race detector (enabled with `-race` flag) helps identify data races during 
 
 Why does Go use package-based organization rather than classes?
 
-A) Better performance
-B) Simpler dependency management and clearer API boundaries
-C) Reduced memory usage
-D) Faster compilation
+- A. Better performance
+- B. Simpler dependency management and clearer API boundaries
+- C. Reduced memory usage
+- D. Faster compilation
 
 ### Back
 
-**B) Simpler dependency management and clearer API boundaries**
+**B. Simpler dependency management and clearer API boundaries**
 
 Go's package-based organization provides several key advantages:
 
 1. **Clear API Boundaries**: 
    - Packages create strong boundaries between code units
-   - Only exported (capitalized) names are visible outside packages, enforcing intentional API design
    - Removes ambiguity about what's public/private compared to multiple levels of access modifiers
 
 2. **Dependency Management Benefits**:
    - Package imports are explicit and clearly visible at file tops
-   - Circular dependencies between packages are not allowed, enforcing cleaner architecture
    - Go modules (introduced in Go 1.11) use packages as the basic unit of versioning
 
 3. **Code Organization Improvements**:
    - Encourages grouping related functionality, not just related data structures
-   - Makes refactoring easier as moving code between packages is simpler than restructuring class hierarchies
    - Simplifies testing as package boundaries are natural seams for test/mock interfaces
 
 This approach aligns with Go's philosophy of simplicity and explicit design, reducing the complexity often found in deep class hierarchies.
@@ -290,26 +283,24 @@ This approach aligns with Go's philosophy of simplicity and explicit design, red
 
 What is the main advantage of Go's channels over traditional mutex-based synchronization?
 
-A) Lower memory usage
-B) Higher-level abstraction that encourages safer concurrent designs
-C) Faster execution
-D) Automatic deadlock detection
+- A. Lower memory usage
+- B. Higher-level abstraction that encourages safer concurrent designs
+- C. Faster execution
+- D. Automatic deadlock detection
 
 ### Back
 
-**B) Higher-level abstraction that encourages safer concurrent designs**
+**B. Higher-level abstraction that encourages safer concurrent designs**
 
 Channels follow the principle "Don't communicate by sharing memory; share memory by communicating," leading to more maintainable and less error-prone concurrent code.
 
 **Channels vs Mutexes**:
 - **Channels**:
   - Designed for communication between goroutines by passing messages, avoiding shared state entirely.
-  - Simplify synchronization by eliminating the need for explicit locking and unlocking.
   - Ideal for "easy stuff" like producer-consumer patterns, fan-out/fan-in workflows, and signaling between goroutines.
 
 - **Mutexes**:
   - Used for protecting shared memory by enforcing mutual exclusion.
-  - Require careful handling to avoid deadlocks, race conditions, and other concurrency bugs.
   - Necessary for low-level synchronization or when shared state cannot be avoided.
 
 **When to Use Channels**:
@@ -332,14 +323,14 @@ By encouraging message passing, channels reduce the need for mutexes in many sce
 
 What makes Go's compilation speed exceptionally fast?
 
-A) Simple syntax and efficient dependency resolution
-B) Lack of features
-C) Small standard library
-D) Limited type system
+- A. Simple syntax and efficient dependency resolution
+- B. Lack of features
+- C. Small standard library
+- D. Limited type system
 
 ### Back
 
-**A) Simple syntax and efficient dependency resolution**
+**A. Simple syntax and efficient dependency resolution**
 
 Go's fast compilation comes from deliberate design choices: simple syntax, efficient import system, no circular dependencies, and a streamlined compilation process.
 
@@ -351,14 +342,14 @@ Go's fast compilation comes from deliberate design choices: simple syntax, effic
 
 What is the primary use case for Go's `context` package?
 
-A) Error handling
-B) Cancellation signals and request-scoped values across API boundaries
-C) Memory management
-D) Type conversion
+- A. Error handling
+- B. Cancellation signals and request-scoped values across API boundaries
+- C. Memory management
+- D. Type conversion
 
 ### Back
 
-**B) Cancellation signals and request-scoped values across API boundaries**
+**B. Cancellation signals and request-scoped values across API boundaries**
 
 The `context` package provides a standardized way to carry cancellation signals, timeouts, and request-scoped values across API boundaries and goroutines.
 
@@ -443,14 +434,14 @@ The context pattern is essential for proper resource management in Go services, 
 
 Why doesn't Go support exceptions?
 
-A) Performance reasons
-B) To encourage explicit error handling and program clarity
-C) Technical limitations
-D) Memory constraints
+- A. Performance reasons
+- B. To encourage explicit error handling and program clarity
+- C. Technical limitations
+- D. Memory constraints
 
 ### Back
 
-**B) To encourage explicit error handling and program clarity**
+**B. To encourage explicit error handling and program clarity**
 
 Go avoids exceptions to force developers to explicitly handle errors where they occur, leading to more predictable control flow and clearer error handling paths.
 
@@ -462,14 +453,14 @@ Go avoids exceptions to force developers to explicitly handle errors where they 
 
 What advantage does Go's zero-value concept provide?
 
-A) Better performance
-B) Eliminates uninitialized variable bugs and provides sensible defaults
-C) Reduced memory usage
-D) Faster compilation
+- A. Better performance
+- B. Eliminates uninitialized variable bugs and provides sensible defaults
+- C. Reduced memory usage
+- D. Faster compilation
 
 ### Back
 
-**B) Eliminates uninitialized variable bugs and provides sensible defaults**
+**B. Eliminates uninitialized variable bugs and provides sensible defaults**
 
 Every type in Go has a meaningful zero value (0 for numbers, "" for strings, nil for pointers), eliminating undefined behavior from uninitialized variables.
 
@@ -481,14 +472,14 @@ Every type in Go has a meaningful zero value (0 for numbers, "" for strings, nil
 
 What makes Go interfaces particularly powerful?
 
-A) Implicit implementation and duck typing
-B) Multiple inheritance support
-C) Automatic method generation
-D) Runtime type checking
+- A. Implicit implementation and duck typing
+- B. Multiple inheritance support
+- C. Automatic method generation
+- D. Runtime type checking
 
 ### Back
 
-**A) Implicit implementation and duck typing**
+**A. Implicit implementation and duck typing**
 
 Go interfaces are satisfied implicitly - if a type has the required methods, it implements the interface. This enables flexible, loosely-coupled designs and easy testing.
 
@@ -500,14 +491,14 @@ Go interfaces are satisfied implicitly - if a type has the required methods, it 
 
 What is the main benefit of Go's `go fmt` tool?
 
-A) Code optimization
-B) Error detection
-C) Enforces consistent code formatting across all Go code
-D) Performance profiling
+- A. Code optimization
+- B. Error detection
+- C. Enforces consistent code formatting across all Go code
+- D. Performance profiling
 
 ### Back
 
-**C) Enforces consistent code formatting across all Go code**
+**C. Enforces consistent code formatting across all Go code**
 
 `go fmt` eliminates formatting debates by enforcing a single, consistent code style across all Go projects, improving readability and reducing code review friction.
 
@@ -519,14 +510,14 @@ D) Performance profiling
 
 Why is Go considered good for network programming?
 
-A) Built-in GUI support
-B) Excellent standard library with net/http, built-in concurrency
-C) Automatic protocol handling
-D) Database integration
+- A. Built-in GUI support
+- B. Excellent standard library with net/http, built-in concurrency
+- C. Automatic protocol handling
+- D. Database integration
 
 ### Back
 
-**B) Excellent standard library with net/http, built-in concurrency**
+**B. Excellent standard library with net/http, built-in concurrency**
 
 Go's standard library includes robust networking packages, and its goroutines make it easy to handle thousands of concurrent network connections efficiently.
 
@@ -538,14 +529,14 @@ Go's standard library includes robust networking packages, and its goroutines ma
 
 What problem does Go's vendor directory solve?
 
-A) Dependency versioning and reproducible builds
-B) Code organization
-C) Performance optimization
-D) Memory management
+- A. Dependency versioning and reproducible builds
+- B. Code organization
+- C. Performance optimization
+- D. Memory management
 
 ### Back
 
-**A) Dependency versioning and reproducible builds**
+**A. Dependency versioning and reproducible builds**
 
 The vendor directory was a mechanism in Go to ensure reproducible builds by including specific versions of dependencies directly in the project. This approach solved the "dependency hell" problem by isolating dependencies from external changes. Although Go modules have largely replaced the vendor directory, it remains a useful tool for projects requiring strict control over dependency versions or offline builds.
 
@@ -555,14 +546,14 @@ The vendor directory was a mechanism in Go to ensure reproducible builds by incl
 
 What is the main advantage of Go's struct embedding?
 
-A) Memory optimization
-B) Composition-based inheritance and method promotion
-C) Type safety
-D) Performance improvement
+- A. Memory optimization
+- B. Composition-based inheritance and method promotion
+- C. Type safety
+- D. Performance improvement
 
 ### Back
 
-**B) Composition-based inheritance and method promotion**
+**B. Composition-based inheritance and method promotion**
 
 Struct embedding allows composition-based "inheritance" where embedded types' methods are promoted to the embedding type, providing inheritance-like behavior through composition.
 
@@ -574,14 +565,14 @@ Struct embedding allows composition-based "inheritance" where embedded types' me
 
 Why does Go prefer short variable names in limited scopes?
 
-A) Memory efficiency
-B) Readability in context and reduced visual noise
-C) Faster typing
-D) Compilation speed
+- A. Memory efficiency
+- B. Readability in context and reduced visual noise
+- C. Faster typing
+- D. Compilation speed
 
 ### Back
 
-**B) Readability in context and reduced visual noise**
+**B. Readability in context and reduced visual noise**
 
 Go encourages short names in limited scopes (like `i` for loop counters) because the context makes the meaning clear, while longer names are used for broader scopes.
 
@@ -593,14 +584,14 @@ Go encourages short names in limited scopes (like `i` for loop counters) because
 
 What makes Go's testing package unique?
 
-A) Automatic test generation
-B) Built-in table-driven testing support and simplicity
-C) GUI test runner
-D) Automatic mocking
+- A. Automatic test generation
+- B. Built-in table-driven testing support and simplicity
+- C. GUI test runner
+- D. Automatic mocking
 
 ### Back
 
-**B) Built-in table-driven testing support and simplicity**
+**B. Built-in table-driven testing support and simplicity**
 
 Go's testing package is simple yet powerful, encouraging table-driven tests and providing built-in benchmarking, making testing a first-class citizen in Go development.
 
@@ -612,14 +603,14 @@ Go's testing package is simple yet powerful, encouraging table-driven tests and 
 
 What is the primary benefit of Go's modules system (introduced in Go 1.11)?
 
-A) Faster compilation
-B) Semantic versioning and dependency management outside GOPATH
-C) Better performance
-D) Reduced binary size
+- A. Faster compilation
+- B. Semantic versioning and dependency management outside GOPATH
+- C. Better performance
+- D. Reduced binary size
 
 ### Back
 
-**B) Semantic versioning and dependency management outside GOPATH**
+**B. Semantic versioning and dependency management outside GOPATH**
 
 Go modules enable projects to exist outside GOPATH, provide semantic versioning, and offer better dependency management with reproducible builds.
 
@@ -631,14 +622,14 @@ Go modules enable projects to exist outside GOPATH, provide semantic versioning,
 
 Why does Go not support method overloading?
 
-A) Performance concerns
-B) To maintain simplicity and avoid ambiguity
-C) Memory limitations
-D) Compilation complexity
+- A. Performance concerns
+- B. To maintain simplicity and avoid ambiguity
+- C. Memory limitations
+- D. Compilation complexity
 
 ### Back
 
-**B) To maintain simplicity and avoid ambiguity**
+**B. To maintain simplicity and avoid ambiguity**
 
 Go avoids method overloading to keep the language simple and prevent the ambiguity and complexity that can arise from multiple methods with the same name but different signatures.
 
@@ -650,14 +641,14 @@ Go avoids method overloading to keep the language simple and prevent the ambigui
 
 What makes Go particularly suitable for CLI tools?
 
-A) GUI support
-B) Fast compilation, static linking, and cross-compilation
-C) Database connectivity
-D) Web framework support
+- A. GUI support
+- B. Fast compilation, static linking, and cross-compilation
+- C. Database connectivity
+- D. Web framework support
 
 ### Back
 
-**B) Fast compilation, static linking, and cross-compilation**
+**B. Fast compilation, static linking, and cross-compilation**
 
 Go's fast build times, self-contained binaries, and easy cross-compilation make it excellent for building CLI tools that can be distributed as single executables.
 
@@ -669,14 +660,14 @@ Go's fast build times, self-contained binaries, and easy cross-compilation make 
 
 What is the purpose of Go's `init()` function?
 
-A) Constructor for structs
-B) Package initialization before main() or other functions
-C) Error handling
-D) Memory allocation
+- A. Constructor for structs
+- B. Package initialization before main() or other functions
+- C. Error handling
+- D. Memory allocation
 
 ### Back
 
-**B) Package initialization before main() or other functions**
+**B. Package initialization before main() or other functions**
 
 `init()` functions run automatically before `main()` (or before the package is used), allowing for package-level initialization and setup that must happen before other code runs.
 
@@ -688,14 +679,14 @@ D) Memory allocation
 
 What advantage does Go's slice design provide over arrays?
 
-A) Better type safety
-B) Dynamic sizing with underlying array efficiency
-C) Automatic memory management
-D) Faster iteration
+- A. Better type safety
+- B. Dynamic sizing with underlying array efficiency
+- C. Automatic memory management
+- D. Faster iteration
 
 ### Back
 
-**B) Dynamic sizing with underlying array efficiency**
+**B. Dynamic sizing with underlying array efficiency**
 
 Slices provide a dynamic view over underlying arrays, combining the efficiency of arrays with the flexibility of dynamic resizing, while sharing memory efficiently.
 
@@ -707,14 +698,14 @@ Slices provide a dynamic view over underlying arrays, combining the efficiency o
 
 Why does Go use UTF-8 as its default string encoding?
 
-A) Performance reasons
-B) Universal Unicode support with ASCII compatibility
-C) Memory efficiency
-D) Simplicity
+- A. Performance reasons
+- B. Universal Unicode support with ASCII compatibility
+- C. Memory efficiency
+- D. Simplicity
 
 ### Back
 
-**B) Universal Unicode support with ASCII compatibility**
+**B. Universal Unicode support with ASCII compatibility**
 
 UTF-8 provides full Unicode support while being backward compatible with ASCII, making Go internationally friendly without breaking existing ASCII-based tools and systems.
 
@@ -726,14 +717,14 @@ UTF-8 provides full Unicode support while being backward compatible with ASCII, 
 
 What makes Go's map implementation efficient?
 
-A) Sorted keys
-B) Hash table with efficient collision handling
-C) Array-based storage
-D) Linked list implementation
+- A. Sorted keys
+- B. Hash table with efficient collision handling
+- C. Array-based storage
+- D. Linked list implementation
 
 ### Back
 
-**B) Hash table with efficient collision handling**
+**B. Hash table with efficient collision handling**
 
 Go's maps use hash tables with sophisticated collision resolution, providing average O(1) access time while handling hash collisions efficiently.
 
@@ -745,14 +736,14 @@ Go's maps use hash tables with sophisticated collision resolution, providing ave
 
 What is the main benefit of Go's `defer` statement for resource management?
 
-A) Performance optimization
-B) Guaranteed cleanup execution regardless of exit path
-C) Memory allocation
-D) Error prevention
+- A. Performance optimization
+- B. Guaranteed cleanup execution regardless of exit path
+- C. Memory allocation
+- D. Error prevention
 
 ### Back
 
-**B) Guaranteed cleanup execution regardless of exit path**
+**B. Guaranteed cleanup execution regardless of exit path**
 
 `defer` ensures cleanup code runs when the function exits, regardless of whether it exits normally, returns early, or panics, making resource management more reliable.
 
@@ -764,14 +755,14 @@ D) Error prevention
 
 Why does Go not support traditional while loops?
 
-A) Performance reasons
-B) `for` loop provides all necessary iteration patterns
-C) Memory efficiency
-D) Compilation simplicity
+- A. Performance reasons
+- B. `for` loop provides all necessary iteration patterns
+- C. Memory efficiency
+- D. Compilation simplicity
 
 ### Back
 
-**B) `for` loop provides all necessary iteration patterns**
+**B. `for` loop provides all necessary iteration patterns**
 
 Go's `for` loop can handle all iteration patterns (while, do-while, traditional for), reducing language complexity while maintaining full functionality.
 
@@ -783,14 +774,14 @@ Go's `for` loop can handle all iteration patterns (while, do-while, traditional 
 
 What makes Go's concurrency model different from async/await patterns?
 
-A) Go uses callbacks
-B) Goroutines and channels provide CSP-style communication
-C) Go is single-threaded
-D) Go uses promises
+- A. Go uses callbacks
+- B. Goroutines and channels provide CSP-style communication
+- C. Go is single-threaded
+- D. Go uses promises
 
 ### Back
 
-**B) Goroutines and channels provide CSP-style communication**
+**B. Goroutines and channels provide CSP-style communication**
 
 Go implements Communicating Sequential Processes (CSP), where independent goroutines communicate through channels, rather than async/await's promise-based approach.
 
@@ -816,14 +807,14 @@ This separation in CSP enables Go to efficiently handle concurrent workloads wit
 
 What is the main advantage of Go's build constraints (build tags)?
 
-A) Performance optimization
-B) Conditional compilation for different platforms/environments
-C) Faster compilation
-D) Memory efficiency
+- A. Performance optimization
+- B. Conditional compilation for different platforms/environments
+- C. Faster compilation
+- D. Memory efficiency
 
 ### Back
 
-**B) Conditional compilation for different platforms/environments**
+**B. Conditional compilation for different platforms/environments**
 
 Build tags allow conditional compilation, enabling platform-specific code, feature flags, and environment-specific builds without runtime overhead.
 
@@ -835,14 +826,14 @@ Build tags allow conditional compilation, enabling platform-specific code, featu
 
 Why does Go encourage small interfaces?
 
-A) Performance benefits
-B) Easier to implement, test, and maintain (interface segregation)
-C) Memory efficiency
-D) Faster compilation
+- A. Performance benefits
+- B. Easier to implement, test, and maintain (interface segregation)
+- C. Memory efficiency
+- D. Faster compilation
 
 ### Back
 
-**B) Easier to implement, test, and maintain (interface segregation)**
+**B. Easier to implement, test, and maintain (interface segregation)**
 
 Small, focused interfaces follow the Interface Segregation Principle, making code more modular, easier to test with mocks, and easier to implement incrementally.
 
@@ -854,14 +845,14 @@ Small, focused interfaces follow the Interface Segregation Principle, making cod
 
 What makes Go's reflection capabilities unique?
 
-A) Compile-time reflection
-B) Runtime type inspection with laws of reflection
-C) Automatic code generation
-D) Performance optimization
+- A. Compile-time reflection
+- B. Runtime type inspection with laws of reflection
+- C. Automatic code generation
+- D. Performance optimization
 
 ### Back
 
-**B) Runtime type inspection with laws of reflection**
+**B. Runtime type inspection with laws of reflection**
 
 Go's reflection follows three laws: reflection goes from interface value to reflection object, from reflection object to interface value, and to modify a reflection object, the value must be settable.
 
@@ -873,14 +864,14 @@ Go's reflection follows three laws: reflection goes from interface value to refl
 
 What problem does Go's escape analysis solve?
 
-A) Security vulnerabilities
-B) Automatic stack vs heap allocation decisions
-C) Race conditions
-D) Memory leaks
+- A. Security vulnerabilities
+- B. Automatic stack vs heap allocation decisions
+- C. Race conditions
+- D. Memory leaks
 
 ### Back
 
-**B) Automatic stack vs heap allocation decisions**
+**B. Automatic stack vs heap allocation decisions**
 
 Go's escape analysis determines whether variables should be allocated on the stack or heap, optimizing memory allocation without programmer intervention while maintaining memory safety.
 
@@ -892,14 +883,14 @@ Go's escape analysis determines whether variables should be allocated on the sta
 
 Why is Go considered good for containerized applications?
 
-A) Built-in Docker support
-B) Small static binaries and minimal runtime requirements
-C) Automatic scaling
-D) Container orchestration features
+- A. Built-in Docker support
+- B. Small static binaries and minimal runtime requirements
+- C. Automatic scaling
+- D. Container orchestration features
 
 ### Back
 
-**B) Small static binaries and minimal runtime requirements**
+**B. Small static binaries and minimal runtime requirements**
 
 Go produces small, self-contained binaries with no external dependencies, making them ideal for containers where minimizing image size and complexity is crucial.
 
@@ -911,14 +902,14 @@ Go produces small, self-contained binaries with no external dependencies, making
 
 What advantage does Go's pointer design provide over C/C++?
 
-A) Automatic dereferencing
-B) Memory safety without pointer arithmetic
-C) Faster access
-D) Automatic allocation
+- A. Automatic dereferencing
+- B. Memory safety without pointer arithmetic
+- C. Faster access
+- D. Automatic allocation
 
 ### Back
 
-**B) Memory safety without pointer arithmetic**
+**B. Memory safety without pointer arithmetic**
 
 Go provides the benefits of pointers (efficiency, reference semantics) while eliminating dangerous pointer arithmetic, preventing buffer overflows and memory corruption.
 
@@ -930,14 +921,14 @@ Go provides the benefits of pointers (efficiency, reference semantics) while eli
 
 What makes Go's standard library philosophy distinctive?
 
-A) Minimal functionality
-B) "Batteries included" with consistent, well-designed APIs
-C) Third-party dependencies
-D) Platform-specific implementations
+- A. Minimal functionality
+- B. "Batteries included" with consistent, well-designed APIs
+- C. Third-party dependencies
+- D. Platform-specific implementations
 
 ### Back
 
-**B) "Batteries included" with consistent, well-designed APIs**
+**B. "Batteries included" with consistent, well-designed APIs**
 
 Go's standard library is comprehensive and well-designed, providing most common functionality out of the box with consistent APIs, reducing the need for external dependencies.
 
@@ -949,14 +940,14 @@ Go's standard library is comprehensive and well-designed, providing most common 
 
 Why does Go use explicit type conversions rather than implicit ones?
 
-A) Performance reasons
-B) Type safety and clarity of intent
-C) Memory efficiency
-D) Compilation speed
+- A. Performance reasons
+- B. Type safety and clarity of intent
+- C. Memory efficiency
+- D. Compilation speed
 
 ### Back
 
-**B) Type safety and clarity of intent**
+**B. Type safety and clarity of intent**
 
 Explicit type conversions prevent subtle bugs from implicit conversions and make the programmer's intent clear, reducing unexpected behavior and improving code reliability.
 
@@ -968,14 +959,14 @@ Explicit type conversions prevent subtle bugs from implicit conversions and make
 
 What makes Go particularly suitable for DevOps and infrastructure tools?
 
-A) GUI capabilities
-B) Fast compilation, static binaries, excellent CLI and network support
-C) Database integration
-D) Web frameworks
+- A. GUI capabilities
+- B. Fast compilation, static binaries, excellent CLI and network support
+- C. Database integration
+- D. Web frameworks
 
 ### Back
 
-**B) Fast compilation, static binaries, excellent CLI and network support**
+**B. Fast compilation, static binaries, excellent CLI and network support**
 
 Go's fast builds, self-contained binaries, strong networking libraries, and excellent CLI support make it ideal for creating DevOps tools, monitoring systems, and infrastructure automation.
 
@@ -987,14 +978,14 @@ Go's fast builds, self-contained binaries, strong networking libraries, and exce
 
 What is the main benefit of Go's method sets and interface satisfaction rules?
 
-A) Performance optimization
-B) Clear rules for interface implementation and embedding behavior
-C) Memory efficiency
-D) Compilation speed
+- A. Performance optimization
+- B. Clear rules for interface implementation and embedding behavior
+- C. Memory efficiency
+- D. Compilation speed
 
 ### Back
 
-**B) Clear rules for interface implementation and embedding behavior**
+**B. Clear rules for interface implementation and embedding behavior**
 
 Go's method sets provide clear, predictable rules for when types satisfy interfaces, especially with pointer vs value receivers, ensuring consistent behavior in interface-based designs.
 
@@ -1006,14 +997,14 @@ Go's method sets provide clear, predictable rules for when types satisfy interfa
 
 Why does Go not support generic types (prior to 1.18) but supports generic functions through interfaces?
 
-A) Technical limitations
-B) Interface{} and type assertions provided sufficient flexibility
-C) Performance concerns
-D) Compilation complexity
+- A. Technical limitations
+- B. Interface{} and type assertions provided sufficient flexibility
+- C. Performance concerns
+- D. Compilation complexity
 
 ### Back
 
-**B) Interface{} and type assertions provided sufficient flexibility**
+**B. Interface{} and type assertions provided sufficient flexibility**
 
 Before generics, Go used `interface{}` with type assertions and interfaces to achieve polymorphism, which the designers felt provided sufficient flexibility while maintaining language simplicity.
 
@@ -1025,14 +1016,14 @@ Before generics, Go used `interface{}` with type assertions and interfaces to ac
 
 What makes Go's garbage collector well-suited for server applications?
 
-A) No garbage collection
-B) Low-latency, concurrent collection with minimal stop-the-world pauses
-C) It only runs when the application is idle
-D) It moves all memory management to disk
+- A. No garbage collection
+- B. Low-latency, concurrent collection with minimal stop-the-world pauses
+- C. It only runs when the application is idle
+- D. It moves all memory management to disk
 
 ### Back
 
-**B) Low-latency, concurrent collection with minimal stop-the-world pauses**
+**B. Low-latency, concurrent collection with minimal stop-the-world pauses**
 
 Go's garbage collector is designed for predictable, low-latency performance with sub-millisecond pauses, making it ideal for responsive server applications that handle many concurrent requests.
 
@@ -1044,14 +1035,14 @@ Go's garbage collector is designed for predictable, low-latency performance with
 
 Which feature best represents Go's approach to API design?
 
-A) Extensive use of operator overloading
-B) Composition over inheritance
-C) Dependency injection frameworks
-D) Runtime reflection for all operations
+- A. Extensive use of operator overloading
+- B. Composition over inheritance
+- C. Dependency injection frameworks
+- D. Runtime reflection for all operations
 
 ### Back
 
-**B) Composition over inheritance**
+**B. Composition over inheritance**
 
 Go deliberately omits inheritance in favor of composition through embedded types and interfaces, leading to simpler, more flexible code that avoids deep class hierarchies and the "diamond problem" of multiple inheritance.
 
@@ -1063,14 +1054,14 @@ Go deliberately omits inheritance in favor of composition through embedded types
 
 What architectural pattern does Go's standard library HTTP server implement?
 
-A) Model-View-Controller
-B) Event-driven architecture
-C) Handler pattern
-D) Aspect-oriented programming
+- A. Model-View-Controller
+- B. Event-driven architecture
+- C. Handler pattern
+- D. Aspect-oriented programming
 
 ### Back
 
-**C) Handler pattern**
+**C. Handler pattern**
 
 Go's HTTP server implements the Handler pattern through the `http.Handler` interface, allowing any type with a `ServeHTTP` method to process HTTP requests. This enables clean separation of concerns and middleware chains for request processing.
 
@@ -1082,16 +1073,15 @@ Go's HTTP server implements the Handler pattern through the `http.Handler` inter
 
 What does "zero value" initialization mean in Go's design philosophy?
 
-A) All variables must be explicitly initialized
-B) Variables are always initialized to nil
-C) Every type has a useful default state without explicit initialization
-D) Variables start with random values until assigned
+- A. All variables must be explicitly initialized
+- B. Variables are always initialized to nil
+- C. Every type has a useful default state without explicit initialization
+- D. Variables start with random values until assigned
 
 ### Back
 
-**C) Every type has a useful default state without explicit initialization**
+**C. Every type has a useful default state without explicit initialization**
 
 Go initializes variables to their "zero value" (0 for numeric types, false for booleans, "" for strings, nil for pointers/slices/maps/channels), ensuring safe usage without explicit initialization and eliminating a whole class of undefined behavior bugs.
 
 <!-- Card End -->
- 

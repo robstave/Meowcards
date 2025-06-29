@@ -1,18 +1,17 @@
- 
 <!-- Card Start -->
 
 ### Front
 
 Which of the following best describes Go's error handling philosophy?
 
-A) Try-catch exception handling
-B) Return error values that must be explicitly checked
-C) Global error callbacks
-D) Panic as the primary error mechanism
+- A. Try-catch exception handling
+- B. Return error values that must be explicitly checked
+- C. Global error callbacks
+- D. Panic as the primary error mechanism
 
 ### Back
 
-**B) Return error values that must be explicitly checked**
+**B. Return error values that must be explicitly checked**
 
 Go uses explicit error checking through returned error values rather than exceptions, making error paths explicit in code and encouraging proper error handling. This approach makes control flow clearer and improves maintainability.
 
@@ -24,14 +23,14 @@ Go uses explicit error checking through returned error values rather than except
 
 What is the main benefit of Go's defer statement?
 
-A) It improves performance by delaying execution
-B) It guarantees resource cleanup regardless of execution path
-C) It allows dynamic function definition
-D) It automatically retries failed operations
+- A. It improves performance by delaying execution
+- B. It guarantees resource cleanup regardless of execution path
+- C. It allows dynamic function definition
+- D. It automatically retries failed operations
 
 ### Back
 
-**B) It guarantees resource cleanup regardless of execution path**
+**B. It guarantees resource cleanup regardless of execution path**
 
 The `defer` statement ensures that cleanup code runs before a function returns, even if there are multiple return statements or panics. This pattern significantly reduces resource leaks by pairing resource acquisition with immediate deferred cleanup.
 
@@ -43,14 +42,14 @@ The `defer` statement ensures that cleanup code runs before a function returns, 
 
 Which statement best characterizes Go's approach to generics?
 
-A) Available since Go 1.0 with full template metaprogramming
-B) Added in Go 1.18 with a focus on type safety and readability
-C) Not supported as interfaces provide sufficient abstraction
-D) Implemented through the reflect package for dynamic typing
+- A. Available since Go 1.0 with full template metaprogramming
+- B. Added in Go 1.18 with a focus on type safety and readability
+- C. Not supported as interfaces provide sufficient abstraction
+- D. Implemented through the reflect package for dynamic typing
 
 ### Back
 
-**B) Added in Go 1.18 with a focus on type safety and readability**
+**B. Added in Go 1.18 with a focus on type safety and readability**
 
 Go 1.18 introduced generics with type parameters that provide compile-time type safety while preserving readability and build speed. The implementation favors clarity and simplicity over complex features like specialization or metaprogramming found in other languages.
 
@@ -62,14 +61,14 @@ Go 1.18 introduced generics with type parameters that provide compile-time type 
 
 What is the main architectural benefit of Go's module system?
 
-A) It enforces monolithic application structure
-B) It provides versioned dependencies with minimal version conflicts
-C) It eliminates the need for third-party libraries
-D) It dynamically loads code at runtime
+- A. It enforces monolithic application structure
+- B. It provides versioned dependencies with minimal version conflicts
+- C. It eliminates the need for third-party libraries
+- D. It dynamically loads code at runtime
 
 ### Back
 
-**B) It provides versioned dependencies with minimal version conflicts**
+**B. It provides versioned dependencies with minimal version conflicts**
 
 Go modules (introduced in Go 1.11) solve dependency management by supporting versioned imports with semantic versioning, minimal version selection algorithm, and reproducible builds through go.mod files. This gives projects reliable, consistent dependencies without dependency hell.
 
@@ -81,14 +80,14 @@ Go modules (introduced in Go 1.11) solve dependency management by supporting ver
 
 What pattern does context.Context enable in Go applications?
 
-A) Singleton pattern
-B) Factory method pattern
-C) Request-scoped values and cancellation
-D) Aspect-oriented programming
+- A. Singleton pattern
+- B. Factory method pattern
+- C. Request-scoped values and cancellation
+- D. Aspect-oriented programming
 
 ### Back
 
-**C) Request-scoped values and cancellation**
+**C. Request-scoped values and cancellation**
 
 The context.Context type provides a standardized way to carry deadlines, cancellation signals, and request-scoped values across API boundaries and between goroutines, enabling graceful shutdowns and resource cleanup in distributed systems.
 
@@ -100,14 +99,14 @@ The context.Context type provides a standardized way to carry deadlines, cancell
 
 How does Go's CSP-based concurrency model differ from actor-based concurrency?
 
-A) CSP uses shared memory, actors use message passing
-B) CSP separates communication channels from processing entities
-C) CSP only allows synchronous communication
-D) CSP requires more threads than actor models
+- A. CSP uses shared memory, actors use message passing
+- B. CSP separates communication channels from processing entities
+- C. CSP only allows synchronous communication
+- D. CSP requires more threads than actor models
 
 ### Back
 
-**B) CSP separates communication channels from processing entities**
+**B. CSP separates communication channels from processing entities**
 
 **CSP (Communicating Sequential Processes)** is a concurrency model where processes (goroutines in Go) communicate by passing messages through channels, rather than sharing memory. This model emphasizes:
 
@@ -129,14 +128,14 @@ This separation in CSP enables Go to efficiently handle concurrent workloads wit
 
 Which of these is NOT a design goal of Go's compilation strategy?
 
-A) Fast compilation times
-B) Simple dependency analysis
-C) Single static binary output
-D) Just-in-time optimization
+- A. Fast compilation times
+- B. Simple dependency analysis
+- C. Single static binary output
+- D. Just-in-time optimization
 
 ### Back
 
-**D) Just-in-time optimization**
+**D. Just-in-time optimization**
 
 Go is designed for fast compilation to machine code with straightforward dependency analysis, producing self-contained binaries. It deliberately avoids just-in-time compilation, prioritizing predictable performance and deployment simplicity over runtime optimizations.
 
@@ -148,14 +147,14 @@ Go is designed for fast compilation to machine code with straightforward depende
 
 Which memory model does Go implement?
 
-A) Strong sequential consistency
-B) Relaxed memory ordering with happens-before relationships
-C) Lock-free programming for all data structures
-D) Total memory isolation between goroutines
+- A. Strong sequential consistency
+- B. Relaxed memory ordering with happens-before relationships
+- C. Lock-free programming for all data structures
+- D. Total memory isolation between goroutines
 
 ### Back
 
-**B) Relaxed memory ordering with happens-before relationships**
+**B. Relaxed memory ordering with happens-before relationships**
 
 Go's memory model defines when reads can observe writes through specific "happens-before" relationships, particularly around channel operations, locks, and the atomic package. This balance allows compiler/hardware optimizations while giving programmers clear rules for concurrent access.
 
@@ -167,14 +166,14 @@ Go's memory model defines when reads can observe writes through specific "happen
 
 What is the key benefit of Go's interface implementation being implicit?
 
-A) It encourages composition over inheritance
-B) It enables higher performance by avoiding virtual tables
-C) It allows loose coupling between packages without direct dependencies
-D) It simplifies reflection operations
+- A. It encourages composition over inheritance
+- B. It enables higher performance by avoiding virtual tables
+- C. It allows loose coupling between packages without direct dependencies
+- D. It simplifies reflection operations
 
 ### Back
 
-**C) It allows loose coupling between packages without direct dependencies**
+**C. It allows loose coupling between packages without direct dependencies**
 
 **Implicit vs Explicit Interface Implementation**:
 - **Implicit**: In Go, a type satisfies an interface simply by implementing its methods. There is no need to explicitly declare that a type implements an interface. This reduces boilerplate code and allows for more flexible and decoupled designs.
@@ -193,14 +192,14 @@ D) It simplifies reflection operations
 
 Which statement best describes Go's approach to metaprogramming?
 
-A) Extensive compile-time code generation through go generate
-B) Reflection-based runtime metaprogramming
-C) Template-based metaprogramming through generics
-D) Macro system similar to Lisp
+- A. Extensive compile-time code generation through go generate
+- B. Reflection-based runtime metaprogramming
+- C. Template-based metaprogramming through generics
+- D. Macro system similar to Lisp
 
 ### Back
 
-**A) Extensive compile-time code generation through go generate**
+**A. Extensive compile-time code generation through go generate**
 
 Go favors compile-time code generation (via `go generate`) over runtime reflection or complex template systems, allowing tools to generate type-safe code that performs well and can be reviewed before compilation.
 
@@ -212,14 +211,14 @@ Go favors compile-time code generation (via `go generate`) over runtime reflecti
 
 What is the significance of Go's work stealing scheduler?
 
-A) It allows goroutines to be migrated between OS threads
-B) It provides cooperative rather than preemptive scheduling
-C) It optimizes CPU cache usage through processor affinity
-D) It enables goroutines to have priorities
+- A. It allows goroutines to be migrated between OS threads
+- B. It provides cooperative rather than preemptive scheduling
+- C. It optimizes CPU cache usage through processor affinity
+- D. It enables goroutines to have priorities
 
 ### Back
 
-**A) It allows goroutines to be migrated between OS threads**
+**A. It allows goroutines to be migrated between OS threads**
 
 Go's work-stealing scheduler efficiently distributes goroutines across available OS threads (M:N scheduling model), allowing idle threads to "steal" work from busy threads' queues. This maximizes CPU utilization and adapts to varying workloads dynamically.
 
@@ -231,14 +230,14 @@ Go's work-stealing scheduler efficiently distributes goroutines across available
 
 Which design principle guides the Go standard library's API design?
 
-A) Complete abstraction of all underlying operations
-B) Extensibility through subclassing
-C) Minimal, orthogonal interfaces that compose well
-D) Maximum flexibility through configuration options
+- A. Complete abstraction of all underlying operations
+- B. Extensibility through subclassing
+- C. Minimal, orthogonal interfaces that compose well
+- D. Maximum flexibility through configuration options
 
 ### Back
 
-**C) Minimal, orthogonal interfaces that compose well**
+**C. Minimal, orthogonal interfaces that compose well**
 
 Go's standard library favors small, focused interfaces (like io.Reader and io.Writer) that can be composed to build more complex behavior. This approach provides flexibility through composition rather than complex inheritance hierarchies or configuration.
 
@@ -250,14 +249,14 @@ Go's standard library favors small, focused interfaces (like io.Reader and io.Wr
 
 What aspect of Go was specifically designed to improve long-term code maintainability?
 
-A) Enforced code formatting through gofmt
-B) Prohibition of unused imports and variables
-C) Limited number of keywords
-D) All of the above
+- A. Enforced code formatting through gofmt
+- B. Prohibition of unused imports and variables
+- C. Limited number of keywords
+- D. All of the above
 
 ### Back
 
-**D) All of the above**
+**D. All of the above**
 
 Go was designed with maintainability as a primary goal, using enforced formatting (gofmt), strict compile-time checks for unused code, and a deliberately limited language specification to reduce "code rot" and make large codebases manageable over time.
 
@@ -269,14 +268,14 @@ Go was designed with maintainability as a primary goal, using enforced formattin
 
 Why does Go use a package-level visibility model (exported/unexported) rather than traditional access modifiers (public/private/protected)?
 
-A) To improve compilation speed
-B) To force better package organization and API design
-C) To maintain backward compatibility with C
-D) To reduce typing by avoiding keywords
+- A. To improve compilation speed
+- B. To force better package organization and API design
+- C. To maintain backward compatibility with C
+- D. To reduce typing by avoiding keywords
 
 ### Back
 
-**B) To force better package organization and API design**
+**B. To force better package organization and API design**
 
 Go's visibility model (capitalized for exported, lowercase for unexported) operates at the package level rather than class level, encouraging developers to organize code into cohesive packages with well-defined APIs and internal implementations.
 
@@ -288,14 +287,14 @@ Go's visibility model (capitalized for exported, lowercase for unexported) opera
 
 What is the primary advantage of Go's static linking approach?
 
-A) Smaller binary sizes
-B) Deployment simplicity with minimal dependencies
-C) Better security through reduced attack surface
-D) Faster runtime performance
+- A. Smaller binary sizes
+- B. Deployment simplicity with minimal dependencies
+- C. Better security through reduced attack surface
+- D. Faster runtime performance
 
 ### Back
 
-**B) Deployment simplicity with minimal dependencies**
+**B. Deployment simplicity with minimal dependencies**
 
 Go typically produces statically linked binaries that include all dependencies, making deployment simpler and more reliable - applications can be copied to target systems and run without installing runtime dependencies or worrying about version conflicts.
 
@@ -307,14 +306,14 @@ Go typically produces statically linked binaries that include all dependencies, 
 
 How does adding a `default` case affect a `select` statement in Go?
 
-A) It makes the select statement terminate immediately
-B) It makes the select statement non-blocking
-C) It prevents the select statement from handling multiple channels
-D) It forces the select statement to prioritize certain channels
+- A. It makes the select statement terminate immediately
+- B. It makes the select statement non-blocking
+- C. It prevents the select statement from handling multiple channels
+- D. It forces the select statement to prioritize certain channels
 
 ### Back
 
-**B) It makes the select statement non-blocking**
+**B. It makes the select statement non-blocking**
 
 Without a `default` case, a `select` statement blocks until one of its cases can proceed. Adding a `default` case makes it non-blocking - if no channel operations are ready, the `default` case executes immediately instead of waiting.
 
@@ -337,14 +336,14 @@ default:
 
 Which is the correct way to implement a timeout for a channel operation using `select`?
 
-A) `timeout(ch, 500)`
-B) `select { case timeout(1000): ... }`
-C) `select { case <-time.After(time.Second): ... }`
-D) `ch.setTimeout(1000)`
+- A. `timeout(ch, 500)`
+- B. `select { case timeout(1000): ... }`
+- C. `select { case <-time.After(time.Second): ... }`
+- D. `ch.setTimeout(1000)`
 
 ### Back
 
-**C) `select { case <-time.After(time.Second): ... }`**
+**C. `select { case <-time.After(time.Second): ... }`**
 
 The idiomatic way to implement a timeout in Go is by using the `time.After` function within a `select` statement. It returns a channel that will send a value after the specified duration, allowing you to handle timeouts elegantly:
 
@@ -366,14 +365,14 @@ case <-time.After(time.Second):
 
 What happens when multiple cases in a `select` statement are ready simultaneously?
 
-A) The first case in the source code is always chosen
-B) The case with the highest priority is chosen
-C) A case is chosen pseudo-randomly with uniform distribution
-D) All ready cases are executed in parallel
+- A. The first case in the source code is always chosen
+- B. The case with the highest priority is chosen
+- C. A case is chosen pseudo-randomly with uniform distribution
+- D. All ready cases are executed in parallel
 
 ### Back
 
-**C) A case is chosen pseudo-randomly with uniform distribution**
+**C. A case is chosen pseudo-randomly with uniform distribution**
 
 When multiple cases in a `select` statement are ready simultaneously, Go selects one at random with uniform probability. This prevents channel starvation and ensures fairness, but means execution can be non-deterministic when multiple channels are ready at the same time.
 
@@ -385,14 +384,14 @@ When multiple cases in a `select` statement are ready simultaneously, Go selects
 
 What is the behavior of an empty `select` statement with no cases?
 
-A) It compiles but panics at runtime
-B) It causes a compile-time error
-C) It blocks forever
-D) It returns immediately
+- A. It compiles but panics at runtime
+- B. It causes a compile-time error
+- C. It blocks forever
+- D. It returns immediately
 
 ### Back
 
-**C) It blocks forever**
+**C. It blocks forever**
 
 An empty `select` statement (`select {}`) blocks forever with no possibility of unblocking. This pattern is sometimes used deliberately at the end of the `main` function to prevent the program from exiting while goroutines continue to run in the background.
 
@@ -409,14 +408,14 @@ select {}
 
 What is the key difference between `switch` statements and `select` statements in Go?
 
-A) `switch` works with any data type, while `select` works only with channels
-B) `switch` evaluates cases sequentially, while `select` evaluates all cases simultaneously
-C) `select` allows fallthrough but `switch` doesn't
-D) `switch` requires a default case, but `select` doesn't
+- A. `switch` works with any data type, while `select` works only with channels
+- B. `switch` evaluates cases sequentially, while `select` evaluates all cases simultaneously
+- C. `select` allows fallthrough but `switch` doesn't
+- D. `switch` requires a default case, but `select` doesn't
 
 ### Back
 
-**A) `switch` works with any data type, while `select` works only with channels**
+**A. `switch` works with any data type, while `select` works only with channels**
 
 The fundamental difference is that `switch` is designed for conditional branching based on values of any type, while `select` is specifically designed for channel operations:
 
@@ -433,14 +432,14 @@ The fundamental difference is that `switch` is designed for conditional branchin
 
 How do `switch` statements and `select` statements differ in their execution when multiple cases match?
 
-A) Both execute all matching cases in order
-B) Both execute only the first matching case
-C) `switch` executes the first matching case, while `select` chooses randomly among ready cases
-D) Both statements require the use of `fallthrough` to execute multiple cases
+- A. Both execute all matching cases in order
+- B. Both execute only the first matching case
+- C. `switch` executes the first matching case, while `select` chooses randomly among ready cases
+- D. Both statements require the use of `fallthrough` to execute multiple cases
 
 ### Back
 
-**C) `switch` executes the first matching case, while `select` chooses randomly among ready cases**
+**C. `switch` executes the first matching case, while `select` chooses randomly among ready cases**
 
 This represents a fundamental difference in how the two statements handle multiple matches:
 
@@ -457,14 +456,14 @@ This difference reflects their different purposes: `switch` for deterministic co
 
 When should you prefer channels over mutexes in Go?
 
-A) When you need the absolute highest performance  
-B) When the problem naturally models communication between goroutines  
-C) When working with a large number of shared variables  
-D) When you need to modify complex data structures concurrently
+- A. When you need the absolute highest performance  
+- B. When the problem naturally models communication between goroutines  
+- C. When working with a large number of shared variables  
+- D. When you need to modify complex data structures concurrently
 
 ### Back
 
-**B) When the problem naturally models communication between goroutines**
+**B. When the problem naturally models communication between goroutines**
 
 Channels are ideal when:
 - You're passing ownership of data between goroutines
@@ -491,14 +490,14 @@ func worker(jobs <-chan Job, results chan<- Result) {
 
 In which scenario would mutexes be more appropriate than channels in Go?
 
-A) When implementing a signaling system between goroutines  
-B) When coordinating the start and stop of multiple goroutines  
-C) When protecting shared state that's frequently accessed  
-D) When implementing a producer-consumer pattern
+- A. When implementing a signaling system between goroutines  
+- B. When coordinating the start and stop of multiple goroutines  
+- C. When protecting shared state that's frequently accessed  
+- D. When implementing a producer-consumer pattern
 
 ### Back
 
-**C) When protecting shared state that's frequently accessed**
+**C. When protecting shared state that's frequently accessed**
 
 Mutexes are more appropriate when:
 - Multiple goroutines need read/write access to shared data
@@ -534,14 +533,14 @@ func (c *Counter) Value() int {
 
 Which of the following is a valid hybrid approach combining channels and mutexes in Go?
 
-A) Using channels for signaling and mutexes for protecting shared state  
-B) Using mutexes inside channels for double protection  
-C) Using channels to synchronize access to mutexes  
-D) Using atomic operations to protect channels
+- A. Using channels for signaling and mutexes for protecting shared state  
+- B. Using mutexes inside channels for double protection  
+- C. Using channels to synchronize access to mutexes  
+- D. Using atomic operations to protect channels
 
 ### Back
 
-**A) Using channels for signaling and mutexes for protecting shared state**
+**A. Using channels for signaling and mutexes for protecting shared state**
 
 A common and effective pattern in Go combines:
 - Channels for coordination, signaling, and coarse-grained communication
@@ -593,14 +592,14 @@ This approach is often seen in well-designed Go libraries and services, combinin
 
 What is duck typing, and how does it relate to Go's type system?
 
-A) A way to define types explicitly  
-B) A method of type inference based on method signatures  
-C) A mechanism for runtime type checking  
-D) A feature for dynamic typing in Go
+- A. A way to define types explicitly  
+- B. A method of type inference based on method signatures  
+- C. A mechanism for runtime type checking  
+- D. A feature for dynamic typing in Go
 
 ### Back
 
-**B) A method of type inference based on method signatures**
+**B. A method of type inference based on method signatures**
 
 Duck typing is a concept where the type of an object is determined by the methods it implements, rather than its explicit declaration. The name comes from the saying, "If it looks like a duck, swims like a duck, and quacks like a duck, then it probably is a duck."
 
@@ -648,3 +647,6 @@ https://go.dev/play/p/6g8huL8W9Oi
 In this example, `Duck` satisfies the `Quacker` interface because it implements the `Quack` method, even though it doesn't explicitly declare that it implements `Quacker`. This is a practical demonstration of duck typing in Go.
 
 However, `MakeItQuack2` is not an example of duck typing. It explicitly requires a `Duck` type as its parameter, which means it does not rely on the interface system or method signatures to determine compatibility. Instead, it directly couples the function to the `Duck` type, losing the flexibility and loose coupling that duck typing provides.
+
+
+<!-- Card End -->
