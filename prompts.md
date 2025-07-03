@@ -30,6 +30,11 @@ Each flashcard must follow this exact structure:
    - **Tables**: Use Markdown tables for structured data
    - **Images**: Include with `![alt text](image_url)` when relevant
 
+4. **Multiple Choice Questions**:
+   - Format as a list of options
+   - Clearly indicate the correct answer in the back side
+   - Be randomized to avoid predictability.  Dont always pick B
+
 ## Card Types
 
 ### Standard Knowledge Card
@@ -52,10 +57,10 @@ Key principles include: encapsulation, inheritance, polymorphism, and abstractio
 ### Front
 Which AWS service is best suited for managing the entire machine learning lifecycle?  
 
-A) Amazon Comprehend  
-B) Amazon SageMaker  
-C) Amazon Polly  
-D) Amazon Translate
+- A. Amazon Comprehend  
+- B. Amazon SageMaker  
+- C. Amazon Polly  
+- D. Amazon Translate
 
 ### Back
 **Correct Answer**: B
