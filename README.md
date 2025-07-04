@@ -1,8 +1,12 @@
 # Meowcards
 
+![Fun Cat Facts](https://lh3.googleusercontent.com/pw/AP1GczPbvKykFBpdQYyx3wMiELwz-Hf2920a1zI_YQd9S-2aKKgOR-TSxQv8_BZLw9INpk-GHMDFTkahmH299kD8kj2vCz8_nTXJ-gtobqn6WsiFRr1QzmM=w2400)
+
 This repo contains flashcards that can be used with the [Meowmorize](https://github.com/robstave/meowmorize) app.
 
 The cards are written in Markdown format and were generated with assistance from ChatGPT. They serve as a valuable resource for learning and memorizing various programming and technology concepts.
+
+
 
 ## Topics
 
