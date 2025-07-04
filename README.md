@@ -45,13 +45,7 @@ The cards are written in Markdown format and were generated with assistance from
 - [SQL Basics](cards/sql/sql-cards1.md) - Fundamental SQL concepts
 - [Advanced SQL](cards/sql/sql-cards2.md) - Advanced SQL queries and concepts
 
-## Contributing
-
-Feel free to contribute by:
-1. Adding new flashcard sets
-2. Improving existing cards
-3. Fixing errors or typos
-4. Suggesting new topics
+ 
 
 ## License
 
@@ -59,4 +53,4 @@ See the [LICENSE](LICENSE) file for details.
 
 ## Related
 
-- [Meowmorize App](https://github.com/robstave/meowmorize) - The flashcard application these cards are designed for
+- [Meowmorize App](https://github.com/robstave/meowmorize) - The flashcard application these cards are designed for.But you can just use them as is as well I suppose.
