@@ -124,18 +124,17 @@ to be a bit more in task
 
 ### Front
 
-Which AWS services are commonly used for real-time ML inference? (Choose 2)
-- A. Amazon SageMaker Real-time Endpoints
-- B. Amazon S3
-- C. AWS Lambda
-- D. Amazon CloudWatch
+Which AWS services are commonly used for real-time ML inference? (Choose 2)  
+- A. Amazon SageMaker Real-time Endpoints  
+- B. Amazon S3  
+- C. AWS Lambda  
+- D. Amazon CloudWatch  
 - E. Amazon EC2
 
 ### Back
 
 **Correct Answers**: A and C  
-**Explanation**: Amazon SageMaker Real-time Endpoints (A) are purpose-built for ML inference with automatic scaling, model monitoring, and support for various instance types including GPU and Inferentia. AWS Lambda (C) enables serverless inference for lightweight models with low latency requirements and automatic scaling with a pay-per-invocation pricing model. Amazon S3 (B) is a storage service not designed for inference, CloudWatch (D) is for monitoring, and while EC2 (E) can run inference workloads, it requires manual setup and management of infrastructure unlike the specialized services.
-
+**Explanation**: Amazon SageMaker Real-time Endpoints (A) are designed specifically for real-time ML inference, offering features like automatic scaling, model monitoring, and support for specialized hardware such as GPUs and Inferentia chips. AWS Lambda (C) provides a serverless option for lightweight inference tasks, enabling low-latency responses and pay-per-invocation pricing. While Amazon EC2 (E) can be configured for inference, it requires manual setup and lacks the built-in optimizations and scalability of SageMaker Endpoints or Lambda. Amazon S3 (B) is a storage service, and CloudWatch (D) is used for monitoring, neither of which are designed for inference tasks.
 <!-- Card End -->
 
 <!-- Card Start -->
@@ -345,24 +344,22 @@ What is the primary purpose of Amazon SageMaker Feature Store?
 
 <!-- Card End -->
 
-#fix
-more context
-ask if likely
+ 
 <!-- Card Start -->
 
 ### Front
 
-Which Amazon Bedrock models are best suited for code generation tasks? (Choose 2)
-- A. Amazon Titan Text models
-- B. Anthropic Claude models
-- C. Amazon Titan Embeddings models
-- D. AI21 Labs Jurassic models
+Which Amazon Bedrock models are best suited for code generation tasks? (Choose 2)  
+- A. Amazon Titan Text models  
+- B. Anthropic Claude models  
+- C. Amazon Titan Embeddings models  
+- D. AI21 Labs Jurassic models  
 - E. Cohere Command models
 
 ### Back
 
 **Correct Answers**: B and E  
-**Explanation**: Anthropic Claude models and Cohere Command models have strong capabilities for code generation and understanding programming tasks. Titan Text is more general-purpose, while Titan Embeddings and Jurassic have other specialties.
+**Explanation**: Anthropic Claude models and Cohere Command models have strong capabilities for code generation and understanding programming tasks. Claude models excel in understanding complex instructions and generating structured code, while Cohere Command models are optimized for generating high-quality programming outputs and handling technical language. Titan Text is more general-purpose, focusing on natural language tasks, while Titan Embeddings specialize in semantic search and vector representations. Jurassic models are better suited for creative writing and general text generation rather than technical code tasks.
 
 <!-- Card End -->
 
@@ -617,17 +614,17 @@ What is the purpose of embeddings in machine learning?
 
 ### Front
 
-Which Amazon Bedrock features help with content filtering and safety? (Choose 2)
-- A. Guardrails for content filtering
-- B. Model customization options
-- C. Prompt management capabilities
-- D. Watermark detection for AI-generated content
+Which Amazon Bedrock features help with content filtering and safety? (Choose 2)  
+- A. Guardrails for content filtering  
+- B. Model customization options  
+- C. Prompt management capabilities  
+- D. Watermark detection for AI-generated content  
 - E. Knowledge base integration
 
 ### Back
 
 **Correct Answers**: A and D  
-**Explanation**: Guardrails filter harmful, inappropriate, or unwanted content in both inputs and outputs, while watermark detection helps identify AI-generated content, both contributing to safer AI deployments.
+**Explanation**: Guardrails filter harmful, inappropriate, or unwanted content in both inputs and outputs, ensuring that AI-generated responses align with ethical and safety standards. Watermark detection helps identify AI-generated content, which is crucial for maintaining transparency and accountability. By detecting watermarks, organizations can prevent misuse of AI-generated content, such as plagiarism or the spread of misinformation, thereby enhancing trust and safety in AI deployments.
 
 <!-- Card End -->
 
@@ -648,7 +645,7 @@ What is the difference between discriminative and generative AI models?
 
 <!-- Card End -->
 
-#fix  verify
+ 
 <!-- Card Start -->
 
 ### Front

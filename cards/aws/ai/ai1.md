@@ -1178,7 +1178,7 @@ Explanation: The model latent space represents the model’s internal understand
 
 <!-- Card End -->
 
-Below, you’ll find a curated set of practice questions specifically designed to help you grasp the key concepts of responsible AI. These questions will challenge your understanding and prepare you to handle this important aspect of the exam with confidence.
+Below, you’ll find the last set of practice questions specifically designed to reinforce your understanding of Domain 4. These questions will help solidify your knowledge and ensure you’re fully prepared for this crucial aspect of the exam.
 
 **Domain 4: Guidelines for Responsible AI**
 
@@ -1280,8 +1280,6 @@ What is overfitting in the context of AI models?
 Explanation: Overfitting refers to when a model performs too well on training data but poorly on new data, as implied in Task Statement 4.1 under effects of bias and variance.
 
 <!-- Card End -->
-#fix
-Add more to end
 <!-- Card Start -->
 
 ### Front
@@ -1295,7 +1293,7 @@ Which AWS service is designed to help detect and monitor bias in machine learnin
 ### Back
 
 **Correct Answer**: C  
-Explanation: Amazon SageMaker Clarify is mentioned in Task Statement 4.1 as a tool to detect and monitor bias.
+Explanation: Amazon SageMaker Clarify is mentioned in Task Statement 4.1 as a tool to detect and monitor bias. It provides capabilities for identifying bias in datasets and models, offering insights into potential fairness issues. SageMaker Clarify also supports explainability by helping users understand the factors influencing model predictions, which is crucial for building responsible AI systems.
 
 <!-- Card End -->
 <!-- Card Start -->
@@ -1450,7 +1448,7 @@ What is the primary purpose of Amazon Augmented AI (A2I) in responsible AI?
 - A. To replace human workers with AI  
 - B. To facilitate human review of AI predictions  
 - C. To increase the AI model’s size  
-- D. To reduce energy consumption of AI systems
+- D. To reduce the AI system’s energy consumption
 
 ### Back
 
@@ -1959,7 +1957,6 @@ Which of the following is a key consideration in AI infrastructure protection?
 Explanation: Implementing network security measures is a key consideration in AI infrastructure protection, as implied in Task Statement 5.1 under security considerations for AI systems.
 
 <!-- Card End -->
-#fix  add more contex
 <!-- Card Start -->
 
 ### Front
@@ -1973,7 +1970,7 @@ What is the primary purpose of data cataloging in AI governance?
 ### Back
 
 **Correct Answer**: B  
-Explanation: Data cataloging is used to organize and inventory data assets, as implied in Task Statement 5.1 under source citation and documenting data origins.
+Explanation: Data cataloging is used to organize and inventory data assets, as implied in Task Statement 5.1 under source citation and documenting data origins. It helps in ensuring data discoverability, understanding data lineage, and maintaining compliance with governance policies. By providing a centralized repository of metadata, data cataloging enables efficient data management and supports decision-making processes in AI systems.
 
 <!-- Card End -->
 <!-- Card Start -->
