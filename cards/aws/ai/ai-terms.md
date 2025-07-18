@@ -465,3 +465,125 @@ Human-Centered Design in AI is an approach that prioritizes human needs, capabil
 **Task Reference**: This concept is explicitly mentioned in Task Statement 4.2 under principles of human-centered design for explainable AI.
 
 <!-- Card End -->
+
+<!-- Card Start -->
+
+### Front
+
+What is model underfitting?
+
+### Back
+
+Model underfitting occurs when a machine learning model is too simple to capture the underlying patterns in the data, resulting in poor performance on both training and test data. Key characteristics include:
+- High bias (strong assumptions about data)
+- Low variance
+- Poor performance on training data
+- Similarly poor performance on validation/test data
+- Inability to capture important relationships in the data
+
+Common causes:
+- Model is too simple for the complexity of the data
+- Insufficient training time
+- Not enough relevant features
+- Too much regularization
+
+**Task Reference**: This concept is covered in Task Statement 4.1 under effects of bias and variance in responsible AI implementation.
+
+<!-- Card End -->
+
+<!-- Card Start -->
+
+### Front
+
+What is Amazon Rekognition?
+
+### Back
+
+Amazon Rekognition is a computer vision service that enables you to analyze images and videos. Key capabilities include:
+- Object and scene detection
+- Face detection and analysis
+- Text extraction from images
+- Content moderation
+- Custom labels for specific use cases
+- Real-time video analysis
+
+**Task Reference**: This service is referenced in Task Statement 1.2 as one of AWS's managed AI services for computer vision applications.
+
+<!-- Card End -->
+
+<!-- Card Start -->
+
+### Front
+
+What is the ROUGE score?
+
+### Back
+
+ROUGE (Recall-Oriented Understudy for Gisting Evaluation) is a set of metrics used to evaluate automatically generated summaries and translations. Key aspects include:
+- Measures overlap between generated and reference texts
+- Multiple variants (ROUGE-N, ROUGE-L, ROUGE-S)
+- Focus on recall (how much of the reference appears in the generated text)
+- Widely used for summarization tasks
+
+**Task Reference**: This metric is mentioned in Task Statement 3.4 for evaluating foundation model performance, particularly for summarization tasks.
+
+<!-- Card End -->
+
+<!-- Card Start -->
+
+### Front
+
+What is Amazon Comprehend?
+
+### Back
+
+Amazon Comprehend is a natural language processing (NLP) service that uses machine learning to find insights and relationships in text. Key features include:
+- Entity recognition
+- Key phrase extraction
+- Sentiment analysis
+- Language detection
+- Topic modeling
+- Custom classification
+- PII detection
+
+**Task Reference**: This service is referenced in Task Statement 1.2 under AWS managed AI/ML services, particularly for NLP applications.
+
+<!-- Card End -->
+
+<!-- Card Start -->
+
+### Front
+
+What is instruction-based fine-tuning?
+
+### Back
+
+Instruction-based fine-tuning is a technique for adapting foundation models to better follow specific instructions and commands. Key aspects include:
+- Training on instruction-response pairs
+- Improving task comprehension
+- Enhancing model's ability to follow directions
+- Better alignment with user intent
+- Increased reliability in task execution
+
+**Task Reference**: This concept is covered in Task Statement 3.3 under methods for fine-tuning foundation models.
+
+<!-- Card End -->
+
+<!-- Card Start -->
+
+### Front
+
+What is AWS Inspector?
+
+### Back
+
+AWS Inspector is an automated security assessment service that helps improve the security and compliance of applications. In the context of AI/ML:
+- Vulnerability assessments
+- Security best practice checks
+- Compliance validation
+- Continuous monitoring
+- Risk scoring and prioritization
+
+**Task Reference**: This service is mentioned in Task Statement 5.2 as a tool for governance and regulation compliance in AI systems.
+
+<!-- Card End -->
