@@ -95,10 +95,11 @@ print(is_palindrome("hello"))  # False
 <!-- Card End -->
 
 
-Additional Guidelines
-Card Length: Keep cards focused - if explanation exceeds 10 lines, consider breaking into multiple cards
-Citations: Include source references when appropriate
-Related Concepts: Link related ideas at the end of the back side
-Difficulty Levels: Consider marking cards as [Basic], [Intermediate], or [Advanced]
-Diagrams: Use ASCII/text diagrams when visual representation would help
+## Additional Guidelines
+- **Card Length**: Keep cards focused - if explanation exceeds 10 lines, consider breaking into multiple cards
+- **Citations**: Include source references when appropriate
+- **Related Concepts**: Link related ideas at the end of the back side
+- **Difficulty Levels**: Consider marking cards as [Basic], [Intermediate], or [Advanced]
+- **Diagrams**: Use ASCII/text diagrams when visual representation would help
+
 Remember that effective flashcards facilitate active recall rather than passive reading.
