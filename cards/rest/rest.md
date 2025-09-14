@@ -1122,6 +1122,193 @@ D) components/responses
 
 <!-- Card Start -->
 ### Front
+Which HTTP methods are cacheable by default according to RFC 7231?
+
+A) GET and HEAD  
+B) GET, HEAD, and POST  
+C) GET only  
+D) GET, HEAD, and PUT
+
+### Back
+**Correct Answer**: A
+
+**Explanation**: By default, responses to **GET** and **HEAD** are cacheable. **POST** responses may be cacheable only if explicitly indicated by cache directives.
+
+*Reference*: RFC 7231, RFC 7234
+<!-- Card End -->
+
+<!-- Card Start -->
+### Front
+Which header enables safely retrying non-idempotent POST operations?
+
+A) If-Match  
+B) Retry-After  
+C) Idempotency-Key  
+D) Vary
+
+### Back
+**Correct Answer**: C
+
+**Explanation**: An **Idempotency-Key** correlates retries so the server can de-duplicate repeated POSTs, ensuring only one side effect occurs.
+
+*Reference*: Industry best practice (e.g., Stripe idempotency keys)
+<!-- Card End -->
+
+<!-- Card Start -->
+### Front
+Which header carries pagination navigation links like next/prev?
+
+A) Pagination  
+B) Link  
+C) Content-Range  
+D) Location
+
+### Back
+**Correct Answer**: B
+
+**Explanation**: The **Link** header conveys hypermedia links for pagination using rel values like `next`, `prev`, `first`, and `last`.
+
+*Reference*: RFC 8288 (Web Linking)
+<!-- Card End -->
+
+<!-- Card Start -->
+### Front
+Which header communicates planned deprecation or sunset of an API?
+
+A) Sunset  
+B) Deprecation  
+C) Expires  
+D) Warning
+
+### Back
+**Correct Answer**: A
+
+**Explanation**: **Sunset** advertises when an API will be retired. It can be paired with `Link: rel="deprecation"` to documentation.
+
+*Reference*: RFC 8594 (Sunset Header Field)
+<!-- Card End -->
+
+<!-- Card Start -->
+### Front
+Which headers are sent in a CORS preflight request?
+
+A) Origin only  
+B) Access-Control-Request-Method and Access-Control-Request-Headers  
+C) Access-Control-Allow-Origin and Access-Control-Allow-Methods  
+D) Vary: Origin
+
+### Back
+**Correct Answer**: B
+
+**Explanation**: The browser sends **Access-Control-Request-Method** and optionally **Access-Control-Request-Headers** with **Origin** in the preflight; the server responds with `Access-Control-Allow-*` headers.
+
+*Reference*: CORS (Fetch/WHATWG)
+<!-- Card End -->
+
+<!-- Card Start -->
+### Front
+Which media type defines JSON Patch operations for partial updates?
+
+A) application/merge-patch+json  
+B) application/json-patch+json  
+C) application/patch+json  
+D) application/problem+json
+
+### Back
+**Correct Answer**: B
+
+**Explanation**: **application/json-patch+json** specifies a sequence of operations (add, remove, replace, etc.). **Merge Patch** uses `application/merge-patch+json` with merge semantics.
+
+*Reference*: RFC 6902 (JSON Patch), RFC 7396 (JSON Merge Patch)
+<!-- Card End -->
+
+<!-- Card Start -->
+### Front
+Which status code should be returned when none of the representations match the Accept header?
+
+A) 400 Bad Request  
+B) 406 Not Acceptable  
+C) 415 Unsupported Media Type  
+D) 422 Unprocessable Entity
+
+### Back
+**Correct Answer**: B
+
+**Explanation**: **406 Not Acceptable** indicates the server cannot produce a response matching the Accept header’s criteria.
+
+*Reference*: RFC 7231 - Content negotiation
+<!-- Card End -->
+
+<!-- Card Start -->
+### Front
+When are weak ETags more appropriate than strong ETags?
+
+A) When byte-for-byte equality is required  
+B) When semantically equivalent representations may differ in bytes  
+C) When caching must be disabled  
+D) When using Range requests
+
+### Back
+**Correct Answer**: B
+
+**Explanation**: **Weak ETags** (prefixed with `W/`) validate semantic equivalence despite minor byte differences (e.g., formatting), while strong ETags require exact byte equality.
+
+*Reference*: RFC 7232 - Validators
+<!-- Card End -->
+
+<!-- Card Start -->
+### Front
+Which status code indicates the server does not support the request Content-Type?
+
+A) 406 Not Acceptable  
+B) 415 Unsupported Media Type  
+C) 405 Method Not Allowed  
+D) 501 Not Implemented
+
+### Back
+**Correct Answer**: B
+
+**Explanation**: **415 Unsupported Media Type** applies when the server cannot process the request payload format indicated by **Content-Type**.
+
+*Reference*: RFC 7231 - HTTP semantics
+<!-- Card End -->
+
+<!-- Card Start -->
+### Front
+When returning 405 Method Not Allowed, which header must be included?
+
+A) Allow  
+B) Location  
+C) Retry-After  
+D) Vary
+
+### Back
+**Correct Answer**: A
+
+**Explanation**: **Allow** lists the permitted methods for the target resource and is required with **405 Method Not Allowed**.
+
+*Reference*: RFC 7231 - HTTP semantics
+<!-- Card End -->
+
+<!-- Card Start -->
+### Front
+Which status code is appropriate when a conditional update fails due to an ETag mismatch?
+
+A) 409 Conflict  
+B) 412 Precondition Failed  
+C) 428 Precondition Required  
+D) 304 Not Modified
+
+### Back
+**Correct Answer**: B
+
+**Explanation**: **412 Precondition Failed** indicates the condition (e.g., `If-Match: <etag>`) was not met, preventing lost updates in optimistic concurrency.
+
+*Reference*: RFC 7232 - Conditional Requests
+<!-- Card End -->
+
+<!-- Card Start -->
+### Front
 What is the recommended approach for versioning OpenAPI specifications?
 
 A) Include version in the OpenAPI document only  

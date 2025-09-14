@@ -624,9 +624,9 @@ Here are 5 additional flashcards specifically addressing Go messaging syntax, in
 
 **What is the correct way to send a value to a channel in Go?**
 
-- a `value := <- channel`
-- b `channel <- value`
-- c `<-channel value`
+- A: `value := <- channel`
+- B: `channel <- value`
+- C: `<-channel value`
 
 ### Back
 
@@ -645,7 +645,7 @@ channel <- value
 
 - A `val := <-ch`
 - B `ch <- val`
-- B `<-ch val`
+- C `<-ch val`
 
 ### Back
 
@@ -799,12 +799,12 @@ What will it say?
 
 ### Back
 
-You would think that it might say
+This will say that the channel is blocked and skip the send most of the time.
+but it might also not.  
+**It all depends on the scheduler.**
 
-Value sent
-Received:42
+https://go.dev/play/p/AUgGX1T0K06
 
-but it might also not.  It all depends on the scheduler.
 
 you can but a small sleep in there
 ```go
@@ -830,7 +830,7 @@ func main() {
 
     wg.Add(1)
     go func() {
-        defer wg.Done()
+         wg.Done()
         v := <-ch // Receives a value
         fmt.Println("Received:", v)
     }()
@@ -845,6 +845,9 @@ func main() {
     }
 }
 ```
+
+https://go.dev/play/p/n91qFVp_A0N
+
 
 <!-- Card End -->
 
@@ -882,9 +885,9 @@ func main() {
 
 ### Back
 
-hello1 is a straight up synchronous function call
-hello2 is a go proc
-hello3 is an anonymous function ( still a go proc)
+- hello1 is a straight up synchronous function call
+- hello2 is a go proc
+- hello3 is an anonymous function ( still a go proc)
 
 you need to do the delay at the end to see the results.
 <!-- Card End -->
