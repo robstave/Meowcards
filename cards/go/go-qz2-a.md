@@ -522,7 +522,7 @@ Why is Go considered good for network programming?
 Go's standard library includes robust networking packages, and its goroutines make it easy to handle thousands of concurrent network connections efficiently.
 
 <!-- Card End -->
-
+ 
 <!-- Card Start -->
 
 ### Front
@@ -540,6 +540,10 @@ What problem does Go's vendor directory solve?
 
 The vendor directory was a mechanism in Go to ensure reproducible builds by including specific versions of dependencies directly in the project. This approach solved the "dependency hell" problem by isolating dependencies from external changes. Although Go modules have largely replaced the vendor directory, it remains a useful tool for projects requiring strict control over dependency versions or offline builds.
 
+<!-- Card End -->
+
+
+ 
 <!-- Card Start -->
 
 ### Front

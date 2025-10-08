@@ -6,14 +6,14 @@ Here are 20 multiple-choice flashcards on Object-Oriented Programming terminolog
 
 What does OOP stand for?
 
-a) Object-Oriented Programming  
-b) Objective Operation Procedure  
-c) Oriented Object Programming  
-d) Operational Object Programming
+- A. Object-Oriented Programming  
+- B. Objective Operation Procedure  
+- C. Oriented Object Programming  
+- D. Operational Object Programming
 
 ### Back
 
-The correct answer is **a) Object-Oriented Programming**.
+The correct answer is **A. Object-Oriented Programming**.
 
 Object-Oriented Programming (OOP) is a programming paradigm based on the concept of "objects," which can contain data and code. OOP uses objects to design and organize programs[1](https://www.indeed.com/career-advice/interviewing/oops-interview-questions).
 
@@ -25,14 +25,14 @@ Object-Oriented Programming (OOP) is a programming paradigm based on the concept
 
 Which of the following is NOT one of the four main principles of OOP?
 
-a) Encapsulation  
-b) Inheritance  
-c) Polymorphism  
-d) Compilation
+- A. Encapsulation  
+- B. Inheritance  
+- C. Polymorphism  
+- D. Compilation
 
 ### Back
 
-The correct answer is **d) Compilation**.
+The correct answer is **D. Compilation**.
 
 The four main principles of OOP are:
 
@@ -55,14 +55,14 @@ Compilation is a process of converting source code to machine code, not a princi
 
 What OOP concept refers to the bundling of data and the methods that operate on that data within a single unit?
 
-a) Inheritance  
-b) Polymorphism  
-c) Encapsulation  
-d) Abstraction
+- A. Inheritance  
+- B. Polymorphism  
+- C. Encapsulation  
+- D. Abstraction
 
 ### Back
 
-The correct answer is **c) Encapsulation**.
+The correct answer is **C. Encapsulation**.
 
 Encapsulation is the bundling of data and the methods that operate on that data within a single unit or object. It provides data hiding and access control to the object's internal state[1](https://www.indeed.com/career-advice/interviewing/oops-interview-questions).
 
@@ -73,14 +73,14 @@ Encapsulation is the bundling of data and the methods that operate on that data 
 
 Which OOP principle allows a class to inherit properties and methods from another class?
 
-a) Polymorphism  
-b) Encapsulation  
-c) Abstraction  
-d) Inheritance
+- A. Polymorphism  
+- B. Encapsulation  
+- C. Abstraction  
+- D. Inheritance
 
 ### Back
 
-The correct answer is **d) Inheritance**.
+The correct answer is **D. Inheritance**.
 
 Inheritance is a mechanism where a new class is derived from an existing class. The new class (subclass) inherits properties and methods from the existing class (superclass), allowing for code reuse and the creation of hierarchical relationships between classes[1](https://www.indeed.com/career-advice/interviewing/oops-interview-questions).
 
@@ -91,14 +91,14 @@ Inheritance is a mechanism where a new class is derived from an existing class. 
 
 What term describes the ability of different classes to respond to the same method call in different ways?
 
-a) Encapsulation  
-b) Polymorphism  
-c) Inheritance  
-d) Abstraction
+- A. Encapsulation  
+- B. Polymorphism  
+- C. Inheritance  
+- D. Abstraction
 
 ### Back
 
-The correct answer is **b) Polymorphism**.
+The correct answer is **B. Polymorphism**.
 
 Polymorphism allows objects of different classes to be treated as objects of a common superclass. It enables one interface to be used for a general class of actions, with the specific action determined by the exact nature of the situation[1](https://www.indeed.com/career-advice/interviewing/oops-interview-questions).
 
@@ -109,14 +109,14 @@ Polymorphism allows objects of different classes to be treated as objects of a c
 
 What is a blueprint for creating objects in OOP called?
 
-a) Instance  
-b) Method  
-c) Class  
-d) Function
+- A. Instance  
+- B. Method  
+- C. Class  
+- D. Function
 
 ### Back
 
-The correct answer is **c) Class**.
+The correct answer is **C. Class**.
 
 A class is a blueprint or template for creating objects. It defines the attributes (data) and methods (functions) that the objects of that class will have. Objects are instances of classes[1](https://www.indeed.com/career-advice/interviewing/oops-interview-questions).
 
@@ -128,14 +128,14 @@ A class is a blueprint or template for creating objects. It defines the attribut
 
 What term describes a concrete occurrence of a class?
 
-a) Object  
-b) Method  
-c) Function  
-d) Variable
+- A. Object  
+- B. Method  
+- C. Function  
+- D. Variable
 
 ### Back
 
-The correct answer is **a) Object**.
+The correct answer is **A. Object**.
 
 An object is an instance of a class. It represents a concrete occurrence of the class blueprint, with its own set of data and ability to perform operations defined by the class methods[1](https://www.indeed.com/career-advice/interviewing/oops-interview-questions).
 
@@ -146,14 +146,14 @@ An object is an instance of a class. It represents a concrete occurrence of the 
 
 Which OOP concept refers to the process of hiding the internal details of an object and showing only the functionality?
 
-a) Encapsulation  
-b) Inheritance  
-c) Polymorphism  
-d) Abstraction
+- A. Encapsulation  
+- B. Inheritance  
+- C. Polymorphism  
+- D. Abstraction
 
 ### Back
 
-The correct answer is **d) Abstraction**.
+The correct answer is **D. Abstraction**.
 
 Abstraction is the process of hiding complex implementation details and showing only the necessary features of an object. It helps in reducing programming complexity and effort[1](https://www.indeed.com/career-advice/interviewing/oops-interview-questions).
 
@@ -163,14 +163,14 @@ Abstraction is the process of hiding complex implementation details and showing 
 
 What is the term for a function defined inside a class?
 
-a) Procedure  
-b) Method  
-c) Routine  
-d) Operation
+- A. Procedure  
+- B. Method  
+- C. Routine  
+- D. Operation
 
 ### Back
 
-The correct answer is **b) Method**.
+The correct answer is **B. Method**.
 
 In OOP, a method is a function that is associated with a class. Methods define the behavior of objects and can access and modify the object's data[1](https://www.indeed.com/career-advice/interviewing/oops-interview-questions).
 
@@ -180,14 +180,14 @@ In OOP, a method is a function that is associated with a class. Methods define t
 
 What is the process of creating an object from a class called?
 
-a) Inheritance  
-b) Encapsulation  
-c) Instantiation  
-d) Abstraction
+- A. Inheritance  
+- B. Encapsulation  
+- C. Instantiation  
+- D. Abstraction
 
 ### Back
 
-The correct answer is **c) Instantiation**.
+The correct answer is **C. Instantiation**.
 
 Instantiation is the process of creating an object (instance) from a class. When an object is instantiated, memory is allocated for it, and its constructor is called to initialize its state[1](https://www.indeed.com/career-advice/interviewing/oops-interview-questions).
 
@@ -197,14 +197,14 @@ Instantiation is the process of creating an object (instance) from a class. When
 
 Which OOP feature allows a subclass to provide a specific implementation of a method that is already defined in its superclass?
 
-a) Overloading  
-b) Overriding  
-c) Hiding  
-d) Shadowing
+- A. Overloading  
+- B. Overriding  
+- C. Hiding  
+- D. Shadowing
 
 ### Back
 
-The correct answer is **b) Overriding**.
+The correct answer is **B. Overriding**.
 
 Method overriding is a feature that allows a subclass to provide a specific implementation of a method that is already defined in its superclass. This enables a subclass to inherit from a superclass and modify some of the inherited behaviors[1](https://www.indeed.com/career-advice/interviewing/oops-interview-questions).
 
@@ -215,14 +215,14 @@ Method overriding is a feature that allows a subclass to provide a specific impl
 
 What is the term for a class that cannot be instantiated and is often used as a base for other classes?
 
-a) Concrete class  
-b) Final class  
-c) Abstract class  
-d) Static class
+- A. Concrete class  
+- B. Final class  
+- C. Abstract class  
+- D. Static class
 
 ### Back
 
-The correct answer is **c) Abstract class**.
+The correct answer is **C. Abstract class**.
 
 An abstract class is a class that cannot be instantiated on its own and is often used as a base for other classes. It may contain abstract methods (methods without a body) that must be implemented by its subclasses[1](https://www.indeed.com/career-advice/interviewing/oops-interview-questions).
 
@@ -233,14 +233,14 @@ An abstract class is a class that cannot be instantiated on its own and is often
 
 Which access modifier makes a class member accessible only within the same class?
 
-a) public  
-b) protected  
-c) private  
-d) default
+- A. public  
+- B. protected  
+- C. private  
+- D. default
 
 ### Back
 
-The correct answer is **c) private**.
+The correct answer is **C. private**.
 
 The private access modifier restricts the visibility of a class member (variable or method) to only within the same class. This is a key aspect of encapsulation, as it helps in hiding the internal details of a class[1](https://www.indeed.com/career-advice/interviewing/oops-interview-questions).
 
@@ -252,14 +252,14 @@ The private access modifier restricts the visibility of a class member (variable
 
 What is the term for a class that inherits from another class?
 
-a) Parent class  
-b) Superclass  
-c) Base class  
-d) Subclass
+- A. Parent class  
+- B. Superclass  
+- C. Base class  
+- D. Subclass
 
 ### Back
 
-The correct answer is **d) Subclass**.
+The correct answer is **D. Subclass**.
 
 A subclass (also known as a derived class or child class) is a class that inherits properties and methods from another class (its superclass or parent class). This relationship is part of the inheritance principle in OOP[1](https://www.indeed.com/career-advice/interviewing/oops-interview-questions).
 
@@ -269,14 +269,14 @@ A subclass (also known as a derived class or child class) is a class that inheri
 
 Which OOP concept allows a single method to have different implementations depending on the type of object it is called on?
 
-a) Method overloading  
-b) Method overriding  
-c) Dynamic dispatch  
-d) Static binding
+- A. Method overloading  
+- B. Method overriding  
+- C. Dynamic dispatch  
+- D. Static binding
 
 ### Back
 
-The correct answer is **c) Dynamic dispatch**.
+The correct answer is **C. Dynamic dispatch**.
 
 Dynamic dispatch (also known as dynamic binding or late binding) is a mechanism in OOP where the method being called is determined at runtime based on the actual type of the object. This is a key aspect of polymorphism[1](https://www.indeed.com/career-advice/interviewing/oops-interview-questions).
 
@@ -286,14 +286,14 @@ Dynamic dispatch (also known as dynamic binding or late binding) is a mechanism 
 
 What is the term for a special method that is automatically called when an object is created?
 
-a) Finalizer  
-b) Initializer  
-c) Constructor  
-d) Destructor
+- A. Finalizer  
+- B. Initializer  
+- C. Constructor  
+- D. Destructor
 
 ### Back
 
-The correct answer is **c) Constructor**.
+The correct answer is **C. Constructor**.
 
 A constructor is a special method in a class that is automatically called when an object of that class is created. It is used to initialize the object's state and allocate resources if needed[1](https://www.indeed.com/career-advice/interviewing/oops-interview-questions).
 
@@ -303,14 +303,14 @@ A constructor is a special method in a class that is automatically called when a
 
 Which OOP principle aims to reduce the complexity of software design by hiding unnecessary details?
 
-a) Encapsulation  
-b) Inheritance  
-c) Polymorphism  
-d) Abstraction
+- A. Encapsulation  
+- B. Inheritance  
+- C. Polymorphism  
+- D. Abstraction
 
 ### Back
 
-The correct answer is **d) Abstraction**.
+The correct answer is **D. Abstraction**.
 
 Abstraction in OOP aims to reduce complexity by hiding unnecessary details and exposing only the essential features of an object. This allows developers to focus on what an object does rather than how it does it[1](https://www.indeed.com/career-advice/interviewing/oops-interview-questions).
 
@@ -320,14 +320,14 @@ Abstraction in OOP aims to reduce complexity by hiding unnecessary details and e
 
 What is the term for a class that cannot be inherited from?
 
-a) Abstract class  
-b) Final class  
-c) Sealed class  
-d) Static class
+- A. Abstract class  
+- B. Final class  
+- C. Sealed class  
+- D. Static class
 
 ### Back
 
-The correct answer is **b) Final class**.
+The correct answer is **B. Final class**.
 
 A final class (also known as a sealed class in some languages) is a class that cannot be inherited from. This is used when you want to prevent further specialization of a class[1](https://www.indeed.com/career-advice/interviewing/oops-interview-questions).
 
@@ -337,14 +337,14 @@ A final class (also known as a sealed class in some languages) is a class that c
 
 Which OOP concept allows a class to have multiple methods with the same name but different parameters?
 
-a) Polymorphism  
-b) Encapsulation  
-c) Method overloading  
-d) Method overriding
+- A. Polymorphism  
+- B. Encapsulation  
+- C. Method overloading  
+- D. Method overriding
 
 ### Back
 
-The correct answer is **c) Method overloading**.
+The correct answer is **C. Method overloading**.
 
 Method overloading is a feature of OOP that allows a class to have multiple methods with the same name but different parameters. This is a form of compile-time polymorphism, as the correct method to call is determined at compile time based on the method signature[1](https://www.indeed.com/career-advice/interviewing/oops-interview-questions).
 
@@ -354,14 +354,14 @@ Method overloading is a feature of OOP that allows a class to have multiple meth
 
 What is the term for a variable that belongs to a class rather than an instance of the class?
 
-a) Instance variable  
-b) Class variable  
-c) Static variable  
-d) Global variable
+- A. Instance variable  
+- B. Class variable  
+- C. Static variable  
+- D. Global variable
 
 ### Back
 
-The correct answer is **c) Static variable**.
+The correct answer is **C. Static variable**.
 
 A static variable (also known as a class variable) is a variable that belongs to the class itself rather than to any specific instance of the class. It is shared by all instances of the class and can be accessed without creating an object of the class[1](https://www.indeed.com/career-advice/interviewing/oops-interview-questions).
 
@@ -563,7 +563,8 @@ The **final** keyword can be applied to variables, methods, and classes:
 
 An **abstract class** cannot be instantiated on its own and may contain abstract methods (without implementation) alongside concrete methods. It serves as a base class for other classes to extend and implement the abstract methods.
 
-<!-- Card End --> <!-- Card Start -->
+<!-- Card End -->
+<!-- Card Start -->
 
 ### Front
 

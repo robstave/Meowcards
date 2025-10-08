@@ -166,10 +166,19 @@ Use an error channel to send errors back to the main goroutine or a central erro
 errCh := make(chan error) 
 
 go func() {     
-    if err := doWork(); err != nil {                      errCh <- err     
+    if err := doWork(); err != nil {                    
+          errCh <- err     
     } 
 }()
 ```
+
+Why This Pattern Is Useful
+
+This is idiomatic Go because it:
+
+- Scopes err to the if block - the err variable only exists within this if statement
+- Combines declaration and checking - you don't need separate lines for calling the function and checking the error
+- Keeps code compact - handles the common "call function, check error" pattern in one line
 
 <!-- Card End --> 
 
@@ -335,6 +344,9 @@ Let's break down the benefits of using sync.Once for this Singleton implementati
 **Simplicity**: Compared to other thread-safe Singleton implementations (like using mutexes), sync.Once provides a cleaner and more idiomatic solution in Go.
 **Performance**: After the first call, subsequent calls to once.Do() are essentially no-ops, making it very efficient.
 
+ 
+
+ https://go.dev/play/p/yMWGCnuqhKm
  
 
 <!-- Card End --> 

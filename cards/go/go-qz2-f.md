@@ -44,6 +44,124 @@ func main() {
 
 ### Front
 
+In Go, what is a rune?
+
+- A. An alias for byte (uint8) representing a UTF-8 code unit
+- B. An alias for int32 representing a Unicode code point
+- C. A struct holding a grapheme cluster
+- D. A UTF-16 code unit
+
+### Back
+
+**B. An alias for int32 representing a Unicode code point**
+
+`rune` is a type alias for `int32`. It holds a Unicode scalar value (code point), independent of UTF-8 encoding. A single rune may be encoded as 1–4 bytes in UTF-8.
+
+<!-- Card End -->
+
+<!-- Card Start -->
+
+### Front
+
+What does `len(s)` return for a Go string containing UTF-8, and how do you get the rune count?
+
+- A. `len(s)` returns rune count; `utf8.RuneCountInString(s)` returns bytes
+- B. `len(s)` returns bytes; `utf8.RuneCountInString(s)` returns rune count
+- C. Both return bytes
+- D. Both return rune count
+
+### Back
+
+**B. `len(s)` returns bytes; `utf8.RuneCountInString(s)` returns rune count**
+
+```go
+s := "😺a"        // cat face + 'a'
+fmt.Println(len(s))                     // 5 (UTF-8 bytes: 4 + 1)
+fmt.Println(utf8.RuneCountInString(s))  // 2 (runes)
+```
+
+<!-- Card End -->
+
+<!-- Card Start -->
+
+### Front
+
+Which statement about iterating a string in Go is correct?
+
+- A. `for i := range s` yields runes; `s[i]` returns rune
+- B. `for _, r := range s` yields runes; `s[i]` returns a byte (UTF-8 code unit)
+- C. `for i := range s` yields bytes; `s[i]` returns bytes but `range` is invalid for UTF-8
+- D. `for _, b := range s` yields bytes; `s[i]` returns runes
+
+### Back
+
+**B. `for _, r := range s` yields runes; `s[i]` returns a byte (UTF-8 code unit)**
+
+`range` over a string decodes UTF-8 and yields rune values with `i` as the starting byte index of each rune. Direct indexing `s[i]` accesses a single byte, not a whole rune.
+
+```go
+for i, r := range s {              // r is rune, i is byte offset
+    fmt.Printf("%d: %U\n", i, r)
+}
+b := s[0] // byte
+```
+
+<!-- Card End -->
+
+<!-- Card Start -->
+
+### Front
+
+How do you safely take the first N characters (runes) of a string that may contain multi-byte UTF-8?
+
+- A. Slice bytes: `s[:N]`
+- B. Convert to `[]rune` and slice: `string([]rune(s)[:N])`
+- C. Use `[]byte(s)[:N]` then cast back to string
+- D. Use `len(s[:N])` to ensure rune boundary
+
+### Back
+
+**B. Convert to `[]rune` and slice: `string([]rune(s)[:N])`**
+
+Converting to `[]rune` respects code point boundaries; slicing by bytes risks cutting a rune in the middle and producing invalid UTF-8.
+
+```go
+prefix := string([]rune(s)[:N])
+```
+
+For streaming, use `utf8.DecodeRuneInString` to step rune-by-rune without allocating a whole `[]rune`.
+
+<!-- Card End -->
+
+<!-- Card Start -->
+
+### Front
+
+What happens when decoding invalid UTF-8 with `utf8.DecodeRuneInString` and how can you validate a string?
+
+- A. It panics; use recover to handle invalid bytes
+- B. It returns `utf8.RuneError` and size 1; use `utf8.ValidString(s)` for validation
+- C. It skips invalid bytes silently
+- D. It returns zero rune and size 0
+
+### Back
+
+**B. It returns `utf8.RuneError` and size 1; use `utf8.ValidString(s)` for validation**
+
+```go
+r, size := utf8.DecodeRuneInString(s[i:])
+if r == utf8.RuneError && size == 1 {
+    // invalid UTF-8 byte encountered
+}
+fmt.Println(utf8.ValidString(s)) // true if s is valid UTF-8
+```
+
+Also useful: rune literals `'\u00E9'`, `'\U0001F431'`, and encoding with `utf8.EncodeRune`.
+
+<!-- Card End -->
+
+### Front
+
 What does this code do?
 
 ```go

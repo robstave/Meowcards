@@ -4,12 +4,15 @@
 ### Front
 What is the difference between `!=` and `<>` operators in SQL?
 
-### Back
-**No difference** - both operators mean "not equal to" in SQL.
+- A. They are identical  
+- B. `!=` is faster  
+- C. `<>` is the standard SQL operator  
+- D. They are not supported in all databases
 
-- `!=` is more common in programming languages
-- `<>` is the standard SQL operator
-- Most databases support both
+### Back
+**Correct Answer**: C
+
+**Explanation**: Both operators mean "not equal to" in SQL, but `<>` is the standard SQL operator. Most databases support both.
 
 ```sql
 -- Both work the same way

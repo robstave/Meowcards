@@ -4,10 +4,10 @@
 ### Front
 What does REST stand for?
 
-A) Reliable External State Transfer  
-B) Representational State Transfer  
-C) Remote Execution State Transfer  
-D) Resource Execution State Transfer
+- A. Reliable External State Transfer  
+- B. Representational State Transfer  
+- C. Remote Execution State Transfer  
+- D. Resource Execution State Transfer
 
 ### Back
 **Correct Answer**: B
@@ -21,10 +21,10 @@ D) Resource Execution State Transfer
 ### Front
 Which HTTP method is idempotent and safe?
 
-A) POST  
-B) PUT  
-C) DELETE  
-D) GET
+- A. POST  
+- B. PUT  
+- C. DELETE  
+- D. GET
 
 ### Back
 **Correct Answer**: D
@@ -38,10 +38,10 @@ D) GET
 ### Front
 What does HATEOAS stand for?
 
-A) Hypertext As The Engine Of Application State  
-B) HTTP Authentication Through External OAuth Services  
-C) Hierarchical Access To External Object Application Services  
-D) Hyperlink Access To External Online Application Systems
+- A. Hypertext As The Engine Of Application State  
+- B. HTTP Authentication Through External OAuth Services  
+- C. Hierarchical Access To External Object Application Services  
+- D. Hyperlink Access To External Online Application Systems
 
 ### Back
 **Correct Answer**: A
@@ -55,10 +55,10 @@ D) Hyperlink Access To External Online Application Systems
 ### Front
 Which HTTP status code indicates a successful resource creation?
 
-A) 200 OK  
-B) 201 Created  
-C) 202 Accepted  
-D) 204 No Content
+- A. 200 OK  
+- B. 201 Created  
+- C. 202 Accepted  
+- D. 204 No Content
 
 ### Back
 **Correct Answer**: B
@@ -72,10 +72,10 @@ D) 204 No Content
 ### Front
 What is the main difference between PUT and PATCH methods?
 
-A) PUT is for updates, PATCH is for creation  
-B) PUT replaces entire resource, PATCH applies partial modifications  
-C) PUT is idempotent, PATCH is not  
-D) PUT is safe, PATCH is not
+- A. PUT is for updates, PATCH is for creation  
+- B. PUT replaces entire resource, PATCH applies partial modifications  
+- C. PUT is idempotent, PATCH is not  
+- D. PUT is safe, PATCH is not
 
 ### Back
 **Correct Answer**: B
@@ -89,10 +89,10 @@ D) PUT is safe, PATCH is not
 ### Front
 Which constraint requires that each request contains all information needed to understand it?
 
-A) Client-Server  
-B) Stateless  
-C) Cacheable  
-D) Uniform Interface
+- A. Client-Server  
+- B. Stateless  
+- C. Cacheable  
+- D. Uniform Interface
 
 ### Back
 **Correct Answer**: B
@@ -106,10 +106,10 @@ D) Uniform Interface
 ### Front
 What is the recommended approach for API versioning in REST?
 
-A) Query parameters (?version=1)  
-B) HTTP headers (Accept: application/vnd.api+json;version=1)  
-C) URL path (/api/v1/users)  
-D) All approaches are equally valid
+- A. Query parameters (?version=1)  
+- B. HTTP headers (Accept: application/vnd.api+json;version=1)  
+- C. URL path (/api/v1/users)  
+- D. All approaches are equally valid
 
 ### Back
 **Correct Answer**: D
@@ -128,10 +128,10 @@ Choose based on your specific requirements and constraints.
 ### Front
 Which HTTP status code should be returned when a resource is not found?
 
-A) 400 Bad Request  
-B) 401 Unauthorized  
-C) 403 Forbidden  
-D) 404 Not Found
+- A. 400 Bad Request  
+- B. 401 Unauthorized  
+- C. 403 Forbidden  
+- D. 404 Not Found
 
 ### Back
 **Correct Answer**: D
@@ -145,10 +145,10 @@ D) 404 Not Found
 ### Front
 What is the Richardson Maturity Model's highest level?
 
-A) Level 0 - The Swamp of POX  
-B) Level 1 - Resources  
-C) Level 2 - HTTP Methods  
-D) Level 3 - Hypermedia Controls
+- A. Level 0 - The Swamp of POX  
+- B. Level 1 - Resources  
+- C. Level 2 - HTTP Methods  
+- D. Level 3 - Hypermedia Controls
 
 ### Back
 **Correct Answer**: D
@@ -162,10 +162,10 @@ D) Level 3 - Hypermedia Controls
 ### Front
 Which caching strategy is most appropriate for frequently changing data?
 
-A) Cache-Control: public, max-age=3600  
-B) Cache-Control: private, no-cache  
-C) Cache-Control: no-store  
-D) ETag with conditional requests
+- A. Cache-Control: public, max-age=3600  
+- B. Cache-Control: private, no-cache  
+- C. Cache-Control: no-store  
+- D. ETag with conditional requests
 
 ### Back
 **Correct Answer**: D
@@ -179,10 +179,10 @@ D) ETag with conditional requests
 ### Front
 What is the primary purpose of the OPTIONS HTTP method?
 
-A) Delete a resource  
-B) Update a resource partially  
-C) Discover allowed methods for a resource  
-D) Create a new resource
+- A. Delete a resource  
+- B. Update a resource partially  
+- C. Discover allowed methods for a resource  
+- D. Create a new resource
 
 ### Back
 **Correct Answer**: C
@@ -196,10 +196,10 @@ D) Create a new resource
 ### Front
 Which media type is commonly used for API error responses?
 
-A) text/plain  
-B) application/xml  
-C) application/problem+json  
-D) text/html
+- A. text/plain  
+- B. application/xml  
+- C. application/problem+json  
+- D. text/html
 
 ### Back
 **Correct Answer**: C
@@ -213,10 +213,10 @@ D) text/html
 ### Front
 What is the main benefit of using hypermedia in REST APIs?
 
-A) Faster response times  
-B) Reduced coupling between client and server  
-C) Smaller payload sizes  
-D) Better security
+- A. Faster response times  
+- B. Reduced coupling between client and server  
+- C. Smaller payload sizes  
+- D. Better security
 
 ### Back
 **Correct Answer**: B
@@ -230,10 +230,10 @@ D) Better security
 ### Front
 Which HTTP status code indicates that authentication is required?
 
-A) 400 Bad Request  
-B) 401 Unauthorized  
-C) 403 Forbidden  
-D) 405 Method Not Allowed
+- A. 400 Bad Request  
+- B. 401 Unauthorized  
+- C. 403 Forbidden  
+- D. 405 Method Not Allowed
 
 ### Back
 **Correct Answer**: B
@@ -247,10 +247,10 @@ D) 405 Method Not Allowed
 ### Front
 What is the recommended approach for handling bulk operations in REST?
 
-A) Single endpoint with array payload  
-B) Multiple individual requests  
-C) Custom RPC-style endpoint  
-D) Depends on the use case and constraints
+- A. Single endpoint with array payload  
+- B. Multiple individual requests  
+- C. Custom RPC-style endpoint  
+- D. Depends on the use case and constraints
 
 ### Back
 **Correct Answer**: D
@@ -269,10 +269,10 @@ Consider performance, atomicity, and complexity requirements.
 ### Front
 Which principle states that the network architecture should not depend on the data being transferred?
 
-A) Stateless  
-B) Uniform Interface  
-C) Layered System  
-D) Code on Demand
+- A. Stateless  
+- B. Uniform Interface  
+- C. Layered System  
+- D. Code on Demand
 
 ### Back
 **Correct Answer**: B
@@ -286,10 +286,10 @@ D) Code on Demand
 ### Front
 What is the purpose of the Accept header in HTTP requests?
 
-A) Specify authentication credentials  
-B) Indicate preferred response media types  
-C) Set caching directives  
-D) Define request body encoding
+- A. Specify authentication credentials  
+- B. Indicate preferred response media types  
+- C. Set caching directives  
+- D. Define request body encoding
 
 ### Back
 **Correct Answer**: B
@@ -303,10 +303,10 @@ D) Define request body encoding
 ### Front
 Which HTTP method should be used to replace an entire resource?
 
-A) POST  
-B) PUT  
-C) PATCH  
-D) UPDATE
+- A. POST  
+- B. PUT  
+- C. PATCH  
+- D. UPDATE
 
 ### Back
 **Correct Answer**: B
@@ -320,10 +320,10 @@ D) UPDATE
 ### Front
 What does the principle of "Uniform Interface" include?
 
-A) Only HTTP methods  
-B) Resource identification, manipulation through representations, self-descriptive messages, HATEOAS  
-C) Only URI design  
-D) Only status codes
+- A. Only HTTP methods  
+- B. Resource identification, manipulation through representations, self-descriptive messages, HATEOAS  
+- C. Only URI design  
+- D. Only status codes
 
 ### Back
 **Correct Answer**: B
@@ -341,10 +341,10 @@ D) Only status codes
 ### Front
 Which status code should be used when a client sends a request with invalid syntax?
 
-A) 400 Bad Request  
-B) 401 Unauthorized  
-C) 422 Unprocessable Entity  
-D) 500 Internal Server Error
+- A. 400 Bad Request  
+- B. 401 Unauthorized  
+- C. 422 Unprocessable Entity  
+- D. 500 Internal Server Error
 
 ### Back
 **Correct Answer**: A
@@ -358,10 +358,10 @@ D) 500 Internal Server Error
 ### Front
 What is the main advantage of stateless communication in REST?
 
-A) Better performance  
-B) Improved scalability and reliability  
-C) Reduced bandwidth usage  
-D) Enhanced security
+- A. Better performance  
+- B. Improved scalability and reliability  
+- C. Reduced bandwidth usage  
+- D. Enhanced security
 
 ### Back
 **Correct Answer**: B
@@ -375,10 +375,10 @@ D) Enhanced security
 ### Front
 Which header is used to specify the media type of the request body?
 
-A) Accept  
-B) Content-Type  
-C) Content-Encoding  
-D) Content-Length
+- A. Accept  
+- B. Content-Type  
+- C. Content-Encoding  
+- D. Content-Length
 
 ### Back
 **Correct Answer**: B
@@ -392,10 +392,10 @@ D) Content-Length
 ### Front
 What is the recommended approach for handling nested resources in REST URLs?
 
-A) /users/123/posts/456  
-B) /users/123?posts=456  
-C) /posts/456?user=123  
-D) Both A and C are valid approaches
+- A. /users/123/posts/456  
+- B. /users/123?posts=456  
+- C. /posts/456?user=123  
+- D. Both A and C are valid approaches
 
 ### Back
 **Correct Answer**: D
@@ -413,10 +413,10 @@ Choose based on the logical relationship and access patterns.
 ### Front
 Which HTTP status code indicates that the request was successful but there's no content to return?
 
-A) 200 OK  
-B) 201 Created  
-C) 202 Accepted  
-D) 204 No Content
+- A. 200 OK  
+- B. 201 Created  
+- C. 202 Accepted  
+- D. 204 No Content
 
 ### Back
 **Correct Answer**: D
@@ -430,10 +430,10 @@ D) 204 No Content
 ### Front
 What is the main purpose of rate limiting in REST APIs?
 
-A) Improve response times  
-B) Protect against abuse and ensure fair usage  
-C) Reduce server costs  
-D) Enhance security through obscurity
+- A. Improve response times  
+- B. Protect against abuse and ensure fair usage  
+- C. Reduce server costs  
+- D. Enhance security through obscurity
 
 ### Back
 **Correct Answer**: B
@@ -447,10 +447,10 @@ D) Enhance security through obscurity
 ### Front
 Which constraint allows for the introduction of intermediate servers like proxies and gateways?
 
-A) Client-Server  
-B) Stateless  
-C) Layered System  
-D) Cacheable
+- A. Client-Server  
+- B. Stateless  
+- C. Layered System  
+- D. Cacheable
 
 ### Back
 **Correct Answer**: C
@@ -464,10 +464,10 @@ D) Cacheable
 ### Front
 What is the recommended way to handle pagination in REST APIs?
 
-A) Page numbers only (?page=1&size=20)  
-B) Offset and limit (?offset=0&limit=20)  
-C) Cursor-based pagination with links  
-D) All approaches are valid depending on use case
+- A. Page numbers only (?page=1&size=20)  
+- B. Offset and limit (?offset=0&limit=20)  
+- C. Cursor-based pagination with links  
+- D. All approaches are valid depending on use case
 
 ### Back
 **Correct Answer**: D
@@ -486,10 +486,10 @@ Choose based on data characteristics and performance requirements.
 ### Front
 Which HTTP method is NOT idempotent?
 
-A) GET  
-B) PUT  
-C) DELETE  
-D) POST
+- A. GET  
+- B. PUT  
+- C. DELETE  
+- D. POST
 
 ### Back
 **Correct Answer**: D
@@ -503,10 +503,10 @@ D) POST
 ### Front
 What is the purpose of the ETag header?
 
-A) Authentication  
-B) Resource versioning for cache validation  
-C) Content encoding  
-D) Request routing
+- A. Authentication  
+- B. Resource versioning for cache validation  
+- C. Content encoding  
+- D. Request routing
 
 ### Back
 **Correct Answer**: B
@@ -520,10 +520,10 @@ D) Request routing
 ### Front
 Which status code should be returned when a client attempts to create a resource that already exists?
 
-A) 400 Bad Request  
-B) 409 Conflict  
-C) 422 Unprocessable Entity  
-D) 500 Internal Server Error
+- A. 400 Bad Request  
+- B. 409 Conflict  
+- C. 422 Unprocessable Entity  
+- D. 500 Internal Server Error
 
 ### Back
 **Correct Answer**: B
@@ -537,10 +537,10 @@ D) 500 Internal Server Error
 ### Front
 What is the main principle behind REST resource identification?
 
-A) Resources are identified by SQL queries  
-B) Resources are identified by URIs  
-C) Resources are identified by object references  
-D) Resources are identified by database keys
+- A. Resources are identified by SQL queries  
+- B. Resources are identified by URIs  
+- C. Resources are identified by object references  
+- D. Resources are identified by database keys
 
 ### Back
 **Correct Answer**: B
@@ -554,10 +554,10 @@ D) Resources are identified by database keys
 ### Front
 Which approach is recommended for API authentication in modern REST APIs?
 
-A) Basic Authentication  
-B) API Keys in URL parameters  
-C) JWT tokens in Authorization header  
-D) Session cookies
+- A. Basic Authentication  
+- B. API Keys in URL parameters  
+- C. JWT tokens in Authorization header  
+- D. Session cookies
 
 ### Back
 **Correct Answer**: C
@@ -571,10 +571,10 @@ D) Session cookies
 ### Front
 What does the "Code on Demand" constraint allow in REST architecture?
 
-A) Server-side code execution  
-B) Client downloading and executing code from server  
-C) Dynamic API generation  
-D) Code compilation on the server
+- A. Server-side code execution  
+- B. Client downloading and executing code from server  
+- C. Dynamic API generation  
+- D. Code compilation on the server
 
 ### Back
 **Correct Answer**: B
@@ -588,10 +588,10 @@ D) Code compilation on the server
 ### Front
 Which HTTP header is used for conditional requests based on modification time?
 
-A) If-Match  
-B) If-None-Match  
-C) If-Modified-Since  
-D) If-Unmodified-Since
+- A. If-Match  
+- B. If-None-Match  
+- C. If-Modified-Since  
+- D. If-Unmodified-Since
 
 ### Back
 **Correct Answer**: C
@@ -605,10 +605,10 @@ D) If-Unmodified-Since
 ### Front
 What is the recommended approach for handling partial failures in bulk operations?
 
-A) Fail the entire operation  
-B) Return partial success with detailed status for each item  
-C) Retry failed items automatically  
-D) Ignore failed items silently
+- A. Fail the entire operation  
+- B. Return partial success with detailed status for each item  
+- C. Retry failed items automatically  
+- D. Ignore failed items silently
 
 ### Back
 **Correct Answer**: B
@@ -622,10 +622,10 @@ D) Ignore failed items silently
 ### Front
 Which principle states that REST components should not retain client state between requests?
 
-A) Client-Server separation  
-B) Stateless communication  
-C) Uniform Interface  
-D) Layered System
+- A. Client-Server separation  
+- B. Stateless communication  
+- C. Uniform Interface  
+- D. Layered System
 
 ### Back
 **Correct Answer**: B
@@ -639,10 +639,10 @@ D) Layered System
 ### Front
 What is the main benefit of using standardized media types in REST APIs?
 
-A) Reduced bandwidth usage  
-B) Improved interoperability and loose coupling  
-C) Better performance  
-D) Enhanced security
+- A. Reduced bandwidth usage  
+- B. Improved interoperability and loose coupling  
+- C. Better performance  
+- D. Enhanced security
 
 ### Back
 **Correct Answer**: B
@@ -656,10 +656,10 @@ D) Enhanced security
 ### Front
 Which HTTP status code should be used when a client sends semantically incorrect data with valid syntax?
 
-A) 400 Bad Request  
-B) 401 Unauthorized  
-C) 422 Unprocessable Entity  
-D) 500 Internal Server Error
+- A. 400 Bad Request  
+- B. 401 Unauthorized  
+- C. 422 Unprocessable Entity  
+- D. 500 Internal Server Error
 
 ### Back
 **Correct Answer**: C
@@ -673,10 +673,10 @@ D) 500 Internal Server Error
 ### Front
 What is the primary advantage of using HATEOAS in REST APIs?
 
-A) Better performance  
-B) Reduced API documentation needs  
-C) Dynamic discoverability and evolvability  
-D) Smaller response payloads
+- A. Better performance  
+- B. Reduced API documentation needs  
+- C. Dynamic discoverability and evolvability  
+- D. Smaller response payloads
 
 ### Back
 **Correct Answer**: C
@@ -690,10 +690,10 @@ D) Smaller response payloads
 ### Front
 Which approach is recommended for handling API errors in REST?
 
-A) Always return 200 OK with error details in body  
-B) Use appropriate HTTP status codes with structured error responses  
-C) Return HTML error pages  
-D) Use only generic error messages
+- A. Always return 200 OK with error details in body  
+- B. Use appropriate HTTP status codes with structured error responses  
+- C. Return HTML error pages  
+- D. Use only generic error messages
 
 ### Back
 **Correct Answer**: B
@@ -707,10 +707,10 @@ D) Use only generic error messages
 ### Front
 What is the purpose of the HEAD HTTP method?
 
-A) Delete a resource  
-B) Get metadata about a resource without the body  
-C) Update a resource  
-D) Create a new resource
+- A. Delete a resource  
+- B. Get metadata about a resource without the body  
+- C. Update a resource  
+- D. Create a new resource
 
 ### Back
 **Correct Answer**: B
@@ -724,10 +724,10 @@ D) Create a new resource
 ### Front
 Which HTTP status code indicates that the server is temporarily unable to handle the request?
 
-A) 500 Internal Server Error  
-B) 502 Bad Gateway  
-C) 503 Service Unavailable  
-D) 504 Gateway Timeout
+- A. 500 Internal Server Error  
+- B. 502 Bad Gateway  
+- C. 503 Service Unavailable  
+- D. 504 Gateway Timeout
 
 ### Back
 **Correct Answer**: C
@@ -741,10 +741,10 @@ D) 504 Gateway Timeout
 ### Front
 What is the main difference between 401 Unauthorized and 403 Forbidden?
 
-A) 401 means bad credentials, 403 means no credentials  
-B) 401 means authentication required, 403 means access denied despite valid authentication  
-C) They are identical  
-D) 401 is for users, 403 is for systems
+- A. 401 means bad credentials, 403 means no credentials  
+- B. 401 means authentication required, 403 means access denied despite valid authentication  
+- C. They are identical  
+- D. 401 is for users, 403 is for systems
 
 ### Back
 **Correct Answer**: B
@@ -758,10 +758,10 @@ D) 401 is for users, 403 is for systems
 ### Front
 Which caching directive prevents any caching of the response?
 
-A) Cache-Control: no-cache  
-B) Cache-Control: no-store  
-C) Cache-Control: private  
-D) Cache-Control: max-age=0
+- A. Cache-Control: no-cache  
+- B. Cache-Control: no-store  
+- C. Cache-Control: private  
+- D. Cache-Control: max-age=0
 
 ### Back
 **Correct Answer**: B
@@ -775,10 +775,10 @@ D) Cache-Control: max-age=0
 ### Front
 What is the recommended HTTP method for searching resources in REST?
 
-A) POST to /search  
-B) GET with query parameters  
-C) SEARCH method  
-D) Both A and B are valid
+- A. POST to /search  
+- B. GET with query parameters  
+- C. SEARCH method  
+- D. Both A and B are valid
 
 ### Back
 **Correct Answer**: D
@@ -796,10 +796,10 @@ Choose based on search complexity and caching requirements.
 ### Front
 Which HTTP header should be used to specify the expected format of a PATCH request body?
 
-A) Accept  
-B) Content-Type  
-C) Content-Encoding  
-D) Accept-Patch
+- A. Accept  
+- B. Content-Type  
+- C. Content-Encoding  
+- D. Accept-Patch
 
 ### Back
 **Correct Answer**: B
@@ -813,10 +813,10 @@ D) Accept-Patch
 ### Front
 What is the main benefit of using ETags for optimistic concurrency control?
 
-A) Improved performance  
-B) Prevent lost updates in concurrent modifications  
-C) Reduced bandwidth  
-D) Better security
+- A. Improved performance  
+- B. Prevent lost updates in concurrent modifications  
+- C. Reduced bandwidth  
+- D. Better security
 
 ### Back
 **Correct Answer**: B
@@ -830,10 +830,10 @@ D) Better security
 ### Front
 Which approach is recommended for handling long-running operations in REST APIs?
 
-A) Synchronous processing with extended timeouts  
-B) Asynchronous processing with 202 Accepted and status polling  
-C) WebSocket connections  
-D) Server-sent events
+- A. Synchronous processing with extended timeouts  
+- B. Asynchronous processing with 202 Accepted and status polling  
+- C. WebSocket connections  
+- D. Server-sent events
 
 ### Back
 **Correct Answer**: B
@@ -847,10 +847,10 @@ D) Server-sent events
 ### Front
 What is the purpose of the Vary header in HTTP responses?
 
-A) Specify caching directives  
-B) Indicate which request headers affect the response  
-C) Define content encoding  
-D) Set response timeouts
+- A. Specify caching directives  
+- B. Indicate which request headers affect the response  
+- C. Define content encoding  
+- D. Set response timeouts
 
 ### Back
 **Correct Answer**: B
@@ -864,10 +864,10 @@ D) Set response timeouts
 ### Front
 Which HTTP status code should be used when request processing will take a significant amount of time?
 
-A) 200 OK  
-B) 201 Created  
-C) 202 Accepted  
-D) 204 No Content
+- A. 200 OK  
+- B. 201 Created  
+- C. 202 Accepted  
+- D. 204 No Content
 
 ### Back
 **Correct Answer**: C
@@ -881,10 +881,10 @@ D) 204 No Content
 ### Front
 What is the main advantage of using JSON:API or HAL for hypermedia in REST APIs?
 
-A) Smaller response sizes  
-B) Standardized hypermedia format  
-C) Better performance  
-D) Enhanced security
+- A. Smaller response sizes  
+- B. Standardized hypermedia format  
+- C. Better performance  
+- D. Enhanced security
 
 ### Back
 **Correct Answer**: B
@@ -898,10 +898,10 @@ D) Enhanced security
 ### Front
 Which HTTP method should be used for partial updates when the update semantics are not idempotent?
 
-A) PUT  
-B) PATCH  
-C) POST  
-D) UPDATE
+- A. PUT  
+- B. PATCH  
+- C. POST  
+- D. UPDATE
 
 ### Back
 **Correct Answer**: C
@@ -915,10 +915,10 @@ D) UPDATE
 ### Front
 What is the recommended approach for handling API rate limit responses?
 
-A) Return 429 with Retry-After header  
-B) Return 503 with custom headers  
-C) Return 400 with error message  
-D) Return 200 with rate limit info in body
+- A. Return 429 with Retry-After header  
+- B. Return 503 with custom headers  
+- C. Return 400 with error message  
+- D. Return 200 with rate limit info in body
 
 ### Back
 **Correct Answer**: A
@@ -932,10 +932,10 @@ D) Return 200 with rate limit info in body
 ### Front
 Which approach is best for handling resource relationships in REST APIs?
 
-A) Always embed related resources  
-B) Always use separate endpoints  
-C) Use links with optional embedding based on query parameters  
-D) Use only resource IDs
+- A. Always embed related resources  
+- B. Always use separate endpoints  
+- C. Use links with optional embedding based on query parameters  
+- D. Use only resource IDs
 
 ### Back
 **Correct Answer**: C
@@ -949,10 +949,10 @@ D) Use only resource IDs
 ### Front
 What is the purpose of the Location header in HTTP responses?
 
-A) Specify the client's location  
-B) Indicate the URI of a newly created or moved resource  
-C) Define the server's location  
-D) Set redirection timeouts
+- A. Specify the client's location  
+- B. Indicate the URI of a newly created or moved resource  
+- C. Define the server's location  
+- D. Set redirection timeouts
 
 ### Back
 **Correct Answer**: B
@@ -966,10 +966,10 @@ D) Set redirection timeouts
 ### Front
 Which content negotiation mechanism allows clients to specify preferred response languages?
 
-A) Accept header  
-B) Accept-Language header  
-C) Content-Language header  
-D) Accept-Charset header
+- A. Accept header  
+- B. Accept-Language header  
+- C. Content-Language header  
+- D. Accept-Charset header
 
 ### Back
 **Correct Answer**: B
@@ -983,10 +983,10 @@ D) Accept-Charset header
 ### Front
 What is the recommended approach for handling partial responses in REST APIs?
 
-A) Always return complete resources  
-B) Use query parameters to specify fields (?fields=id,name)  
-C) Use custom HTTP headers  
-D) Use different endpoints for different views
+- A. Always return complete resources  
+- B. Use query parameters to specify fields (?fields=id,name)  
+- C. Use custom HTTP headers  
+- D. Use different endpoints for different views
 
 ### Back
 **Correct Answer**: B
@@ -1000,10 +1000,10 @@ D) Use different endpoints for different views
 ### Front
 Which HTTP status code indicates that the request could not be completed due to insufficient storage?
 
-A) 507 Insufficient Storage  
-B) 413 Payload Too Large  
-C) 500 Internal Server Error  
-D) 503 Service Unavailable
+- A. 507 Insufficient Storage  
+- B. 413 Payload Too Large  
+- C. 500 Internal Server Error  
+- D. 503 Service Unavailable
 
 ### Back
 **Correct Answer**: A
@@ -1017,10 +1017,10 @@ D) 503 Service Unavailable
 ### Front
 What is the main purpose of the Accept-Encoding header?
 
-A) Specify preferred response languages  
-B) Indicate supported compression algorithms  
-C) Define character encoding  
-D) Specify content types
+- A. Specify preferred response languages  
+- B. Indicate supported compression algorithms  
+- C. Define character encoding  
+- D. Specify content types
 
 ### Back
 **Correct Answer**: B
@@ -1034,10 +1034,10 @@ D) Specify content types
 ### Front
 Which approach is recommended for API documentation that supports HATEOAS?
 
-A) Static documentation only  
-B) Interactive documentation that follows hypermedia links  
-C) No documentation needed  
-D) Separate documentation for each API version
+- A. Static documentation only  
+- B. Interactive documentation that follows hypermedia links  
+- C. No documentation needed  
+- D. Separate documentation for each API version
 
 ### Back
 **Correct Answer**: B
@@ -1051,10 +1051,10 @@ D) Separate documentation for each API version
 ### Front
 What is the current version of the OpenAPI Specification (formerly Swagger)?
 
-A) OpenAPI 2.0  
-B) OpenAPI 3.0  
-C) OpenAPI 3.1  
-D) OpenAPI 4.0
+- A. OpenAPI 2.0  
+- B. OpenAPI 3.0  
+- C. OpenAPI 3.1  
+- D. OpenAPI 4.0
 
 ### Back
 **Correct Answer**: C
@@ -1068,10 +1068,10 @@ D) OpenAPI 4.0
 ### Front
 Which HTTP header is commonly used to serve OpenAPI documentation?
 
-A) Content-Type: application/json  
-B) Content-Type: application/yaml  
-C) Content-Type: application/x-yaml  
-D) All of the above can be valid
+- A. Content-Type: application/json  
+- B. Content-Type: application/yaml  
+- C. Content-Type: application/x-yaml  
+- D. All of the above can be valid
 
 ### Back
 **Correct Answer**: D
@@ -1090,10 +1090,10 @@ Choose based on client preferences and content negotiation.
 ### Front
 What is the primary benefit of using OpenAPI specifications in REST API development?
 
-A) Better runtime performance  
-B) Documentation generation and contract-first development  
-C) Reduced server costs  
-D) Enhanced security
+- A. Better runtime performance  
+- B. Documentation generation and contract-first development  
+- C. Reduced server costs  
+- D. Enhanced security
 
 ### Back
 **Correct Answer**: B
@@ -1107,10 +1107,10 @@ D) Enhanced security
 ### Front
 Which OpenAPI component is used to define reusable response objects?
 
-A) parameters  
-B) schemas  
-C) responses  
-D) components/responses
+- A. parameters  
+- B. schemas  
+- C. responses  
+- D. components/responses
 
 ### Back
 **Correct Answer**: D
@@ -1124,10 +1124,10 @@ D) components/responses
 ### Front
 Which HTTP methods are cacheable by default according to RFC 7231?
 
-A) GET and HEAD  
-B) GET, HEAD, and POST  
-C) GET only  
-D) GET, HEAD, and PUT
+- A. GET and HEAD  
+- B. GET, HEAD, and POST  
+- C. GET only  
+- D. GET, HEAD, and PUT
 
 ### Back
 **Correct Answer**: A
@@ -1141,10 +1141,10 @@ D) GET, HEAD, and PUT
 ### Front
 Which header enables safely retrying non-idempotent POST operations?
 
-A) If-Match  
-B) Retry-After  
-C) Idempotency-Key  
-D) Vary
+- A. If-Match  
+- B. Retry-After  
+- C. Idempotency-Key  
+- D. Vary
 
 ### Back
 **Correct Answer**: C
@@ -1158,10 +1158,10 @@ D) Vary
 ### Front
 Which header carries pagination navigation links like next/prev?
 
-A) Pagination  
-B) Link  
-C) Content-Range  
-D) Location
+- A. Pagination  
+- B. Link  
+- C. Content-Range  
+- D. Location
 
 ### Back
 **Correct Answer**: B
@@ -1175,10 +1175,10 @@ D) Location
 ### Front
 Which header communicates planned deprecation or sunset of an API?
 
-A) Sunset  
-B) Deprecation  
-C) Expires  
-D) Warning
+- A. Sunset  
+- B. Deprecation  
+- C. Expires  
+- D. Warning
 
 ### Back
 **Correct Answer**: A
@@ -1192,10 +1192,10 @@ D) Warning
 ### Front
 Which headers are sent in a CORS preflight request?
 
-A) Origin only  
-B) Access-Control-Request-Method and Access-Control-Request-Headers  
-C) Access-Control-Allow-Origin and Access-Control-Allow-Methods  
-D) Vary: Origin
+- A. Origin only  
+- B. Access-Control-Request-Method and Access-Control-Request-Headers  
+- C. Access-Control-Allow-Origin and Access-Control-Allow-Methods  
+- D. Vary: Origin
 
 ### Back
 **Correct Answer**: B
@@ -1209,10 +1209,10 @@ D) Vary: Origin
 ### Front
 Which media type defines JSON Patch operations for partial updates?
 
-A) application/merge-patch+json  
-B) application/json-patch+json  
-C) application/patch+json  
-D) application/problem+json
+- A. application/merge-patch+json  
+- B. application/json-patch+json  
+- C. application/patch+json  
+- D. application/problem+json
 
 ### Back
 **Correct Answer**: B
@@ -1226,10 +1226,10 @@ D) application/problem+json
 ### Front
 Which status code should be returned when none of the representations match the Accept header?
 
-A) 400 Bad Request  
-B) 406 Not Acceptable  
-C) 415 Unsupported Media Type  
-D) 422 Unprocessable Entity
+- A. 400 Bad Request  
+- B. 406 Not Acceptable  
+- C. 415 Unsupported Media Type  
+- D. 422 Unprocessable Entity
 
 ### Back
 **Correct Answer**: B
@@ -1243,10 +1243,10 @@ D) 422 Unprocessable Entity
 ### Front
 When are weak ETags more appropriate than strong ETags?
 
-A) When byte-for-byte equality is required  
-B) When semantically equivalent representations may differ in bytes  
-C) When caching must be disabled  
-D) When using Range requests
+- A. When byte-for-byte equality is required  
+- B. When semantically equivalent representations may differ in bytes  
+- C. When caching must be disabled  
+- D. When using Range requests
 
 ### Back
 **Correct Answer**: B
@@ -1260,10 +1260,10 @@ D) When using Range requests
 ### Front
 Which status code indicates the server does not support the request Content-Type?
 
-A) 406 Not Acceptable  
-B) 415 Unsupported Media Type  
-C) 405 Method Not Allowed  
-D) 501 Not Implemented
+- A. 406 Not Acceptable  
+- B. 415 Unsupported Media Type  
+- C. 405 Method Not Allowed  
+- D. 501 Not Implemented
 
 ### Back
 **Correct Answer**: B
@@ -1277,10 +1277,10 @@ D) 501 Not Implemented
 ### Front
 When returning 405 Method Not Allowed, which header must be included?
 
-A) Allow  
-B) Location  
-C) Retry-After  
-D) Vary
+- A. Allow  
+- B. Location  
+- C. Retry-After  
+- D. Vary
 
 ### Back
 **Correct Answer**: A
@@ -1294,10 +1294,10 @@ D) Vary
 ### Front
 Which status code is appropriate when a conditional update fails due to an ETag mismatch?
 
-A) 409 Conflict  
-B) 412 Precondition Failed  
-C) 428 Precondition Required  
-D) 304 Not Modified
+- A. 409 Conflict  
+- B. 412 Precondition Failed  
+- C. 428 Precondition Required  
+- D. 304 Not Modified
 
 ### Back
 **Correct Answer**: B
@@ -1311,10 +1311,10 @@ D) 304 Not Modified
 ### Front
 What is the recommended approach for versioning OpenAPI specifications?
 
-A) Include version in the OpenAPI document only  
-B) Use semantic versioning aligned with API versions  
-C) Version the specification independently of the API  
-D) Both A and B are recommended practices
+- A. Include version in the OpenAPI document only  
+- B. Use semantic versioning aligned with API versions  
+- C. Version the specification independently of the API  
+- D. Both A and B are recommended practices
 
 ### Back
 **Correct Answer**: D

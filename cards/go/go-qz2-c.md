@@ -144,6 +144,29 @@ func (e CustomError) Error() string {
 }
 ```
 
+```go
+// Example: returning and handling a CustomError
+func doThing(x int) error {
+    if x < 0 {
+        return CustomError{Code: 400, Message: "x must be non-negative"}
+    }
+    return nil
+}
+
+func example() {
+    if err := doThing(-1); err != nil {
+        // Error() is called implicitly by fmt
+        fmt.Println(err) // Output: Error 400: x must be non-negative
+
+        // Access structured fields via errors.As
+        var ce CustomError
+        if errors.As(err, &ce) {
+            fmt.Printf("code=%d message=%s\n", ce.Code, ce.Message)
+        }
+    }
+}
+```
+
 <!-- Card End -->
 
 <!-- Card Start -->
@@ -199,6 +222,12 @@ func GetDatabase() *Database {
     return instance
 }
 ```
+
+https://cristiancurteanu.com/understanding-go-sync-once/
+
+
+https://go.dev/play/p/yMWGCnuqhKm
+
 
 <!-- Card End -->
 

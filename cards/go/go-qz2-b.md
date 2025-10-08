@@ -21,6 +21,54 @@ Go uses explicit error checking through returned error values rather than except
 
 ### Front
 
+In Go, what is the key difference between these worker function signatures, and why is the first preferred for pipelines?
+
+```go
+func worker(jobs <-chan Job, results chan<- Result) {
+    // jobs: receive-only channel; results: send-only channel
+}
+
+func worker(jobs Job, results Result) {
+    // plain values, no channels
+}
+```
+
+- A. The first uses unidirectional channels for concurrency-safe communication; the second passes plain values and cannot coordinate asynchronously
+- B. They are semantically identical; channel directions are just comments
+- C. The first returns results instead of sending; the second panics at runtime
+- D. The second enables goroutines while the first cannot be used with goroutines
+
+### Back
+
+**A. The first uses unidirectional channels for concurrency-safe communication; the second passes plain values and cannot coordinate asynchronously**
+
+Explanation:
+- `jobs <-chan Job` and `results chan<- Result` are direction-restricted channel parameters that the compiler enforces. This documents intent and prevents misuse (e.g., sending on a receive-only channel fails at compile time):
+
+```go
+func f(in <-chan int) {
+    // in <- 1 // compile error: send to receive-only channel
+}
+```
+
+- This signature is idiomatic for worker pools/pipelines:
+
+```go
+func worker(jobs <-chan Job, results chan<- Result) {
+    for j := range jobs {
+        results <- process(j)
+    }
+}
+```
+
+- By contrast, `func worker(jobs Job, results Result)` takes plain values. There is no channel-based coordination, no ability to stream multiple jobs/results, and no natural concurrency. You’d typically return a `Result` or error instead of taking a `results Result` value in such a case.
+
+<!-- Card End -->
+
+<!-- Card Start -->
+
+### Front
+
 What is the main benefit of Go's defer statement?
 
 - A. It improves performance by delaying execution
@@ -456,14 +504,14 @@ This difference reflects their different purposes: `switch` for deterministic co
 
 When should you prefer channels over mutexes in Go?
 
-- A. When you need the absolute highest performance  
-- B. When the problem naturally models communication between goroutines  
-- C. When working with a large number of shared variables  
-- D. When you need to modify complex data structures concurrently
+- A. When you need the absolute highest performance   
+- B. When working with a large number of shared variables  
+- C. When you need to modify complex data structures concurrently
+- D. When the problem naturally models communication between goroutines 
 
 ### Back
 
-**B. When the problem naturally models communication between goroutines**
+**D. When the problem naturally models communication between goroutines**
 
 Channels are ideal when:
 - You're passing ownership of data between goroutines
@@ -481,6 +529,56 @@ func worker(jobs <-chan Job, results chan<- Result) {
     }
 }
 ```
+
+
+Great question! The syntax jobs <-chan Job and results chan<- Result uses Go's directional channel types to enforce which operations are allowed on each channel parameter. Let me break this down:
+Channel Direction Syntax
+```go
+func worker(jobs <-chan Job, results chan<- Result) {
+    // jobs <-chan Job    means "receive-only channel"
+    // results chan<- Result means "send-only channel"
+}
+```
+The arrows indicate the allowed direction of data flow:
+
+`<-chan Job` = receive-only (data flows OUT of the channel TO your code)
+`chan<- Result` = send-only (data flows FROM your code INTO the channel)
+`chan Job` = bidirectional (can both send and receive)
+
+Why Use Directional Channels?
+
+Interface Safety: The compiler prevents you from accidentally using channels incorrectly
+Clear Intent: The function signature documents what the function does with each channel
+Better API Design: Callers know exactly how the function will use their channels
+
+What Happens in Practice
+go// This would compile and work, but is less safe:
+```go
+func worker(jobs chan Job, results chan Result) {
+    // Could accidentally do: jobs <- someJob  (wrong!)
+    // Could accidentally do: result := <-results (wrong!)
+}
+```
+
+// This is safer and clearer:
+```
+func worker(jobs <-chan Job, results chan<- Result) {
+    // Can only do: job := <-jobs ✓
+    // Can only do: results <- someResult ✓
+    // jobs <- someJob would be a compile error ✗
+    // result := <-results would be a compile error ✗
+}
+```
+How the Conversion Works
+When you call the function, Go automatically converts bidirectional channels to directional ones:
+```go
+jobs := make(chan Job)      // bidirectional channel
+results := make(chan Result) // bidirectional channel
+```
+
+// Go automatically converts them when passed to the function:
+worker(jobs, results) // jobs becomes <-chan, results becomes chan<-
+This is a form of type safety - you create the channels as bidirectional (because you need to send AND receive), but you pass them to functions that only need to use them in one direction. The function signature acts as a contract that prevents misuse.
 
 <!-- Card End -->
 

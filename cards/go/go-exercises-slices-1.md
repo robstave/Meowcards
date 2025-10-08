@@ -1,8 +1,6 @@
 
 
 
-Certainly! I'll create a set of 35 flashcards focusing on Go (Golang) slice operations and related concepts. These will be similar to the JavaScript array methods we discussed, but tailored for Go's slice operations.
-
 <!-- Card Start -->
 
 ### Front
@@ -36,7 +34,9 @@ the `...` spreads the slice so its like
 ```go
 append(s[:2],4,5)
 ```
-<!-- Card End --> <!-- Card Start -->
+<!-- Card End -->
+
+<!-- Card Start -->
 
 ### Front
 

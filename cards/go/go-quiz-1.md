@@ -97,13 +97,13 @@ Goroutines are functions or methods that run concurrently with other functions o
 Which keyword is used to create a new struct type in Go?
 
 A) struct  
-B) type  
+B) create
 C) new  
-D) create
+D) type
 
 ### Back
 
-B) type
+D) type
 
 The `type` keyword is used to define new types, including structs, in Go.
 
