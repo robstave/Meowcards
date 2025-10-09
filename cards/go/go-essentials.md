@@ -6,7 +6,6 @@ Note...these cards are not really front back all the time.  They are more like c
 
 ### Front
 
-
 Initialize and print a slice and an array in Go.
 ```go
 s := []int{1, 2, 3, 4, 5} 
@@ -18,7 +17,7 @@ fmt.Println(a)
 
 ### Back
 
- 
+none
 <!-- Card End -->
 <!-- Card Start -->
 
@@ -40,7 +39,7 @@ fmt.Println(s)
 ```
 
 ### Back
-
+none
 <!-- Card End -->
 <!-- Card Start -->
 
@@ -61,6 +60,9 @@ s := make([]int)       // Error: missing length and capacity
 ```
 
 ### Back
+
+none
+
 <!-- Card End -->
 <!-- Card Start -->
 
@@ -87,6 +89,8 @@ if err := someFunction(); err != nil {
 
 ### Back
 
+none
+
 <!-- Card End -->
 <!-- Card Start -->
 
@@ -101,6 +105,7 @@ for x < 10 {
 ```
 ### Back
 
+none
 <!-- Card End -->
 <!-- Card Start -->
 
@@ -120,6 +125,7 @@ for range 10 {
 ```
 
 ### Back
+none
 
 <!-- Card End -->
 <!-- Card Start -->
@@ -134,6 +140,8 @@ ch1 := make(chan string)
 
  
 ### Back
+
+none
 
 <!-- Card End -->
 
@@ -157,6 +165,8 @@ ch1 := make(chan string)
 
 ### Back
 
+none
+
 <!-- Card End -->
 
 
@@ -173,42 +183,9 @@ fmt.Println(str) // Output: "123"
 ```
 ### Back
 
-<!-- Card End -->
-
-
-
-
-<!-- Card Start -->
-
-### Front
-Runes
-
-In Go, a rune is an alias for int32 and represents a Unicode code point. Runes are used to handle characters beyond the ASCII set.
-
-```go
-r := 'a' // rune literal
-fmt.Println(r)        // Output: 97 (Unicode code point for 'a')
-
-fmt.Printf("%c\n", r) // Output: a (character representation)
-```
- 
-### Back
-
-<!-- Card End -->
-
-<!-- Card Start -->
-
-### Front
- 
-### Back
+none
 
 <!-- Card End -->
 
 
-<!-- Card Start -->
 
-### Front
- 
-### Back
-
-<!-- Card End -->

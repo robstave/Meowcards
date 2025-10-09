@@ -1,4 +1,3 @@
-
 #meowmorize 
 
 # Group 1 
@@ -214,9 +213,19 @@ When you want decoupling of goroutines, avoiding immediate synchronization, and 
 
 ### Back
 
- ```go
-chan<- int
+The syntax `chan<- int` is used to declare a send-only channel in Go. However, this directionality applies only to variables or function parameters, not to the channel type itself when defined globally or in a struct.
+
+Example:
+
+```go
+func sendOnly(ch chan<- int) {
+    ch <- 42 // Send value to the channel
+}
+
+var ch chan<- int // Send-only channel variable
 ```
+
+This ensures that the channel can only be used for sending values, improving code clarity and safety.
 
 <!-- Card End --> 
 <!-- Card Start -->
@@ -227,9 +236,20 @@ chan<- int
 
 ### Back
 
+The syntax `<-chan int` is used to declare a receive-only channel in Go. Like send-only channels, this directionality applies only to variables or function parameters.
+
+Example:
+
 ```go
-<-chan int
+func receiveOnly(ch <-chan int) {
+    val := <-ch // Receive value from the channel
+    fmt.Println(val)
+}
+
+var ch <-chan int // Receive-only channel variable
 ```
+
+This ensures that the channel can only be used for receiving values, enforcing constraints at compile time.
 
 <!-- Card End --> 
 <!-- Card Start -->
