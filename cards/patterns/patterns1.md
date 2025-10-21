@@ -117,7 +117,8 @@ Passes a request along a chain of handlers. Each handler decides either to proce
 
 [Learn more about the Chain of Responsibility Pattern](https://refactoring.guru/design-patterns/chain-of-responsibility)
 
-<!-- Card End --> <!-- Card Start -->
+<!-- Card End --> 
+<!-- Card Start -->
 ### Front
 Command Pattern
 

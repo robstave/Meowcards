@@ -366,3 +366,17 @@ func main() {
  
  
 <!-- Card End -->
+
+
+<!-- Card Start -->
+
+### Front
+
+**Difference between `sync.Mutex` and `sync.RWMutex`?**
+
+### Back
+
+- `sync.Mutex` allows exclusive lock/unlock.
+- `sync.RWMutex` allows concurrent reads but exclusive writes, ideal for read-heavy workloads.
+
+<!-- Card End -->
