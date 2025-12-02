@@ -549,4 +549,40 @@ In practice, both work similarly; teams often prefer `const = class {}` to signa
 
 <!-- Card End -->
 
+<!-- Card Start -->
+### Front
+Given a Map with numeric values, write code to sort its entries by value in descending order.
+
+Setup:
+```javascript
+const myMap = new Map([
+  ['apple', 5],
+  ['banana', 2],
+  ['cherry', 8],
+  ['date', 3]
+]);
+```
+
+### Back
+**Solution**:
+```javascript
+let sortedEntries = Array.from(myMap.entries()).sort((a, b) => b[1] - a[1]);
+```
+
+**Explanation**:
+- `myMap.entries()` returns an iterator of `[key, value]` pairs
+- `Array.from()` converts the iterator to an array of entries
+- `.sort((a, b) => b[1] - a[1])` sorts by comparing values (index `[1]`)
+  - `b[1] - a[1]` gives descending order (largest first)
+  - For ascending, use `a[1] - b[1]`
+
+**Result**:
+```javascript
+// sortedEntries = [['cherry', 8], ['apple', 5], ['date', 3], ['banana', 2]]
+```
+
+You can convert back to a Map if needed: `new Map(sortedEntries)`
+
+<!-- Card End -->
+
 const 

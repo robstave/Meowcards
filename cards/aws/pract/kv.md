@@ -20,7 +20,7 @@ Where can you store files in AWS? (Choose TWO)
 
 ### Back
 
-Correct answer: A, C
+**Correct Answer**: A, C
 
 <!-- Card End --> 
 <!-- Card Start -->
@@ -35,7 +35,7 @@ Which AWS service can be used to store and reliably deliver messages across dist
 
 ### Back
 
-Correct answer: A
+**Correct Answer**: A
 
 <!-- Card End --> <!-- Card Start -->
 
@@ -49,7 +49,7 @@ Which of the following describes the payment model that AWS makes available for 
 
 ### Back
 
-Correct answer: D
+**Correct Answer**: D
 
 <!-- Card End --> <!-- Card Start -->
 
@@ -63,7 +63,7 @@ A company is migrating its on-premises database to Amazon RDS. What should the c
 
 ### Back
 
-Correct answer: A
+**Correct Answer**: A
 
 <!-- Card End --> <!-- Card Start -->
 
@@ -77,7 +77,7 @@ What is the primary storage service used by Amazon RDS database instances?
 
 ### Back
 
-Correct answer: B
+**Correct Answer**: B
 
 <!-- Card End --> <!-- Card Start -->
 
@@ -91,7 +91,7 @@ A company is developing a new application using a microservices framework. The n
 
 ### Back
 
-Correct answer: B
+**Correct Answer**: B
 
 <!-- Card End --> <!-- Card Start -->
 
@@ -106,7 +106,7 @@ Correct answer: B
 
 ### Back
 
-Correct answer: C, E
+**Correct Answer**: C, E
 
 <!-- Card End --> <!-- Card Start -->
 
@@ -121,7 +121,7 @@ What are the Amazon RDS features that can be used to improve the availability of
 
 ### Back
 
-Correct answer: B, D
+**Correct Answer**: B, D
 
 <!-- Card End --> <!-- Card Start -->
 
@@ -135,7 +135,7 @@ Sarah has deployed an application in the Northern California (us-west-1) region.
 
 ### Back
 
-Correct answer: D
+**Correct Answer**: D
 
 <!-- Card End --> <!-- Card Start -->
 
@@ -149,7 +149,7 @@ An organization runs many systems and uses many AWS products. Which of the follo
 
 ### Back
 
-Correct answer: A
+**Correct Answer**: A
 
 <!-- Card End --> <!-- Card Start -->
 
@@ -163,7 +163,7 @@ Using Amazon EC2 falls under which of the following cloud computing models?
 
 ### Back
 
-Correct answer: B
+**Correct Answer**: B
 
 <!-- Card End --> <!-- Card Start -->
 
@@ -177,7 +177,7 @@ Which of the below is a best-practice when building applications on AWS?
 
 ### Back
 
-Correct answer: D
+**Correct Answer**: D
 
 <!-- Card End --> <!-- Card Start -->
 
@@ -191,7 +191,7 @@ Your company is designing a new application that will store and retrieve photos 
 
 ### Back
 
-Correct answer: D
+**Correct Answer**: D
 
 <!-- Card End --> <!-- Card Start -->
 
@@ -206,7 +206,7 @@ Amazon Glacier is an Amazon S3 storage class that is suitable for storing [...] 
 
 ### Back
 
-Correct answer: A, C
+**Correct Answer**: A, C
 
 <!-- Card End --> <!-- Card Start -->
 
@@ -226,7 +226,7 @@ Correct answer: A
 
 ### Front
 
-\What is the AWS service that performs automated network assessments of Amazon EC2 instances to check for vulnerabilities?  
+What is the AWS service that performs automated network assessments of Amazon EC2 instances to check for vulnerabilities?  
     A. Amazon Kinesis.  
     B. Security groups.  
     C. Amazon Inspector.  
@@ -234,7 +234,7 @@ Correct answer: A
 
 ### Back
 
-Correct answer: C
+**Correct Answer**: C
 
 <!-- Card End --> <!-- Card Start -->
 
@@ -792,12 +792,12 @@ An AWS customer has used one Amazon Linux instance for 2 hours, 5 minutes and 9 
 
 ### Back
 
-Correct answer: C
+**Correct Answer**: B
 
 Explanation:
 
-- Pricing is per instance-hour consumed for each instance, from launch until termination or stop.
-- Each partial instance-hour is billed per-second (for supported Linux and certain Windows types), so the Linux instance is billed exactly for 2 hours, 5 minutes, and 9 seconds, while the CentOS instance (if it follows the same per-second model) is billed similarly; the answer indicates that CentOS usage rounds up to 5 hours as per the given options.
+- EC2 instances running Linux distributions (including CentOS) are billed per‑second with a 60‑second minimum.
+- Both instances are Linux, so each is billed exactly for its usage: 2:05:09 and 4:23:07, respectively.
 
 <!-- Card End --> <!-- Card Start -->
 
@@ -1370,13 +1370,12 @@ A company wants to grant a new employee long-term access to manage Amazon Dynamo
 
 ### Back
 
-Correct answer: C
+**Correct Answer**: C
 
 Explanation:
 
-- Best practices recommend creating a dedicated IAM user with only the permissions necessary (in this case, for DynamoDB), rather than granting full administrative privileges.
-ya  it seems odd..but digging around...since is a long term user.  its c
-creating the role and assigning to a user is better if its a temp thing
+- For long‑term human access, create an IAM user and grant only the least privileges needed (DynamoDB in this case).
+- Use an IAM role for temporary or application access instead of long‑term keys.
 
 <!-- Card End --> <!-- Card Start -->
 
@@ -1727,40 +1726,12 @@ Which is the MINIMUM AWS Support plan that allows for one-hour target response t
 
 ### Back
 
-**Correct answer: B** 
+**Correct Answer**: B
 
-**Correct Answer: B. Business**
+Explanation:
 
-The **Business Support Plan** is the **minimum plan** that provides **1-hour target response time** for **urgent support cases** (e.g., production system down). It also includes 24/7 support via phone, chat, and email.
-
----
-
-**C. Developer Plan**
-
-- **Does allow tickets** but only provides **email support** during **business hours** (not 24/7).
-- **Response time:**
-    - General guidance: **24 hours**
-    - System impairment: **12 hours**
-- **No 1-hour response time option.**
-
----
-
-**D. Basic Plan**
-
-- **Does not allow tickets.**
-- Only includes **documentation**, **forums**, and access to the **AWS Health Dashboard**.
-- No direct access to AWS Support engineers.
-
-Quick Comparison:
-
-|Plan|Support Tickets|Target Response Time|
-|---|---|---|
-|**Basic**|❌ No|N/A|
-|**Developer**|✔ Yes|12–24 hours (no 1-hour option)|
-|**Business**|✔ Yes|1 hour for urgent cases|
-|**Enterprise**|✔ Yes|15 minutes for critical cases (faster)|
-
-So, **C and D do not provide 1-hour response times**, and **D doesn’t even allow tickets**, making **B. Business** the minimum plan for this feature.
+- Business Support is the minimum plan with a 1‑hour response target for urgent issues (24/7 by phone, chat, and email).
+- Developer offers slower email-only response; Basic has no technical support; Enterprise is faster (15‑minute target for critical issues).
 
 <!-- Card End -->
 
@@ -1776,24 +1747,12 @@ What is the lowest-cost, durable storage option for retaining database backups f
 
 ### Back
 
-Correct answer: A 
+**Correct Answer**: A
 
-**Why not B. Amazon Glacier?**
+Explanation:
 
-Amazon S3 Glacier (and **Glacier Deep Archive**) is designed for **long-term archival storage** at **very low cost**, but **retrieval times vary** based on the retrieval option selected:
-
-1. **Expedited Retrieval**
-    
-    - **Time**: **1–5 minutes**
-    - **Cost**: Higher than standard retrieval.
-2. **Standard Retrieval**
-    
-    - **Time**: **3–5 hours**
-    - **Cost**: Lower than expedited but slower.
-3. **Bulk Retrieval**
-
-    - **Time**: **5–12 hours**
-    - **Cost**: Lowest but slowest.
+- S3 provides durable object storage with immediate retrieval, ideal for backups you may need quickly.
+- S3 Glacier classes are for archival with minutes‑to‑hours retrieval, not “immediate” access.
 <!-- Card End -->
 
 <!-- Card Start -->
@@ -2262,25 +2221,12 @@ What can assist in evaluating an application for migration to the cloud? (Select
 
 ### Back
 
-Correct answer: **B, D**
+**Correct Answer**: B, D
 
- Explanation
+Explanation:
 
-AWS Professional Services (B)
-
-AWS Professional Services can assist in evaluating applications for cloud migration[4](https://www.cloudduggu.com/aws/Cloud-Practitioner/Question-Answer-Set-7/). They provide guidance and expertise in setting up AWS environments, such as creating an AWS Landing Zone in a company's AWS account. This service offers specialized knowledge to help organizations assess their applications and plan their migration strategies effectively.
-
-AWS Partner Network (APN) (D)
-
-The AWS Partner Network (APN) is a global community of partners that can assist with cloud migration[4](https://www.cloudduggu.com/aws/Cloud-Practitioner/Question-Answer-Set-7/)[7](https://aws.amazon.com/partners/vmware/). APN partners have demonstrated technical proficiency and proven success in helping customers migrate and modernize their workloads to AWS. They offer specialized expertise, tools, and best practices to streamline the migration process and simplify the journey to the cloud.
-
-Why the other options are incorrect:
-
-1. AWS Trusted Advisor (A): While it provides recommendations for optimizing AWS environments, it's not specifically designed for evaluating applications for migration[2](https://aws.amazon.com/premiumsupport/technology/trusted-advisor/).
-2. AWS Systems Manager (C): This service is primarily for managing and automating operational tasks on AWS resources, not for migration evaluation.
-3. AWS Secrets Manager (E): This service is for managing secrets and credentials, not for migration assessment.
-
-It's worth noting that while AWS offers tools like the AWS Migration Evaluator[5](https://aws.amazon.com/migration-evaluator/?pg=htm&cp=tb&sec=s)and the AWS Cloud Adoption Readiness Tool (CART)[9](https://expertinsights.com/insights/the-top-cloud-migration-assessment-tools/)for migration assessment, these were not among the given options in the question.
+- AWS Professional Services and APN Consulting Partners help assess, plan, and execute migrations.
+- Trusted Advisor and Systems Manager are valuable, but not focused on migration evaluation.
 
 <!-- Card End -->
 <!-- Card Start -->
@@ -2634,17 +2580,11 @@ What can users access from AWS Artifact?
 
 ### Back
 
-Correct answer: **A**
+**Correct Answer**: A
 
-AWS Artifact is a self-service portal that provides on-demand access to AWS security and compliance documents[
-These documents include:
+Explanation:
 
-1. Compliance reports such as SOC (Service Organization Control) reports, PCI DSS (Payment Card Industry Data Security Standard) reports, and ISO certifications
-2. Security and compliance documentation that outlines AWS's security posture, including whitepapers and best practice guides
-3. Agreements and compliance frameworks, such as the AWS Business Associate Addendum (BAA) for organizations handling Protected Health Information (PHI)[4](https://dev.to/ikoh_sylva/aws-artifact-for-security-compliance-reports-29ak)[7](https://aws.amazon.com/artifact/faq/).
-4. Certifications from accreditation bodies that validate the implementation and operating effectiveness of AWS security controls[5](https://docs.aws.amazon.com/artifact/latest/ug/what-is-aws-artifact.html).
-
-Users can download these documents to demonstrate their own compliance with various regulations and standards, or to submit them to auditors and regulators as evidence of AWS's compliance
+- AWS Artifact provides on‑demand access to AWS security and compliance reports (e.g., SOC, ISO, PCI) and related documentation.
 
 <!-- Card End -->
 
@@ -4166,9 +4106,11 @@ Which task is AWS responsible for in the shared responsibility model for securit
 - D. Updating operating systems
 ### Back
 
-Correct answer: **B**
+**Correct Answer**: C
 
-read these carfully.  Customer configures for encryption at rest
+Explanation:
+
+- AWS secures and maintains the underlying infrastructure (including host firmware and hypervisor); customers handle OS, applications, and data.
 
 
 <!-- Card End --> 
