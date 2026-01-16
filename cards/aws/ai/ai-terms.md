@@ -42,7 +42,8 @@ Key capabilities:
 - Feature versioning and tracking
 - Real-time feature serving
 - Point-in-time feature retrieval
-- Feature sharing across teams
+- Feature sharing across teams  
+**Research Link**: [Amazon SageMaker Feature Store](https://aws.amazon.com/sagemaker/feature-store/)
 
 <!-- Card End -->
 
@@ -60,7 +61,8 @@ Amazon SageMaker JumpStart is a capability that provides pre-built, solution-ori
 - Example notebooks and tutorials
 - Built-in algorithms
 
-**Task Reference**: This service is relevant to Task Statement 2.3 as it facilitates rapid development and deployment of AI solutions.
+**Task Reference**: This service is relevant to Task Statement 2.3 as it facilitates rapid development and deployment of AI solutions.  
+**Research Link**: [Amazon SageMaker JumpStart](https://aws.amazon.com/sagemaker/jumpstart/)
 
 <!-- Card End -->
 
@@ -79,7 +81,8 @@ Amazon SageMaker Model Cards are standardized model documentation templates that
 - Model limitations and biases
 - Deployment considerations
 
-**Task Reference**: This feature is covered in Task Statement 4.2 as a tool for model transparency and documentation.
+**Task Reference**: This feature is covered in Task Statement 4.2 as a tool for model transparency and documentation.  
+**Research Link**: [Amazon SageMaker Model Cards](https://aws.amazon.com/sagemaker/model-cards/)
 
 <!-- Card End -->
 
@@ -191,7 +194,8 @@ AWS Audit Manager helps continuously audit AWS usage to assess risk and complian
 - Creates audit-ready reports
 - Maintains audit trails for model lifecycles
 
-**Task Reference**: This service is referenced in Task Statement 5.2 for governance and compliance monitoring.
+**Task Reference**: This service is referenced in Task Statement 5.2 for governance and compliance monitoring.  
+**Research Link**: [AWS Audit Manager](https://aws.amazon.com/audit-manager/)
 
 <!-- Card End -->
 
@@ -505,7 +509,8 @@ Amazon Rekognition is a computer vision service that enables you to analyze imag
 - Text extraction from images
 - Content moderation
 - Custom labels for specific use cases
-- Real-time video analysis
+- Real-time video analysis  
+**Research Link**: [Amazon Rekognition](https://aws.amazon.com/rekognition/)
 
 **Task Reference**: This service is referenced in Task Statement 1.2 as one of AWS's managed AI services for computer vision applications.
 
@@ -546,7 +551,8 @@ Amazon Comprehend is a natural language processing (NLP) service that uses machi
 - Custom classification
 - PII detection
 
-**Task Reference**: This service is referenced in Task Statement 1.2 under AWS managed AI/ML services, particularly for NLP applications.
+**Task Reference**: This service is referenced in Task Statement 1.2 under AWS managed AI/ML services, particularly for NLP applications.  
+**Research Link**: [Amazon Comprehend](https://aws.amazon.com/comprehend/)
 
 <!-- Card End -->
 
@@ -584,6 +590,7 @@ AWS Inspector is an automated security assessment service that helps improve the
 - Continuous monitoring
 - Risk scoring and prioritization
 
-**Task Reference**: This service is mentioned in Task Statement 5.2 as a tool for governance and regulation compliance in AI systems.
+**Task Reference**: This service is mentioned in Task Statement 5.2 as a tool for governance and regulation compliance in AI systems.  
+**Research Link**: [Amazon Inspector](https://aws.amazon.com/inspector/)
 
 <!-- Card End -->

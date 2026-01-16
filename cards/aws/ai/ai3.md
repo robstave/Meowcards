@@ -20,7 +20,8 @@ Which capabilities of Amazon OpenSearch Service are most relevant for AI/ML work
 - Vector similarity search (k-NN) for efficient similarity-based queries
 - Vector database functionality for storing and querying embeddings
 
-**Task Reference**: This is covered in Task Statement 3.1 regarding services for storing embeddings within vector databases.
+**Task Reference**: This is covered in Task Statement 3.1 regarding services for storing embeddings within vector databases.  
+**Research Link**: [Amazon OpenSearch Service](https://aws.amazon.com/opensearch-service/)
 
 <!-- Card End -->
 
@@ -43,7 +44,8 @@ What is the primary advantage of using Amazon Aurora with pgvector for AI applic
 - Maintain ACID compliance while working with vector data
 - Scale vector operations efficiently
 
-**Task Reference**: Referenced in Task Statement 3.1 as one of the AWS services that help store embeddings within databases.
+**Task Reference**: Referenced in Task Statement 3.1 as one of the AWS services that help store embeddings within databases.  
+**Research Link**: [Aurora PostgreSQL with pgvector](https://aws.amazon.com/about-aws/whats-new/2023/07/amazon-aurora-postgresql-pgvector-vector-similarity-search/)
 
 <!-- Card End -->
 
@@ -67,7 +69,8 @@ Which features make Amazon Kendra most valuable for enterprise search applicatio
 - Integration with enterprise data sources
 - Learning from user interactions and feedback
 
-**Task Reference**: This service is mentioned in Task Statement 1.2 under AWS managed AI services, particularly for intelligent search applications.
+**Task Reference**: This service is mentioned in Task Statement 1.2 under AWS managed AI services, particularly for intelligent search applications.  
+**Research Link**: [Amazon Kendra](https://aws.amazon.com/kendra/)
 
 <!-- Card End -->
 
@@ -90,7 +93,8 @@ Which parameters are commonly used for controlling the output diversity in gener
 - Top-p (nucleus) sampling selects from tokens that sum to probability p
 Both help balance between diversity and quality of generated content.
 
-**Task Reference**: These concepts relate to Task Statement 3.1 regarding inference parameters' effects on model responses.
+**Task Reference**: These concepts relate to Task Statement 3.1 regarding inference parameters' effects on model responses.  
+**Research Link**: [Bedrock Model Parameters](https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters.html)
 
 <!-- Card End -->
 
@@ -138,7 +142,8 @@ What are the primary use cases for storing embeddings in a vector database like 
 - Supporting RAG (Retrieval Augmented Generation)
 - Enabling efficient nearest neighbor search at scale
 
-**Task Reference**: This aligns with Task Statement 3.1 regarding vector database applications and RAG implementations.
+**Task Reference**: This aligns with Task Statement 3.1 regarding vector database applications and RAG implementations.  
+**Research Link**: [What is Semantic Search?](https://aws.amazon.com/what-is/semantic-search/)
 
 <!-- Card End -->
 

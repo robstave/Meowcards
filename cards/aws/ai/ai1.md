@@ -17,6 +17,9 @@ What is the primary difference between AI and ML?
 **Correct Answer**: B  
 Explanation: ML is a subset of AI. The study guide mentions that understanding the similarities and differences between AI, ML, and deep learning is important (Task Statement 1.1).
 
+The main difference is that Artificial Intelligence (AI) is the broad concept of machines mimicking human intelligence, while Machine Learning (ML) is a subset of AI that specifically enables systems to learn from data and improve without explicit programming, acting as a core tool within the larger AI field. Think of AI as the whole universe of smart systems, and ML as one powerful way (using algorithms to find patterns) to build those systems, alongside other AI approaches like expert systems or rule-based logi
+
+
 <!-- Card End -->
 <!-- Card Start -->
 

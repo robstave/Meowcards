@@ -18,7 +18,8 @@ Which AWS services can be used to build a complete chatbot solution? (Choose 2)
 
 **Amazon Polly** converts text to speech but doesn't handle the conversational aspects, 
 **Transcribe** converts speech to text but doesn't understand intent, and 
-**Textract** is for extracting text from documents.
+**Textract** is for extracting text from documents.  
+**Research Link**: [Amazon Lex](https://aws.amazon.com/lex/)
 
 <!-- Card End -->
 
@@ -57,7 +58,8 @@ Which of the following are key considerations when implementing responsible AI? 
 **Correct Answers**: B and C  
 **Explanation**: Responsible AI implementation requires ensuring fairness (option B) by preventing/mitigating bias and discrimination across demographic groups. It also requires transparency and explainability (option C) so stakeholders can understand how models make decisions and trust the systems.
 
- Options A, D, and E focus solely on technical or business considerations without addressing ethical concerns. The AWS Responsible AI approach emphasizes human agency, fairness, governance, privacy, robustness, and transparency.
+ Options A, D, and E focus solely on technical or business considerations without addressing ethical concerns. The AWS Responsible AI approach emphasizes human agency, fairness, governance, privacy, robustness, and transparency.  
+**Research Link**: [AWS Responsible AI](https://aws.amazon.com/machine-learning/responsible-ai/)
 
 <!-- Card End -->
 
@@ -74,7 +76,8 @@ What is the primary purpose of Amazon SageMaker Ground Truth?
 ### Back
 
 **Correct Answer**: B  
-**Explanation**: Amazon SageMaker Ground Truth is a data labeling service that helps create high-quality training datasets by providing tools for human annotators. It includes features like automated data labeling with active learning that reduces labeling costs by up to 70%. Ground Truth supports various labeling types including text classification, image classification, object detection, semantic segmentation, and can use private workforces, Amazon Mechanical Turk, or AWS Marketplace vendor workforces to complete labeling tasks.
+**Explanation**: Amazon SageMaker Ground Truth is a data labeling service that helps create high-quality training datasets by providing tools for human annotators. It includes features like automated data labeling with active learning that reduces labeling costs by up to 70%. Ground Truth supports various labeling types including text classification, image classification, object detection, semantic segmentation, and can use private workforces, Amazon Mechanical Turk, or AWS Marketplace vendor workforces to complete labeling tasks.  
+**Research Link**: [Amazon SageMaker Ground Truth](https://aws.amazon.com/sagemaker/groundtruth/)
 
 <!-- Card End -->
 
@@ -94,7 +97,8 @@ Which Amazon Bedrock features help ensure responsible AI deployment? (Choose 2)
 **Correct Answers**: A and D  
 **Explanation**: Amazon Bedrock Guardrails (A) allow you to implement content filtering policies that block harmful content in both inputs and outputs, enforce topics to avoid, and protect personally identifiable information (PII). Model evaluation (D) helps you assess foundation models based on key metrics and custom evaluation criteria to ensure they meet quality, safety, and fairness standards before deployment. 
 
-Model customization (B) adapts models to specific use cases, Agents (C) orchestrate tasks, and Knowledge bases (E) connect external information, but these don't specifically target responsible AI practices.
+Model customization (B) adapts models to specific use cases, Agents (C) orchestrate tasks, and Knowledge bases (E) connect external information, but these don't specifically target responsible AI practices.  
+**Research Link**: [Amazon Bedrock Guardrails](https://aws.amazon.com/bedrock/guardrails/)
 
 <!-- Card End -->
 
@@ -188,7 +192,8 @@ What is the primary benefit of using Amazon SageMaker Model Registry?
 ### Back
 
 **Correct Answer**: B  
-**Explanation**: Amazon SageMaker Model Registry provides a centralized repository for model catalog management with versioning, lineage tracking, and approval workflows. It maintains metadata like training metrics, datasets used, hyperparameters, and approval status for each model version. Model Registry integrates with CI/CD pipelines and enables organizations to implement governance processes with model approval workflows. It also facilitates model deployment by allowing you to select specific approved versions for deployment to production, supporting regulatory compliance and model governance requirements by maintaining comprehensive audit trails.
+**Explanation**: Amazon SageMaker Model Registry provides a centralized repository for model catalog management with versioning, lineage tracking, and approval workflows. It maintains metadata like training metrics, datasets used, hyperparameters, and approval status for each model version. Model Registry integrates with CI/CD pipelines and enables organizations to implement governance processes with model approval workflows. It also facilitates model deployment by allowing you to select specific approved versions for deployment to production, supporting regulatory compliance and model governance requirements by maintaining comprehensive audit trails.  
+**Research Link**: [Amazon SageMaker Model Registry](https://aws.amazon.com/sagemaker/model-registry/)
 
 <!-- Card End -->
 
@@ -305,7 +310,8 @@ What is the purpose of Amazon SageMaker Pipelines?
 ### Back
 
 **Correct Answer**: B  
-**Explanation**: SageMaker Pipelines enables you to create, automate, and manage end-to-end ML workflows, including data preparation, training, evaluation, and deployment steps.
+**Explanation**: SageMaker Pipelines enables you to create, automate, and manage end-to-end ML workflows, including data preparation, training, evaluation, and deployment steps.  
+**Research Link**: [Amazon SageMaker Pipelines](https://aws.amazon.com/sagemaker/pipelines/)
 
 <!-- Card End -->
 
@@ -452,7 +458,8 @@ What is the primary purpose of Amazon SageMaker Autopilot?
 ### Back
 
 **Correct Answer**: B  
-**Explanation**: Amazon SageMaker Autopilot automates the machine learning process by analyzing your data, selecting appropriate algorithms, performing hyperparameter optimization, feature engineering, and model tuning. It supports classification and regression tasks, and creates up to 50 different pipeline candidates to identify the best model. Autopilot provides full transparency by generating Python notebooks with the code used to create models, enabling you to understand, customize, and reproduce the process. It can be used with minimal ML expertise through the Studio interface or programmatically via APIs, making ML accessible to developers without specialized ML knowledge while still providing control to experts.
+**Explanation**: Amazon SageMaker Autopilot automates the machine learning process by analyzing your data, selecting appropriate algorithms, performing hyperparameter optimization, feature engineering, and model tuning. It supports classification and regression tasks, and creates up to 50 different pipeline candidates to identify the best model. Autopilot provides full transparency by generating Python notebooks with the code used to create models, enabling you to understand, customize, and reproduce the process. It can be used with minimal ML expertise through the Studio interface or programmatically via APIs, making ML accessible to developers without specialized ML knowledge while still providing control to experts.  
+**Research Link**: [Amazon SageMaker Autopilot](https://aws.amazon.com/sagemaker/autopilot/)
 
 <!-- Card End -->
 
@@ -679,6 +686,7 @@ What is the primary purpose of Amazon Q for Business?
 ### Back
 
 **Correct Answer**: B  
-**Explanation**: Amazon Q for Business is an enterprise-grade, generative AI-powered assistant specifically designed for business use. It integrates with enterprise systems, applications, and data repositories to provide contextual assistance to employees. Key capabilities include: answering questions about company data and policies, generating content like emails and documents based on internal knowledge, providing summaries of documents and meetings, troubleshooting issues and offering solutions, assisting with software development tasks, all while respecting company security policies and access controls. Unlike general AI assistants, Q for Business is specifically trained on your organization's internal information and maintains privacy and security requirements, making it different from both standard ML training tools (A) and basic data storage (C) or monitoring (D) solutions.
+**Explanation**: Amazon Q for Business is an enterprise-grade, generative AI-powered assistant specifically designed for business use. It integrates with enterprise systems, applications, and data repositories to provide contextual assistance to employees. Key capabilities include: answering questions about company data and policies, generating content like emails and documents based on internal knowledge, providing summaries of documents and meetings, troubleshooting issues and offering solutions, assisting with software development tasks, all while respecting company security policies and access controls. Unlike general AI assistants, Q for Business is specifically trained on your organization's internal information and maintains privacy and security requirements, making it different from both standard ML training tools (A) and basic data storage (C) or monitoring (D) solutions.  
+**Research Link**: [Amazon Q for Business](https://aws.amazon.com/q/business/)
 
 <!-- Card End -->

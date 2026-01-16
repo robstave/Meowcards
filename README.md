@@ -10,9 +10,9 @@ The cards are written in Markdown format and were generated with assistance from
 
 ## Topics
 
-### AWS
-- [AI and Machine Learning](cards/aws/ai/) - AWS AI and ML service flashcards
-- More AWS topics coming soon!
+### AWS Certifications
+- [AWS Certified AI Practitioner (AIF-C01)](cards/aws/ai/) - AI/ML fundamentals, generative AI, and responsible AI
+- [AWS Certified Cloud Practitioner (CLF-C02)](cards/aws/pract/) - AWS Cloud fundamentals and core services
 
 ### CAP Theory and Databases
 - [CAP Theory Basics](cards/cap/cap1.md) - Understanding CAP theorem and its implications in distributed systems

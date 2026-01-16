@@ -75,10 +75,15 @@ Which AWS service provides fully managed message queuing?
 Back example:
 ```
 ### Back
-**Correct Answer**: B
+**Correct Answer**: C
 
 **Explanation**: Amazon SQS provides fully managed message queues. SNS is pub/sub notifications, Lambda is compute, Kinesis handles streaming data.
 ```
+
+
+- Be sure to make the correct answer random.  Do not always make the correct answer B.
+
+- Some cards will have multiple correct answers. Generally there are 5 possible answers, and 2 of them are correct.  In those cases, make sure to include all correct answers in the Back section.  Follow conventions you find in AWS questions for this.
 
 ## 9. Code Blocks
 - Always specify language for syntax highlighting.

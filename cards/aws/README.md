@@ -1,31 +1,25 @@
 # AWS Flashcards
 
-This directory contains flashcards for learning various AWS services and concepts.
+This directory contains flashcards for AWS certification preparation.
 
-## Card Sets
+## Certification Types
 
-### AI and Machine Learning
-- AI service flashcards covering Amazon's ML offerings
+### 🤖 [AWS Certified AI Practitioner (AIF-C01)](./ai/)
+Flashcards covering AI/ML fundamentals, generative AI, foundation models, responsible AI, and AWS AI services.
 
-## Topics Covered
+**Useful Links:**
+- [Official Exam Guide](https://aws.amazon.com/certification/certified-ai-practitioner/)
+- [AWS Skill Builder - AI Practitioner Prep](https://explore.skillbuilder.aws/learn/course/19554)
+- [AWS AI Services Overview](https://aws.amazon.com/machine-learning/)
 
-- Amazon SageMaker
-- Amazon Comprehend
-- Amazon Rekognition
-- Amazon Polly
-- Amazon Lex
-- AWS Lambda for ML
-- Amazon Textract
-- Best practices for AI/ML on AWS
+### ☁️ [AWS Certified Cloud Practitioner (CLF-C02)](./pract/)
+Flashcards covering AWS Cloud fundamentals, core services, security, pricing, and architecture.
 
-## Future Additions
-- EC2 and Computing Services
-- Storage Solutions
-- Networking
-- Security
-- Database Services
-- Serverless Architecture
+**Useful Links:**
+- [Official Exam Guide](https://aws.amazon.com/certification/certified-cloud-practitioner/)
+- [AWS Skill Builder - Cloud Practitioner Prep](https://explore.skillbuilder.aws/learn/course/134)
+- [AWS Cloud Essentials](https://aws.amazon.com/getting-started/cloud-essentials/)
 
 ## Usage
 
-Import these cards into the Meowmorize app to study AWS services and concepts.
+Import these cards into the [Meowmorize](https://github.com/robstave/meowmorize) app to study for your AWS certification.
