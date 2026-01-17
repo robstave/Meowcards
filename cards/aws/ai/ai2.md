@@ -5,6 +5,7 @@
 ### Front
 
 Which AWS services can be used to build a complete chatbot solution? (Choose 2)
+
 - A. Amazon Lex
 - B. Amazon Polly
 - C. Amazon Transcribe
@@ -19,7 +20,8 @@ Which AWS services can be used to build a complete chatbot solution? (Choose 2)
 **Amazon Polly** converts text to speech but doesn't handle the conversational aspects, 
 **Transcribe** converts speech to text but doesn't understand intent, and 
 **Textract** is for extracting text from documents.  
-**Research Link**: [Amazon Lex](https://aws.amazon.com/lex/)
+**Research Links**: [Amazon Lex](https://aws.amazon.com/lex/) | [Amazon Kendra](https://aws.amazon.com/kendra/)
+
 
 <!-- Card End -->
 
@@ -28,6 +30,7 @@ Which AWS services can be used to build a complete chatbot solution? (Choose 2)
 ### Front
 
 What is the primary difference between Amazon SageMaker and Amazon Bedrock?
+
 - A. SageMaker is only for traditional ML, Bedrock is only for generative AI
 - B. SageMaker is a comprehensive ML platform for custom models, Bedrock provides managed access to foundation models
 - C. SageMaker is cheaper than Bedrock for all use cases
@@ -47,6 +50,7 @@ What is the primary difference between Amazon SageMaker and Amazon Bedrock?
 ### Front
 
 Which of the following are key considerations when implementing responsible AI? (Choose 2)
+
 - A. Maximizing model accuracy at all costs
 - B. Ensuring fairness across different demographic groups
 - C. Implementing transparency and explainability
@@ -107,6 +111,7 @@ Model customization (B) adapts models to specific use cases, Agents (C) orchestr
 ### Front
 
 What is the difference between fine-tuning and prompt engineering in generative AI?
+
 - A. Fine-tuning is cheaper than prompt engineering
 - B. Fine-tuning modifies model weights, prompt engineering modifies inputs
 - C. Fine-tuning is faster than prompt engineering
@@ -119,16 +124,13 @@ What is the difference between fine-tuning and prompt engineering in generative 
 
 <!-- Card End -->
 
-#fix
-this seems kinda weird.  I mean, you can run 
-what you want on EC2...can you refine this 
-to be a bit more in task
 
 <!-- Card Start -->
 
 ### Front
 
 Which AWS services are commonly used for real-time ML inference? (Choose 2)  
+
 - A. Amazon SageMaker Real-time Endpoints  
 - B. Amazon S3  
 - C. AWS Lambda  
@@ -138,7 +140,13 @@ Which AWS services are commonly used for real-time ML inference? (Choose 2)
 ### Back
 
 **Correct Answers**: A and C  
-**Explanation**: Amazon SageMaker Real-time Endpoints (A) are designed specifically for real-time ML inference, offering features like automatic scaling, model monitoring, and support for specialized hardware such as GPUs and Inferentia chips. AWS Lambda (C) provides a serverless option for lightweight inference tasks, enabling low-latency responses and pay-per-invocation pricing. While Amazon EC2 (E) can be configured for inference, it requires manual setup and lacks the built-in optimizations and scalability of SageMaker Endpoints or Lambda. Amazon S3 (B) is a storage service, and CloudWatch (D) is used for monitoring, neither of which are designed for inference tasks.
+**Explanation**: Amazon SageMaker Real-time Endpoints (A) are designed specifically for real-time ML inference, offering features like automatic scaling, model monitoring, and support for specialized hardware such as GPUs and Inferentia chips. 
+
+AWS Lambda (C) provides a serverless option for lightweight inference tasks, enabling low-latency responses and pay-per-invocation pricing. 
+
+While Amazon EC2 (E) can be configured for inference, it requires manual setup and lacks the built-in optimizations and scalability of SageMaker Endpoints or Lambda. 
+
+Amazon S3 (B) is a storage service, and CloudWatch (D) is used for monitoring, neither of which are designed for inference tasks.
 <!-- Card End -->
 
 <!-- Card Start -->
