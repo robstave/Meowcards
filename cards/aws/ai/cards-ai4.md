@@ -6,13 +6,13 @@
 
 What is Amazon Bedrock primarily used for?
 - A. Hosting web applications
-- B. Building generative AI applications using foundation models
-- C. Managing database backups
-- D. Monitoring network traffic
+- B. Managing database backups
+- C. Monitoring network traffic
+- D. Building generative AI applications using foundation models
 
 ### Back
 
-**Correct Answer**: B  
+**Correct Answer**: D  
 Explanation: Amazon Bedrock is a fully managed service that provides access to foundation models from leading AI companies for building generative AI applications. It's referenced in Task Statement 2.3.  
 **Research Link**: [Amazon Bedrock](https://aws.amazon.com/bedrock/)
 
@@ -41,14 +41,15 @@ Explanation: Amazon Augmented AI (A2I) makes it easy to build workflows for huma
 ### Front
 
 What is the primary purpose of Amazon SageMaker Clarify?
-- A. Text-to-speech conversion
-- B. Detecting bias and explaining model predictions
+
+- A. Detecting bias and explaining model predictions
+- B. Text-to-speech conversion
 - C. Image classification
 - D. Language translation
 
 ### Back
 
-**Correct Answer**: B  
+**Correct Answer**: A
 Explanation: Amazon SageMaker Clarify helps detect bias in ML models and explain predictions using techniques like SHAP (SHapley Additive exPlanations) and LIME (Local Interpretable Model-agnostic Explanations).
 
 **Task Reference**: Referenced in Task Statement 4.1 for monitoring bias, trustworthiness, and truthfulness.  
@@ -389,5 +390,64 @@ Explanation: ROUGE (Recall-Oriented Understudy for Gisting Evaluation) measures 
 
 **Task Reference**: Listed in Task Statement 3.4 as a metric for evaluating foundation model performance.  
 **Research Link**: [Model Evaluation in Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluation.html)
+
+<!-- Card End -->
+
+<!-- Card Start -->
+
+### Front
+
+Which evaluation metric is BEST suited for measuring the quality of a machine translation system?
+- A. BERT Score
+- B. ROUGE Score
+- C. BLEU Score
+- D. F1 Score
+
+### Back
+
+**Correct Answer**: C  
+Explanation: BLEU (Bilingual Evaluation Understudy) is specifically designed for evaluating machine translation by measuring n-gram overlap between the generated translation and reference translations. ROUGE is better for summarization, while BERT Score evaluates semantic similarity more broadly.
+
+**Task Reference**: Listed in Task Statement 3.4 as a metric for evaluating foundation model performance in translation tasks.
+
+<!-- Card End -->
+
+<!-- Card Start -->
+
+### Front
+
+You need to evaluate whether a generated summary captures the key information from a source document. Which metric should you use?
+- A. BLEU Score
+- B. ROUGE Score
+- C. BERT embeddings
+- D. Perplexity
+
+### Back
+
+**Correct Answer**: B  
+Explanation: ROUGE (Recall-Oriented Understudy for Gisting Evaluation) is specifically designed for summarization evaluation by measuring recall-based overlap between generated and reference summaries. BLEU focuses on precision and is better for translation, while BERT provides embeddings rather than a direct evaluation metric.
+
+**Task Reference**: Listed in Task Statement 3.4 as a metric for evaluating foundation model performance in summarization tasks.
+
+<!-- Card End -->
+
+<!-- Card Start -->
+
+### Front
+
+Which approach would BEST evaluate the semantic similarity between two sentences, even if they use different words?
+- A. BLEU Score
+- B. ROUGE Score
+- C. BERT Score
+- D. Exact string matching
+
+### Back
+
+**Correct Answer**: C  
+Explanation: BERT Score uses contextual embeddings from pre-trained BERT models to evaluate semantic similarity, capturing meaning even when different words are used. BLEU and ROUGE rely on n-gram overlap and cannot detect paraphrases or semantic equivalence with different vocabulary.
+
+**Example**: "The cat sat on the mat" and "A feline rested on the rug" would score poorly with BLEU/ROUGE but highly with BERT Score.
+
+**Task Reference**: Listed in Task Statement 3.4 as a metric for evaluating foundation model performance.
 
 <!-- Card End -->

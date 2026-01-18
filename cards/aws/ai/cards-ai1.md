@@ -107,14 +107,25 @@ Explanation: Customer acquisition is not a typical stage in an ML pipeline. The 
 
 What does AUC stand for in the context of model performance metrics?  
 - A. Average User Cost  
-- B. Area Under the Curve  
-- C. Automated Universal Calculation  
+- B. Automated Universal Calculation 
+- C. Area Under the Curve  
 - D. Augmented Use Case
 
 ### Back
 
-**Correct Answer**: B  
+**Correct Answer**: C  
 Explanation: AUC stands for Area Under the Curve (specifically, the ROC curve). The study guide mentions AUC as one of the model performance metrics (Task Statement 1.3).
+
+
+AUC (Area Under the Curve) is a performance metric that measures the area under the ROC (Receiver Operating Characteristic) curve. It indicates how well a model can distinguish between classes, with values ranging from 0 to 1, where:
+- 1.0 represents perfect classification
+- 0.5 represents random chance
+- < 0.5 represents worse than random
+
+basically you are maximizing the area under the curve.  if its a flat line at 0.5, you are doing no better than random guessing.
+
+![OpenAI Generated Image](https://images.openai.com/thumbnails/url/IS6BgXicu5mVUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw7KMtY1K4-Pd_GszHeLCPdKNs_2qkpyCXdyLdMtrPAvjjcs9jMsKnJLqgr1jjBPNAoNVisGAH2XJk8)
+
 
 <!-- Card End -->
 <!-- Card Start -->
@@ -994,15 +1005,18 @@ Explanation: Instruction tuning aims to teach the model to follow specific instr
 ### Front
 
 What is BERTScore used for in evaluating foundation models?  
-- A. Measuring the model’s energy efficiency  
-- B. Evaluating the quality of generated text  
-- C. Calculating the model’s processing speed  
-- D. Determining the model’s market value
+- A. Measuring the model’s energy efficiency   
+- B. Calculating the model’s processing speed  
+- C. Determining the model’s market value
+- D Evaluating the quality of generated text 
 
 ### Back
 
-**Correct Answer**: B  
-Explanation: BERTScore is used for evaluating the quality of generated text, as mentioned in Task Statement 3.4.
+**Correct Answer**: D  
+Explanation: BERTScore is used for evaluating the quality of generated text, as mentioned 
+in Task Statement 3.4.
+
+WITH BERT, your talking NLP model, you can evaluate the quality of generated text by comparing it to reference texts using contextual embeddings. BERTScore calculates similarity scores based on these embeddings, providing a more nuanced evaluation than traditional metrics like BLEU or ROUGE.
 
 <!-- Card End -->
 <!-- Card Start -->
@@ -1481,13 +1495,13 @@ Explanation: The system’s impact on different demographic groups is key when e
 
 What is underfitting in the context of AI models?  
 - A. When a model is too small to fit in memory  
-- B. When a model performs poorly on both training and new data  
-- C. When a model generates outputs that are too short  
-- D. When a model consumes too little energy
+- B a model generates outputs that are too short  
+- C. When a model consumes too little energy
+- D. When a model performs poorly on both training and new data 
 
 ### Back
 
-**Correct Answer**: B  
+**Correct Answer**: D  
 Explanation: Underfitting refers to when a model performs poorly on both training and new data, as implied in Task Statement 4.1 under effects of bias and variance.
 
 <!-- Card End -->

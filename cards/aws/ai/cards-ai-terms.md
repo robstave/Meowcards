@@ -10,9 +10,69 @@ What is model overfitting?
 
 Model overfitting occurs when a machine learning model learns the training data too well, including its noise and random fluctuations, resulting in poor generalization to new data. An overfit model performs exceptionally well on training data but poorly on validation or test data.
 
+AWS-flavored intuition
+
+The model memorized CloudWatch logs instead of learning system behavior.
+
 **Task Reference**: This concept is covered in Task Statement 4.1 under effects of bias and variance in responsible AI implementation.
 
 <!-- Card End -->
+
+<!-- Card Start -->
+
+### Front
+
+What is model underfitting?
+
+### Back
+
+Model underfitting occurs when a machine learning model is too simple to capture the underlying patterns and relationships in the training data, resulting in poor performance on both training and test data. An underfit model fails to learn the essential structure of the data.
+
+**Characteristics**:
+- High training error
+- High validation/test error
+- Model is too simple for the data complexity
+- Insufficient training time or features
+
+**Solutions**:
+- Increase model complexity
+- Add more features
+- Train longer
+- Reduce regularization
+
+
+AWS-flavored intuition
+
+You picked the cheapest tool for the job, but it can’t do the job at all.
+
+
+**Task Reference**: This concept is covered in Task Statement 4.1 under effects of bias and variance in responsible AI implementation.
+
+<!-- Card End -->
+
+<!-- Card Start -->
+
+### Front
+
+How do bias and variance relate to underfitting and overfitting?
+
+### Back
+
+**High bias → underfitting**
+
+**High variance → overfitting**
+
+The goal is to balance bias and variance to generalize well.
+
+**Explanation**:
+- **Bias** refers to errors from overly simplistic assumptions in the learning algorithm. High bias causes the model to miss relevant patterns (underfitting).
+- **Variance** refers to errors from sensitivity to small fluctuations in the training set. High variance causes the model to model the noise in the data (overfitting).
+
+**Task Reference**: This concept is covered in Task Statement 4.1 under effects of bias and variance in responsible AI implementation.
+
+<!-- Card End -->
+
+
 
 <!-- Card Start -->
 
@@ -123,7 +183,102 @@ AUC (Area Under the Curve) is a performance metric that measures the area under 
 - 0.5 represents random chance
 - < 0.5 represents worse than random
 
+basically you are maximizing the area under the curve.  if its a flat line at 0.5, you are doing no better than random guessing.
+
+![OpenAI Generated Image](https://images.openai.com/thumbnails/url/IS6BgXicu5mVUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw7KMtY1K4-Pd_GszHeLCPdKNs_2qkpyCXdyLdMtrPAvjjcs9jMsKnJLqgr1jjBPNAoNVisGAH2XJk8)
+
+Exam trap
+
+High accuracy but low AUC
+This often means:
+
+Data imbalance
+
+Model predicting the majority class
+
+AWS takeaway:
+
+AUC evaluates ranking quality, not just correctness.
+
+
+
+
 **Task Reference**: This metric is mentioned in Task Statement 1.3 as one of the key model performance metrics.
+
+<!-- Card End -->
+
+<!-- Card Start -->
+
+### Front
+
+What does an AUC-ROC curve represent in machine learning?
+
+### Back
+
+The **AUC-ROC curve** (Area Under the Receiver Operating Characteristic Curve) is a performance measurement for classification problems at various threshold settings. It plots the **True Positive Rate (TPR)** against the **False Positive Rate (FPR)** at different threshold values.
+
+**Key Points**:
+- **True Positive Rate (TPR)**: Sensitivity or recall, measures the proportion of actual positives correctly identified.
+- **False Positive Rate (FPR)**: Measures the proportion of actual negatives incorrectly identified as positive.
+- **AUC (Area Under Curve)**: Represents the degree of separability. A higher AUC indicates a better model at distinguishing between positive and negative classes.
+
+**How it is created**:
+1. The model outputs probabilities for each data point belonging to the positive class.
+2. These probabilities are sorted, and thresholds are applied to classify data points as positive or negative.
+3. For each threshold, the TPR and FPR are calculated and plotted on the graph.
+4. The curve is formed by connecting these points, and the area under this curve is computed to evaluate the model's ranking quality.
+
+**Why it evaluates ranking quality**:
+- The AUC-ROC curve measures how well the model ranks positive instances higher than negative ones.
+- A perfect model will have an AUC of 1, meaning it ranks all positive instances above all negative ones.
+- A random model will have an AUC of 0.5, indicating no ability to distinguish between classes.
+
+![AUC-ROC Curve](https://media.geeksforgeeks.org/wp-content/uploads/20230410164437/AUC-ROC-Curve.webp)
+
+**Task Reference**: This concept is covered in Task Statement 4.3 under model evaluation metrics.
+
+<!-- Card End -->
+
+<!-- Card Start -->
+
+### Front
+
+A fraud detection model has 99% accuracy but an AUC of 0.55. What does this indicate?
+
+### Back
+
+The dataset is likely imbalanced, and the model is predicting the majority class well but is poor at distinguishing fraud cases.
+
+**Explanation**:
+- **99% accuracy** suggests the model is correct most of the time, but in fraud detection, legitimate transactions typically make up 99%+ of the data
+- **AUC of 0.55** (close to 0.5 random guessing) indicates the model has almost no ability to rank fraudulent transactions higher than legitimate ones
+- The model is likely just predicting "not fraud" for everything, achieving high accuracy by default
+
+**Key insight**: With imbalanced datasets, accuracy is misleading. AUC, precision, recall, and F1 score are much better metrics.
+
+**Task Reference**: This concept is covered in Task Statement 4.3 under model evaluation metrics and understanding appropriate metrics for different scenarios.
+
+<!-- Card End -->
+
+<!-- Card Start -->
+
+### Front
+
+Which metric is most appropriate for evaluating a binary classifier across multiple thresholds?
+
+### Back
+
+AUC (Area Under the ROC Curve), because it measures ranking quality independent of classification threshold.
+
+**Key advantages**:
+- **Threshold-independent**: Evaluates performance across all possible thresholds simultaneously
+- **Ranking quality**: Measures how well the model ranks positive instances above negative ones
+- **Robust to imbalance**: Unlike accuracy, AUC accounts for class imbalance
+- **Single summary metric**: Provides one value (0 to 1) representing overall classifier performance
+
+**Comparison**: Metrics like accuracy, precision, and recall depend on a specific threshold, making them less suitable for comparing classifiers when the optimal threshold is unknown.
+
+**Task Reference**: This concept is covered in Task Statement 4.3 under model evaluation metrics.
 
 <!-- Card End -->
 
@@ -538,6 +693,28 @@ ROUGE (Recall-Oriented Understudy for Gisting Evaluation) is a set of metrics us
 
 ### Front
 
+A text summarization model has a low ROUGE score but users find the summaries helpful. Why?
+
+### Back
+
+ROUGE measures n-gram overlap, not semantic meaning or usefulness. Valid summaries can score poorly if worded differently.
+
+**Key insights**:
+- **ROUGE limitation**: Only counts exact word/phrase matches between generated and reference summaries
+- **Semantic equivalence ignored**: "The company profits increased" vs "The firm saw revenue growth" = low ROUGE, same meaning
+- **User value differs**: Clarity, brevity, and relevance matter more than matching reference text
+- **Paraphrasing penalty**: Better vocabulary or alternative phrasing reduces ROUGE scores
+
+**Implication**: Always complement automated metrics with human evaluation to capture actual quality and usefulness.
+
+**Task Reference**: This relates to Task Statement 3.4 (model evaluation metrics) and Task Statement 4.1 (understanding limitations of metrics in responsible AI).
+
+<!-- Card End -->
+
+<!-- Card Start -->
+
+### Front
+
 What is Amazon Comprehend?
 
 ### Back
@@ -594,3 +771,103 @@ AWS Inspector is an automated security assessment service that helps improve the
 **Research Link**: [Amazon Inspector](https://aws.amazon.com/inspector/)
 
 <!-- Card End -->
+
+<!-- Card Start -->
+
+### Front
+
+What makes BERT different from earlier NLP models?
+
+### Back
+
+BERT uses a transformer architecture with bidirectional self-attention, allowing it to understand context from both left and right simultaneously.
+
+**Key differences**:
+- **Bidirectional**: Unlike earlier models (like GPT-1) that only read left-to-right, BERT processes text in both directions
+- **Transformer-based**: Uses self-attention mechanisms instead of recurrent architectures (RNNs/LSTMs)
+- **Pre-training approach**: Uses masked language modeling and next sentence prediction
+- **Contextual embeddings**: Generates different embeddings for the same word based on context
+
+**Task Reference**: This concept relates to Task Statement 3.2 under understanding foundation model architectures and their capabilities.
+
+<!-- Card End -->
+
+<!-- Card Start -->
+
+### Front
+
+When is using a BERT-based model not appropriate?
+
+### Back
+
+When latency, cost, or simplicity are critical and a simpler NLP approach meets requirements.
+
+❗ AWS prefers right-sized solutions, not "biggest model wins."
+
+**Situations where simpler alternatives are better**:
+- **Real-time applications** requiring sub-millisecond latency
+- **Resource-constrained environments** with limited compute/memory
+- **Simple tasks** like keyword matching or basic sentiment analysis
+- **Cost-sensitive deployments** where simpler models provide sufficient accuracy
+- **High-throughput systems** processing millions of requests
+
+**Better alternatives**:
+- Rule-based systems for deterministic tasks
+- Traditional ML (logistic regression, random forest) for structured features
+- Smaller models (DistilBERT, TinyBERT) for reduced complexity
+- AWS services like Amazon Comprehend for managed simplicity
+
+**Task Reference**: This relates to Task Statement 2.1 (selecting appropriate model types) and Task Statement 2.3 (inferencing strategies and cost considerations).
+
+<!-- Card End -->
+
+<!-- Card Start -->
+
+### Front
+
+Which metric is most appropriate for evaluating text summarization?
+
+### Back
+
+ROUGE, because it compares generated summaries against reference summaries.
+
+⚠️ Accuracy and AUC are incorrect but tempting answers.
+
+**Why ROUGE**:
+- Designed specifically for summarization tasks
+- Measures overlap between generated and reference text
+- Captures how well key content is preserved
+- Standard metric in NLP summarization research
+
+**Why not other metrics**:
+- **Accuracy**: Used for classification, not generation tasks
+- **AUC**: Used for binary classification ranking, not text generation
+- **BLEU**: Better suited for translation than summarization
+
+**Task Reference**: This concept is covered in Task Statement 3.4 under selecting appropriate metrics for different model types and tasks.
+
+<!-- Card End -->
+
+<!-- Card Start -->
+
+### Front
+
+What is the primary goal of model evaluation in a production ML system?
+
+### Back
+
+To ensure the model generalizes well to unseen data and meets business requirements—not to maximize training accuracy.
+
+**Key principles**:
+- **Generalization over memorization**: The model must perform well on new data, not just training data
+- **Business alignment**: Technical metrics must translate to business value (e.g., reduced fraud, improved customer satisfaction)
+- **Real-world performance**: Validation on representative production-like data
+- **Trade-offs**: Balance accuracy, latency, cost, and interpretability
+
+**Common pitfall**: Overfitting to training data produces impressive training metrics but poor real-world performance.
+
+**Task Reference**: This concept is foundational to Task Statement 4.1 (responsible AI) and Task Statement 4.3 (model evaluation and monitoring).
+
+<!-- Card End -->
+
+
